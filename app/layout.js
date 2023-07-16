@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <Link rel='icon' href='/favicon.ico' sizes='any' />
       </Head>
       <Script src='/js/vendor/jquery-library.js' defer></Script>
-      <Script src='js/vendor/bootstrap.min.js'></Script>
+      <Script src='/js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
       <Script src='/js/tinycolor-0.9.16.min.js'></Script>
       <Script src='/js/jquery.scrollTo.min.js'></Script>
