@@ -24,27 +24,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <Head>
-        <Link rel='icon' href='/favicon.ico' sizes='any' />
-      </Head>
+      <head>
+        <link rel='icon' href='/favicon.ico' sizes='any' />
+      </head>
 
       <body className='bt-home'>{children}</body>
-      <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
-      <Script src='/js/vendor/jquery-library.js'></Script>
-      <Script src='/js/vendor/bootstrap.min.js'></Script>
-      <Script src='/js/jquery.cubeportfolio.min.js'></Script>
-      <Script src='/js/tinycolor-0.9.16.min.js'></Script>
-      <Script src='/js/jquery.scrollTo.min.js'></Script>
-      <Script src='/js/jquery.pogoslider.js'></Script>
-      <Script src='/js/touchswipe.min.js'></Script>
-      <Script src='/js/jgallery.js'></Script>
-      <Script src='/js/jquery.vide.js'></Script>
-      <Script src='/js/prettyPhoto.js'></Script>
-      <Script src='/js/slick.min.js'></Script>
-      {/*<Script src='/js/parallax.js'></Script>
-      <Script src='/js/countTo.js'></Script>
-      <Script src='/js/appear.js'></Script> */}
-      <Script src='/js/themefunction.js'></Script>
+      <script src='/js/vendor/jquery-library.js'></script>
+      <script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></script>
+      <script src='/js/vendor/jquery-library.js'></script>
+      <script src='/js/vendor/bootstrap.min.js'></script>
+      <script src='/js/jquery.cubeportfolio.min.js'></script>
+      <script src='/js/tinycolor-0.9.16.min.js'></script>
+      <script src='/js/jquery.scrollTo.min.js'></script>
+      <script src='/js/jquery.pogoslider.js'></script>
+      <script src='/js/touchswipe.min.js'></script>
+      <script src='/js/jgallery.js'></script>
+      <script src='/js/jquery.vide.js'></script>
+      <script src='/js/prettyPhoto.js'></script>
+      <script src='/js/slick.min.js'></script>
+      <script src='/js/parallax.js'></script>
+      <script src='/js/countTo.js'></script>
+      <script src='/js/appear.js'></script>
+      <script src='/js/themefunction.js'></script>
     </html>
   )
 }
