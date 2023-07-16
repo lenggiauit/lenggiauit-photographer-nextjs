@@ -45,7 +45,7 @@ export default function HomeAlbums(props) {
           {props.data.sliderData.map((item) => (
             <div key={v4()} className='bt-item'>
               <figure>
-                <img
+                <Image
                   width={200}
                   height={133}
                   src={item.thumb}
