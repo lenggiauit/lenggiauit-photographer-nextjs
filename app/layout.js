@@ -41,9 +41,9 @@ export default function RootLayout({ children }) {
       <Script src='/js/jquery.vide.js'></Script>
       <Script src='/js/prettyPhoto.js'></Script>
       <Script src='/js/slick.min.js'></Script>
-      <Script src='/js/parallax.js'></Script>
+      {/*<Script src='/js/parallax.js'></Script>
       <Script src='/js/countTo.js'></Script>
-      <Script src='/js/appear.js'></Script>
+      <Script src='/js/appear.js'></Script> */}
       <Script src='/js/themefunction.js'></Script>
     </html>
   )

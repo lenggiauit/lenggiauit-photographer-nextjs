@@ -141,14 +141,14 @@ $(document).on('ready', function () {
   /*--------------------------------------
 			HOME PAGE FOUR SLIDER
 	--------------------------------------*/
-  var _bt_sliderfour = $('#bt-sliderfour')
-  _bt_sliderfour.slick({
-    infinite: true,
-    slidesToShow: 1,
-    dots: true,
-    arrows: false,
-    dotsClass: 'bt-slidernav',
-  })
+  // var _bt_sliderfour = $('#bt-sliderfour')
+  // _bt_sliderfour.slick({
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   dots: true,
+  //   arrows: false,
+  //   dotsClass: 'bt-slidernav',
+  // })
   /*--------------------------------------
 			HOME PAGE FIVE SLIDER
 	--------------------------------------*/
@@ -244,70 +244,70 @@ $(document).on('ready', function () {
   /* ---------------------------------------
 			HOME EIGHT SLIDER
 	-------------------------------------- */
-  var homeEightSlider = $('#bt-homesliderveight')
-  homeEightSlider.slick({
-    dots: false,
-    arrows: true,
-    slidesToShow: 3,
-    infinite: false,
-    slidesToScroll: 1,
-    prevArrow:
-      '<span class="tg-btnprev"><i class="fa fa-angle-left"></i></span>',
-    nextArrow:
-      '<span class="tg-btnnext"><i class="fa fa-angle-right"></i></span>',
-    responsive: [
-      {
-        breakpoint: 1080,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 600,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  })
+  // var homeEightSlider = $('#bt-homesliderveight')
+  // homeEightSlider.slick({
+  //   dots: false,
+  //   arrows: true,
+  //   slidesToShow: 3,
+  //   infinite: false,
+  //   slidesToScroll: 1,
+  //   prevArrow:
+  //     '<span class="tg-btnprev"><i class="fa fa-angle-left"></i></span>',
+  //   nextArrow:
+  //     '<span class="tg-btnnext"><i class="fa fa-angle-right"></i></span>',
+  //   responsive: [
+  //     {
+  //       breakpoint: 1080,
+  //       settings: { slidesToShow: 2 },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: { slidesToShow: 2 },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: { slidesToShow: 1 },
+  //     },
+  //   ],
+  // })
   /* -------------------------------------
 			COUNTER
 	-------------------------------------- */
-  var _bt_counters = $('.bt-counters')
-  _bt_counters.appear(function () {
-    var _bt_timer = $('.bt-count h3')
-    _bt_timer.countTo()
-  })
+  // var _bt_counters = $('.bt-counters')
+  // _bt_counters.appear(function () {
+  //   var _bt_timer = $('.bt-count h3')
+  //   _bt_timer.countTo()
+  // })
   /* -------------------------------------
 			PROGRESS BAR
 	-------------------------------------- */
-  var _bt_memberskills = $('#bt-memberskills')
-  _bt_memberskills.appear(function () {
-    var _bt_memberskillholder = $('.bt-memberskillholder')
-    _bt_memberskillholder.each(function () {
-      $(this)
-        .find('.bt-memberskillbar')
-        .animate(
-          {
-            width: $(this).attr('data-percent'),
-          },
-          2500
-        )
-    })
-  })
+  // var _bt_memberskills = $('#bt-memberskills')
+  // _bt_memberskills.appear(function () {
+  //   var _bt_memberskillholder = $('.bt-memberskillholder')
+  //   _bt_memberskillholder.each(function () {
+  //     $(this)
+  //       .find('.bt-memberskillbar')
+  //       .animate(
+  //         {
+  //           width: $(this).attr('data-percent'),
+  //         },
+  //         2500
+  //       )
+  //   })
+  // })
   /*--------------------------------------
 			HOME PAGE FOUR SLIDER
 	--------------------------------------*/
-  var _bt_portfolioslider = $('#bt-portfolioslider')
-  _bt_portfolioslider.slick({
-    infinite: true,
-    slidesToShow: 1,
-    arrows: true,
-    prevArrow:
-      '<span class="tg-btnprev"><i class="fa fa-angle-left"></i></span>',
-    nextArrow:
-      '<span class="tg-btnnext"><i class="fa fa-angle-right"></i></span>',
-  })
+  // var _bt_portfolioslider = $('#bt-portfolioslider')
+  // _bt_portfolioslider.slick({
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   arrows: true,
+  //   prevArrow:
+  //     '<span class="tg-btnprev"><i class="fa fa-angle-left"></i></span>',
+  //   nextArrow:
+  //     '<span class="tg-btnnext"><i class="fa fa-angle-right"></i></span>',
+  // })
   /* -------------------------------------
 			TOGGLE CONTACT US
 	-------------------------------------- */
