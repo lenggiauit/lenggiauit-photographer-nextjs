@@ -27,8 +27,6 @@ export default function RootLayout({ children }) {
       <Head>
         <Link rel='icon' href='/favicon.ico' sizes='any' />
       </Head>
-      <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
-      <body className='bt-home'>{children}</body>
       <Script src='/js/vendor/jquery-library.js'></Script>
       <Script src='js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
@@ -43,6 +41,9 @@ export default function RootLayout({ children }) {
       <Script src='/js/parallax.js'></Script>
       <Script src='/js/countTo.js'></Script>
       <Script src='/js/appear.js'></Script>
+      <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
+      <body className='bt-home'>{children}</body>
+
       <Script src='/js/themefunction.js'></Script>
     </html>
   )
