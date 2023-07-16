@@ -30,11 +30,7 @@ export default function RootLayout({ children }) {
       <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
       <body className='bt-home'>{children}</body>
       <Script src='/js/vendor/jquery-library.js'></Script>
-      <Script
-        src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
-        integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz'
-        crossorigin='anonymous'
-      ></Script>
+      <Script src='js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
       <Script src='/js/tinycolor-0.9.16.min.js'></Script>
       <Script src='/js/jquery.scrollTo.min.js'></Script>
