@@ -29,10 +29,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body className='bt-home'>{children}</body>
-      <Script
-        src='/js/vendor/jquery-library.js'
-        strategy='afterInteractive'
-      ></Script>
+      <Script src='/js/vendor/jquery-library.js'></Script>
       <Script src='/js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
       <Script src='/js/tinycolor-0.9.16.min.js'></Script>
