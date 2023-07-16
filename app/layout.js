@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <Script src='/js/jquery.scrollTo.min.js'></Script>
       <Script src='/js/jquery.pogoslider.js'></Script>
       <Script src='/js/touchswipe.min.js'></Script>
-      <Script src='/js/jgallery.min.js'></Script>
+      <Script src='/js/jgallery.js'></Script>
       <Script src='/js/jquery.vide.js'></Script>
       <Script src='/js/prettyPhoto.js'></Script>
       <Script src='/js/slick.min.js'></Script>
