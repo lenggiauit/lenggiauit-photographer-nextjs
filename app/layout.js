@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <body className='bt-home'>{children}</body>
       <Script
         src='/js/vendor/jquery-library.js'
-        strategy='beforeInteractive'
+        strategy='afterInteractive'
       ></Script>
       <Script src='/js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
