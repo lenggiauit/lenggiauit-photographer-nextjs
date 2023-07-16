@@ -1,4 +1,3 @@
-'use client'
 import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
 import Head from 'next/head'
