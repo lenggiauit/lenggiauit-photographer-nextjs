@@ -2,7 +2,7 @@
 const nextConfig = {
   experimental: {
     images: {
-      allowFutureImage: true,
+      allowFutureImage: false,
     },
     appDir: true,
   },
