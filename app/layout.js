@@ -30,22 +30,25 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className='bt-home'>{children}</body>
-      <Script src='/js/vendor/jquery-library.js'></Script>
-      <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
-      <Script src='/js/vendor/bootstrap.min.js'></Script>
-      <Script src='/js/jquery.cubeportfolio.min.js'></Script>
-      <Script src='/js/tinycolor-0.9.16.min.js'></Script>
-      <Script src='/js/jquery.scrollTo.min.js'></Script>
-      <Script src='/js/jquery.pogoslider.js'></Script>
-      <Script src='/js/touchswipe.min.js'></Script>
-      <Script src='/js/jgallery.js'></Script>
-      <Script src='/js/jquery.vide.js'></Script>
-      <Script src='/js/prettyPhoto.js'></Script>
-      <Script src='/js/slick.min.js'></Script>
-      <Script src='/js/parallax.js'></Script>
-      <Script src='/js/countTo.js'></Script>
-      <Script src='/js/appear.js'></Script>
-      <Script src='/js/themefunction.js'></Script>
+      <Script src='/js/vendor/jquery-library.js' async></Script>
+      <Script
+        src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'
+        async
+      ></Script>
+      <Script src='/js/vendor/bootstrap.min.js' async></Script>
+      <Script src='/js/jquery.cubeportfolio.min.js' async></Script>
+      <Script src='/js/tinycolor-0.9.16.min.js' async></Script>
+      <Script src='/js/jquery.scrollTo.min.js' async></Script>
+      <Script src='/js/jquery.pogoslider.js' async></Script>
+      <Script src='/js/touchswipe.min.js' async></Script>
+      <Script src='/js/jgallery.js' async></Script>
+      <Script src='/js/jquery.vide.js' async></Script>
+      <Script src='/js/prettyPhoto.js' async></Script>
+      <Script src='/js/slick.min.js' async></Script>
+      <Script src='/js/parallax.js' async></Script>
+      <Script src='/js/countTo.js' async></Script>
+      <Script src='/js/appear.js' async></Script>
+      <Script src='/js/themefunction.js' async></Script>
     </html>
   )
 }
