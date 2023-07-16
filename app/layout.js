@@ -26,16 +26,11 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
-        <meta
-          httpEquiv='Cache-Control'
-          content='no-cache, no-store, must-revalidate'
-        />
-        <meta httpEquiv='Pragma' content='no-cache' />
-        <meta httpEquiv='Expires' content='0' />
+        <script src='/js/vendor/jquery-library.js'></script>
       </head>
 
       <body className='bt-home'>{children}</body>
-      <Script src='/js/vendor/jquery-library.js'></Script>
+      <Script src='/js/vendor/jquery-library.js' strategy='lazyOnload'></Script>
       <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
       <Script src='/js/vendor/bootstrap.min.js'></Script>
       <Script src='/js/jquery.cubeportfolio.min.js'></Script>
