@@ -14,8 +14,9 @@ export default function HomeAlbums(props) {
               <figure
                 style={{
                   backgroundImage: `url('${item.image}')`,
+                  backgroundPositionX: 'center',
+                  backgroundPositionY: 'bottom',
                   backgroundRepeat: 'no-repeat',
-                  backgroundAttachment: 'fixed',
                 }}
               >
                 <div className='bt-slidercontent'>
