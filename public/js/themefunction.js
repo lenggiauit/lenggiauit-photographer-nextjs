@@ -1,27 +1,27 @@
-jQuery(document).on('ready', function () {
+$(document).on('ready', function () {
   'use strict'
   /* -------------------------------------
 			NAVIGATION TOGGLE
 	-------------------------------------- */
-  jQuery('.bt-btntogglemenu').on('click', function (event) {
+  $('.bt-btntogglemenu').on('click', function (event) {
     event.preventDefault()
-    jQuery('#bt-nav').slideToggle('slow')
-    jQuery('body.bt-homeone').toggleClass('bt-pagescrolldiable')
-    jQuery('body.bt-hometwo').toggleClass('bt-pagescrolldiable')
+    $('#bt-nav').slideToggle('slow')
+    $('body.bt-homeone').toggleClass('bt-pagescrolldiable')
+    $('body.bt-hometwo').toggleClass('bt-pagescrolldiable')
   })
   /* -------------------------------------
 			SHARE ICONS TOGGLE
 	-------------------------------------- */
-  var _bt_btnshare = jQuery('.bt-btnshare')
+  var _bt_btnshare = $('.bt-btnshare')
   _bt_btnshare.on('click', function (event) {
     event.preventDefault()
-    var _bt_shapreicons = jQuery('.bt-shapreicons')
-    jQuery(this).parent('li').toggleClass('bt-showicon')
+    var _bt_shapreicons = $('.bt-shapreicons')
+    $(this).parent('li').toggleClass('bt-showicon')
   })
   /* -------------------------------------
 			HOME BANNER SLIDER				
 	-------------------------------------- */
-  var _bt_homeslidervone = jQuery('#bt-homeslidervone')
+  var _bt_homeslidervone = $('#bt-homeslidervone')
   _bt_homeslidervone
     .pogoSlider({
       pauseOnHover: false,
@@ -32,17 +32,17 @@ jQuery(document).on('ready', function () {
       autoplayTimeout: 6000,
       responsive: true,
       onSlideStart: function () {
-        var _slideslength = jQuery('.pogoSlider-slide').length
+        var _slideslength = $('.pogoSlider-slide').length
         var _currentSlide = this.currentSlideIndex + 1
-        jQuery('#bt-totalslides').text(_slideslength)
-        jQuery('#bt-currentslides').text(_currentSlide)
+        $('#bt-totalslides').text(_slideslength)
+        $('#bt-currentslides').text(_currentSlide)
       },
     })
     .data('plugin_pogoSlider')
   /* -------------------------------------
 			ALBUMBS GALLERY
 	-------------------------------------- */
-  var _tg_categoryAlbumbs = jQuery(
+  var _tg_categoryAlbumbs = $(
     '[id="bt-weddingalbum"],[id="bt-kidsalbum"], [id="bt-twinssisteralbum"], [id="bt-halloweenalbum"], [id="bt-stationphotographyalbum"], [id="bt-femalemodelalbum"], [id="bt-femalemodeltwoalbum"], [id="bt-randomclickalbum"]'
   )
   if (_tg_categoryAlbumbs.hasClass('bt-album')) {
@@ -54,38 +54,38 @@ jQuery(document).on('ready', function () {
       backgroundColor: '#000',
     })
   }
-  jQuery('.bt-callalbum').on('click', function (event) {
+  $('.bt-callalbum').on('click', function (event) {
     event.preventDefault()
-    var clickedValue = jQuery(this).attr('data-number')
+    var clickedValue = $(this).attr('data-number')
     // console.log(clickedValue)
-    jQuery('.jgallery').each(function () {
-      jQuery(this).hide()
-      if (jQuery(this).attr('data-jgallery-id') == clickedValue) {
-        jQuery(this).show()
+    $('.jgallery').each(function () {
+      $(this).hide()
+      if ($(this).attr('data-jgallery-id') == clickedValue) {
+        $(this).show()
       }
     })
-    jQuery('body.bt-homevalbums').toggleClass('bt-showalbum')
+    $('body.bt-homevalbums').toggleClass('bt-showalbum')
   })
-  jQuery('#bt-btnclosealbum').on('click', function (event) {
-    jQuery('body.bt-homevalbums').toggleClass('bt-showalbum')
+  $('#bt-btnclosealbum').on('click', function (event) {
+    $('body.bt-homevalbums').toggleClass('bt-showalbum')
   })
   /* -------------------------------------
 			BANNER FADEOUT
 	-------------------------------------- */
   function bannerFadeout() {
-    jQuery(window).on('scroll', function () {
-      var scroll = jQuery(window).scrollTop()
+    $(window).on('scroll', function () {
+      var scroll = $(window).scrollTop()
       /*if (scroll > 1) {
-				jQuery('.bt-homevtwo').addClass('bt-fixed');
+				$('.bt-homevtwo').addClass('bt-fixed');
 			}
 			if (scroll === 0){
-				jQuery('.bt-homevtwo').removeClass('bt-fixed');
+				$('.bt-homevtwo').removeClass('bt-fixed');
 			}*/
-      var mainPosition = jQuery('.bt-main').offset().top
+      var mainPosition = $('.bt-main').offset().top
       if (scroll >= mainPosition) {
-        jQuery('.bt-homevtwo').addClass('bt-fixed')
+        $('.bt-homevtwo').addClass('bt-fixed')
       } else {
-        jQuery('.bt-homevtwo').removeClass('bt-fixed')
+        $('.bt-homevtwo').removeClass('bt-fixed')
       }
     })
   }
@@ -93,10 +93,10 @@ jQuery(document).on('ready', function () {
   /* -------------------------------------
 			PRETTY PHOTO GALLERY
 	-------------------------------------- */
-  jQuery('a[data-rel]').each(function () {
-    jQuery(this).attr('rel', jQuery(this).data('rel'))
+  $('a[data-rel]').each(function () {
+    $(this).attr('rel', $(this).data('rel'))
   })
-  jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({
+  $("a[data-rel^='prettyPhoto']").prettyPhoto({
     animation_speed: 'normal',
     theme: 'dark_square',
     slideshow: 3000,
@@ -107,8 +107,8 @@ jQuery(document).on('ready', function () {
 			PADDING EQUEL TO WINDOW HEIGHT
 	--------------------------------------*/
   function paddingequlheight() {
-    var $_height = jQuery(window).height()
-    jQuery('body.bt-homevthree .bt-wrapper').css({
+    var $_height = $(window).height()
+    $('body.bt-homevthree .bt-wrapper').css({
       'padding-top': $_height + 'px',
     })
   }
@@ -116,7 +116,7 @@ jQuery(document).on('ready', function () {
   /* -------------------------------------
 			HOME BANNER SLIDER				
 	-------------------------------------- */
-  var mySlider = jQuery('#bt-homeslidervthree')
+  var mySlider = $('#bt-homeslidervthree')
   mySlider
     .pogoSlider({
       generateButtons: true,
@@ -127,12 +127,12 @@ jQuery(document).on('ready', function () {
       responsive: true,
       autoplay: false,
       onSlideStart: function (current) {
-        var currentSlide = jQuery(this)[0].currentSlideIndex + 1
-        jQuery('.bt-albumpost').each(function () {
-          jQuery(this).removeClass('active').fadeOut()
-          var dataSlide = jQuery(this).data('slide')
+        var currentSlide = $(this)[0].currentSlideIndex + 1
+        $('.bt-albumpost').each(function () {
+          $(this).removeClass('active').fadeOut()
+          var dataSlide = $(this).data('slide')
           if (currentSlide == dataSlide) {
-            jQuery(this).addClass('active').delay(300).fadeIn()
+            $(this).addClass('active').delay(300).fadeIn()
           }
         })
       },
@@ -141,7 +141,7 @@ jQuery(document).on('ready', function () {
   /*--------------------------------------
 			HOME PAGE FOUR SLIDER
 	--------------------------------------*/
-  var _bt_sliderfour = jQuery('#bt-sliderfour')
+  var _bt_sliderfour = $('#bt-sliderfour')
   _bt_sliderfour.slick({
     infinite: true,
     slidesToShow: 1,
@@ -153,8 +153,8 @@ jQuery(document).on('ready', function () {
 			HOME PAGE FIVE SLIDER
 	--------------------------------------*/
   function slickSlider() {
-    var _status = jQuery('.tg-bannerfullwidthslidecount')
-    var _slider = jQuery('#tg-postfullslider')
+    var _status = $('.tg-bannerfullwidthslidecount')
+    var _slider = $('#tg-postfullslider')
     _slider.on(
       'init reInit afterChange',
       function (event, slick, currentSlide) {
@@ -171,7 +171,7 @@ jQuery(document).on('ready', function () {
       slidesToScroll: 1,
       asNavFor: '#tg-postthumbnail',
     })
-    jQuery('#tg-postthumbnail').slick({
+    $('#tg-postthumbnail').slick({
       dots: false,
       arrows: false,
       vertical: true,
@@ -182,8 +182,8 @@ jQuery(document).on('ready', function () {
       focusOnSelect: true,
       asNavFor: _slider,
     })
-    jQuery('#bt-togglethumbnails').on('click', function () {
-      jQuery('body.bt-homevfive').toggleClass('bt-hidethumbnail')
+    $('#bt-togglethumbnails').on('click', function () {
+      $('body.bt-homevfive').toggleClass('bt-hidethumbnail')
     })
   }
   slickSlider()
@@ -191,16 +191,16 @@ jQuery(document).on('ready', function () {
 			LOAD MORE GALLERY
 	-------------------------------------- */
   function loadMoregallery() {
-    jQuery('.bt-loaditem').slice(0, 9).show()
-    jQuery('#bt-btnloadmore').on('click', function (e) {
+    $('.bt-loaditem').slice(0, 9).show()
+    $('#bt-btnloadmore').on('click', function (e) {
       e.preventDefault()
-      jQuery('.bt-loaditem:hidden').slice(0, 2).slideDown()
-      if (jQuery('.bt-loaditem:hidden').length == 0) {
-        jQuery('#bt-btnloadmore').fadeOut('slow')
+      $('.bt-loaditem:hidden').slice(0, 2).slideDown()
+      if ($('.bt-loaditem:hidden').length == 0) {
+        $('#bt-btnloadmore').fadeOut('slow')
       }
-      jQuery('html,body').animate(
+      $('html,body').animate(
         {
-          scrollTop: jQuery(this).offset().top - 30,
+          scrollTop: $(this).offset().top - 30,
         },
         1500
       )
@@ -208,16 +208,16 @@ jQuery(document).on('ready', function () {
   }
   loadMoregallery()
   function indexsixloadMoregallery() {
-    jQuery('.bt-indexsixloaditem').slice(0, 11).show()
-    jQuery('#bt-indexsixbtnloadmore').on('click', function (e) {
+    $('.bt-indexsixloaditem').slice(0, 11).show()
+    $('#bt-indexsixbtnloadmore').on('click', function (e) {
       e.preventDefault()
-      jQuery('.bt-indexsixloaditem:hidden').slice(0, 2).slideDown()
-      if (jQuery('.bt-indexsixloaditem:hidden').length == 0) {
-        jQuery('#bt-indexsixbtnloadmore').fadeOut('slow')
+      $('.bt-indexsixloaditem:hidden').slice(0, 2).slideDown()
+      if ($('.bt-indexsixloaditem:hidden').length == 0) {
+        $('#bt-indexsixbtnloadmore').fadeOut('slow')
       }
-      jQuery('html,body').animate(
+      $('html,body').animate(
         {
-          scrollTop: jQuery(this).offset().top - 30,
+          scrollTop: $(this).offset().top - 30,
         },
         1500
       )
@@ -225,16 +225,16 @@ jQuery(document).on('ready', function () {
   }
   indexsixloadMoregallery()
   function loadmorephotographer() {
-    jQuery('.bt-loadmorephotographer').slice(0, 8).show()
-    jQuery('#bt-btnloadmorephotographer').on('click', function (e) {
+    $('.bt-loadmorephotographer').slice(0, 8).show()
+    $('#bt-btnloadmorephotographer').on('click', function (e) {
       e.preventDefault()
-      jQuery('.bt-loadmorephotographer:hidden').slice(0, 2).slideDown()
-      if (jQuery('.bt-loadmorephotographer:hidden').length == 0) {
-        jQuery('#bt-btnloadmorephotographer').fadeOut('slow')
+      $('.bt-loadmorephotographer:hidden').slice(0, 2).slideDown()
+      if ($('.bt-loadmorephotographer:hidden').length == 0) {
+        $('#bt-btnloadmorephotographer').fadeOut('slow')
       }
-      jQuery('html,body').animate(
+      $('html,body').animate(
         {
-          scrollTop: jQuery(this).offset().top - 30,
+          scrollTop: $(this).offset().top - 30,
         },
         1500
       )
@@ -244,7 +244,7 @@ jQuery(document).on('ready', function () {
   /* ---------------------------------------
 			HOME EIGHT SLIDER
 	-------------------------------------- */
-  var homeEightSlider = jQuery('#bt-homesliderveight')
+  var homeEightSlider = $('#bt-homesliderveight')
   homeEightSlider.slick({
     dots: false,
     arrows: true,
@@ -273,23 +273,23 @@ jQuery(document).on('ready', function () {
   /* -------------------------------------
 			COUNTER
 	-------------------------------------- */
-  var _bt_counters = jQuery('.bt-counters')
+  var _bt_counters = $('.bt-counters')
   _bt_counters.appear(function () {
-    var _bt_timer = jQuery('.bt-count h3')
+    var _bt_timer = $('.bt-count h3')
     _bt_timer.countTo()
   })
   /* -------------------------------------
 			PROGRESS BAR
 	-------------------------------------- */
-  var _bt_memberskills = jQuery('#bt-memberskills')
+  var _bt_memberskills = $('#bt-memberskills')
   _bt_memberskills.appear(function () {
-    var _bt_memberskillholder = jQuery('.bt-memberskillholder')
+    var _bt_memberskillholder = $('.bt-memberskillholder')
     _bt_memberskillholder.each(function () {
-      jQuery(this)
+      $(this)
         .find('.bt-memberskillbar')
         .animate(
           {
-            width: jQuery(this).attr('data-percent'),
+            width: $(this).attr('data-percent'),
           },
           2500
         )
@@ -298,7 +298,7 @@ jQuery(document).on('ready', function () {
   /*--------------------------------------
 			HOME PAGE FOUR SLIDER
 	--------------------------------------*/
-  var _bt_portfolioslider = jQuery('#bt-portfolioslider')
+  var _bt_portfolioslider = $('#bt-portfolioslider')
   _bt_portfolioslider.slick({
     infinite: true,
     slidesToShow: 1,
@@ -311,29 +311,29 @@ jQuery(document).on('ready', function () {
   /* -------------------------------------
 			TOGGLE CONTACT US
 	-------------------------------------- */
-  jQuery('#bt-btnplus').on('click', function () {
-    jQuery('#bt-contactinfo').toggle('slow')
+  $('#bt-btnplus').on('click', function () {
+    $('#bt-contactinfo').toggle('slow')
   })
   /* -------------------------------------
 			TOGGLE CONTACT US
 	-------------------------------------- */
-  var _bt_btnheadertoggle = jQuery('#bt-btnheadertoggle')
+  var _bt_btnheadertoggle = $('#bt-btnheadertoggle')
   _bt_btnheadertoggle.on('click', function () {
-    jQuery('body').toggleClass('bt-showheader')
+    $('body').toggleClass('bt-showheader')
   })
 
   /* -------------------------------------
 			SCROLL TO SECTION
 	-------------------------------------- */
-  jQuery('#bt-btnscrollto').click(function (event) {
+  $('#bt-btnscrollto').click(function (event) {
     event.preventDefault()
-    jQuery.scrollTo('#bt-main', 800)
+    $.scrollTo('#bt-main', 800)
   })
   /* -------------------------------------
 			CUBE GALLERY
 	-------------------------------------- */
-  if (jQuery('#bt-threecolumnscubegallery').length > 0) {
-    jQuery('#bt-threecolumnscubegallery').cubeportfolio({
+  if ($('#bt-threecolumnscubegallery').length > 0) {
+    $('#bt-threecolumnscubegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -362,8 +362,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-threecolumnscubevonegallery').length > 0) {
-    jQuery('#bt-threecolumnscubevonegallery').cubeportfolio({
+  if ($('#bt-threecolumnscubevonegallery').length > 0) {
+    $('#bt-threecolumnscubevonegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -392,8 +392,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-threecolumnscubegalleryvtwo').length > 0) {
-    jQuery('#bt-threecolumnscubegalleryvtwo').cubeportfolio({
+  if ($('#bt-threecolumnscubegalleryvtwo').length > 0) {
+    $('#bt-threecolumnscubegalleryvtwo').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -422,8 +422,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-threecolumnscubegallery').length > 0) {
-    jQuery('#bt-threecolumnscubegallery').cubeportfolio({
+  if ($('#bt-threecolumnscubegallery').length > 0) {
+    $('#bt-threecolumnscubegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -452,8 +452,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-threecolumnscubegallery').length > 0) {
-    jQuery('#bt-threecolumnscubegallery').cubeportfolio({
+  if ($('#bt-threecolumnscubegallery').length > 0) {
+    $('#bt-threecolumnscubegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -482,8 +482,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-indexfourphotogallery').length > 0) {
-    jQuery('#bt-indexfourphotogallery').cubeportfolio({
+  if ($('#bt-indexfourphotogallery').length > 0) {
+    $('#bt-indexfourphotogallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -512,8 +512,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#js-grid-agency').length > 0) {
-    jQuery('#js-grid-agency').cubeportfolio({
+  if ($('#js-grid-agency').length > 0) {
+    $('#js-grid-agency').cubeportfolio({
       filters: '#js-filters-agency',
       layoutMode: 'grid',
       defaultFilter: '*',
@@ -543,8 +543,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-threecolumnscubegallery').length > 0) {
-    jQuery('#bt-threecolumnscubegallery').cubeportfolio({
+  if ($('#bt-threecolumnscubegallery').length > 0) {
+    $('#bt-threecolumnscubegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -566,8 +566,8 @@ jQuery(document).on('ready', function () {
       displayTypeSpeed: 100,
     })
   }
-  if (jQuery('#bt-portfoliovfourgallery').length > 0) {
-    jQuery('#bt-portfoliovfourgallery').cubeportfolio({
+  if ($('#bt-portfoliovfourgallery').length > 0) {
+    $('#bt-portfoliovfourgallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -589,8 +589,8 @@ jQuery(document).on('ready', function () {
       displayTypeSpeed: 100,
     })
   }
-  if (jQuery('#bt-portfoliovonegallery').length > 0) {
-    jQuery('#bt-portfoliovonegallery').cubeportfolio({
+  if ($('#bt-portfoliovonegallery').length > 0) {
+    $('#bt-portfoliovonegallery').cubeportfolio({
       layoutMode: 'grid',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -619,8 +619,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-cubegallery').length > 0) {
-    jQuery('#bt-cubegallery').cubeportfolio({
+  if ($('#bt-cubegallery').length > 0) {
+    $('#bt-cubegallery').cubeportfolio({
       layoutMode: 'mosaic',
       sortToPreventGaps: true,
       animationType: 'fadeOutTop',
@@ -662,8 +662,8 @@ jQuery(document).on('ready', function () {
       },
     })
   }
-  if (jQuery('#bt-freephotosgallery').length > 0) {
-    jQuery('#bt-freephotosgallery').cubeportfolio({
+  if ($('#bt-freephotosgallery').length > 0) {
+    $('#bt-freephotosgallery').cubeportfolio({
       filters: '#js-filters-agency',
       layoutMode: 'mosaic',
       defaultFilter: '*',
@@ -710,8 +710,8 @@ jQuery(document).on('ready', function () {
 /* -------------------------------------
 		THEME PRELOADER
 -------------------------------------- */
-jQuery(window).on('load', function () {
-  var $preloader = jQuery('#bt-preloader'),
+$(window).on('load', function () {
+  var $preloader = $('#bt-preloader'),
     $spinner = $preloader.find('.bt-preloadericon')
   $spinner.fadeOut()
   $preloader.delay(350).fadeOut('slow')

@@ -34,7 +34,11 @@ export default function HomeAlbums(props) {
             </div>
           ))}
         </div>
-        <a id='bt-togglethumbnails' className='bt-togglethumbnails' href='#'>
+        <a
+          id='bt-togglethumbnails'
+          className='bt-togglethumbnails'
+          href='javascript:void(0);'
+        >
           thumbs
         </a>
         <div id='tg-postthumbnail' className='tg-postthumbnail'>
