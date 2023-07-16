@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
-        <script src='/js/vendor/jquery-library.js'></script>
+        {/* <script src='/js/vendor/jquery-library.js'></script> */}
       </head>
 
       <body className='bt-home'>{children}</body>
