@@ -57,7 +57,7 @@ jQuery(document).on('ready', function () {
   jQuery('.bt-callalbum').on('click', function (event) {
     event.preventDefault()
     var clickedValue = jQuery(this).attr('data-number')
-    console.log(clickedValue)
+    // console.log(clickedValue)
     jQuery('.jgallery').each(function () {
       jQuery(this).hide()
       if (jQuery(this).attr('data-jgallery-id') == clickedValue) {
