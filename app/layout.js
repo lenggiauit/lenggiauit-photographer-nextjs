@@ -27,6 +27,8 @@ export default function RootLayout({ children }) {
       <Head>
         <Link rel='icon' href='/favicon.ico' sizes='any' />
       </Head>
+
+      <body className='bt-home'>{children}</body>
       <Script
         src='/js/vendor/jquery-library.js'
         strategy='beforeInteractive'
@@ -45,8 +47,6 @@ export default function RootLayout({ children }) {
       <Script src='/js/countTo.js'></Script>
       <Script src='/js/appear.js'></Script>
       <Script src='/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></Script>
-      <body className='bt-home'>{children}</body>
-
       <Script src='/js/themefunction.js'></Script>
     </html>
   )
