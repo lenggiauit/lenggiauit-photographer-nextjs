@@ -83,7 +83,7 @@ const AlbumDetail = ({ params }) => {
               ))}
             </div>
           </div>
-          <div class='clearfix'></div>
+          <div className='clearfix'></div>
 
           <div className='container'>
             <ul className='bt-postnav'>
