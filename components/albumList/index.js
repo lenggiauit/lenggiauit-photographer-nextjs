@@ -32,6 +32,8 @@ function AlbumList(props) {
             backgroundPositionX: 'center',
             backgroundPositionY: 'bottom',
             backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            minHeight: 500,
           }}
         >
           <figcaption>
