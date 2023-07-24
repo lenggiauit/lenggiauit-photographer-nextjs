@@ -1,24 +1,3 @@
-/*
- @Author: Company Name
- @URL: http://companyname.com
- This file contains the styling for the actual theme, this
- is the file you need to edit to change the look of the
- theme.
- However we used Less script to make things easy to maintain, this is the compressed ourput, we recommend to edit the less files and then recombile the files and add the result here, if you don't like to use less you can edit this file here.
- 
- This files contents are outlined below.
- 01.	Theme Reset Style
- 02.	Global Elements
- 03.	Menu
- 04.	Social
- 05.	Article
- 06.	Posts
- 07.	Responsive
- 08.	Widgets
- 09.	Flexslider
- 10.	Grid
-*/
-
 /* =============================================
 			Theme Reset Style
 ============================================= */
@@ -691,6 +670,9 @@ address {
 .bt-loadmorephotographer {
   display: none;
 }
+a.bt-btn {
+  text-decoration: none;
+}
 /*=============================================
 			Header
 =============================================*/
@@ -698,7 +680,7 @@ address {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
   padding: 30px 30px 0;
 }
@@ -723,7 +705,7 @@ address {
   width: 100%;
   height: 100%;
   z-index: 100;
-  display: none;
+  /* display: none; */
   padding: 80px;
   position: fixed;
   overflow-x: scroll;
@@ -1107,332 +1089,7 @@ address {
   margin: 13px 15px;
   background: rgba(255, 255, 255, 0.5);
 }
-/*==============================================
-			Home Version Two
-==============================================*/
-.bt-btnclosealbum {
-  top: 0;
-  left: 0;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  display: block;
-  z-index: 99999;
-  position: fixed;
-  font-size: 22px;
-  line-height: 60px;
-  text-align: center;
-}
-.bt-btnclosealbum > i {
-  color: #fff;
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-}
-.bt-albums {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  position: fixed;
-  -webkit-transform: translateX(150%);
-  -moz-transform: translateX(150%);
-  -ms-transform: translateX(150%);
-  -o-transform: translateX(150%);
-  transform: translateX(150%);
-}
-body.bt-homevalbums.bt-showalbum {
-  overflow: hidden;
-}
-body.bt-homevalbums.bt-showalbum .bt-albums {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-body.bt-homevtwo .bt-nav .bt-btntogglemenu,
-body.bt-homevthree .bt-nav .bt-btntogglemenu,
-body.bt-homevfive .bt-nav .bt-btntogglemenu {
-  left: 30px;
-}
-body.bt-homevtwo .bt-btntogglemenu {
-  margin: 0;
-  float: left;
-}
-body.bt-homevtwo .bt-btntogglemenu img:last-child,
-body.bt-homevtwo.bt-fixed .bt-btntogglemenu img:first-child {
-  display: none;
-}
 
-body.bt-homevtwo .bt-btntogglemenu img:first-child,
-body.bt-homevtwo.bt-fixed .bt-btntogglemenu img:last-child {
-  display: block;
-}
-
-.bt-navigationarea .bt-socialicons {
-  float: right;
-}
-body.bt-homevtwo.bt-fixed .bt-socialicons li a {
-  color: #000;
-}
-body.bt-homevtwo .bt-socialicons li a {
-  color: #fff;
-}
-body.bt-homevtwo.bt-fixed .bt-header {
-  background: none;
-  padding: 30px 30px 0;
-  border-color: #e8e8e8;
-}
-body.bt-homevtwo .bt-header {
-  padding: 0;
-  position: fixed;
-  border: 30px solid transparent;
-  border-bottom: 0;
-}
-.bt-backgroundimg,
-.bt-backgroundvideo {
-  float: left;
-  z-index: 98;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-#bt-videobox {
-  position: static !important;
-}
-.bt-backgroundimg {
-  background: url(/images/slider/img-02.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.bt-backgroundimg .bt-logo,
-.bt-backgroundvideo .bt-logo {
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  width: 242px;
-  height: 67px;
-  display: block;
-  position: absolute;
-  margin: -33px 0 0 -121px;
-}
-.bt-scene {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  float: left;
-  z-index: 2;
-  list-style: none;
-  background: rgba(18, 4, 53, 0.47);
-}
-.bt-layer {
-  width: 100%;
-  float: left;
-  list-style-type: none;
-}
-.bt-layer img {
-  display: block;
-}
-.bt-homevtwo .bt-main {
-  padding: 130px 0 0;
-  border: 30px solid #e8e8e8;
-  border-bottom: 0;
-}
-.bt-pageheadcontent {
-  width: 100%;
-  float: left;
-  padding: 70px 0;
-  text-align: center;
-}
-.bt-pageheadcontent h2 {
-  margin: 0 0 15px;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 48px;
-}
-.bt-pageheadcontent h3 {
-  margin: 0 0 30px;
-  font-size: 18px;
-  line-height: 21px;
-}
-.bt-pageheadcontent .bt-description p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 28px;
-}
-.bt-categorybox {
-  width: 100%;
-  float: left;
-}
-.bt-categorypost {
-  width: 100%;
-  float: left;
-}
-.bt-categorypost figure {
-  margin: 0;
-  width: 100%;
-  float: left;
-}
-.bt-categorypost figure a {
-  display: block;
-}
-.bt-categorypost figure a img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.bt-categorypostcontent {
-  width: 100%;
-  float: left;
-  padding: 30px 0 0;
-}
-.bt-postmatadata {
-  width: 100%;
-  float: left;
-  color: #7f7f7f;
-  font-size: 13px;
-  line-height: 16px;
-  list-style: none;
-}
-.bt-postmatadata li {
-  float: left;
-  line-height: inherit;
-  list-style-type: none;
-}
-.bt-postmatadata li a {
-  color: #2c2c2c;
-}
-.bt-postmatadata li time {
-  display: block;
-  line-height: inherit;
-}
-.bt-postmatadata li span {
-  line-height: inherit;
-  display: inline-block;
-  vertical-align: middle;
-}
-.bt-authorimgname {
-  overflow: hidden;
-}
-.bt-authorimgname > a {
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  margin: 0 10px 0 0;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-}
-.bt-postmatadata li time a {
-  color: #7f7f7f;
-}
-.bt-categorypostcontent .bt-postmatadata li:first-child {
-  float: left;
-}
-.bt-categorypostcontent .bt-postmatadata li:last-child {
-  float: right;
-  padding: 7px 0;
-}
-.bt-categoryposttitle {
-  width: 100%;
-  float: left;
-  padding: 15px 0;
-}
-.bt-categoryposttitle h3 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 35px;
-  text-transform: capitalize;
-}
-.bt-categorypostcontent .bt-description {
-  margin: 0;
-  color: #6b6b6b;
-  font-size: 16px;
-}
-.bt-shareandlikes {
-  float: right;
-  color: #868686;
-  font-size: 13px;
-  line-height: 16px;
-  list-style: none;
-  padding: 15px 15px 15px;
-  text-transform: uppercase;
-}
-.bt-shareandlikes li {
-  float: left;
-  position: relative;
-  line-height: inherit;
-  list-style-type: none;
-}
-.bt-shareandlikes li + li {
-  margin: 0 0 0 25px;
-}
-.bt-shareandlikes li a {
-  color: #fff;
-  display: block;
-}
-.bt-categorybox .bt-shareandlikes > li > a {
-  color: #373542;
-}
-.bt-shareandlikes li span {
-  line-height: 18px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.bt-shareandlikes li span:first-child {
-  padding: 0 5px 0 0;
-}
-.bt-shareandlikes li span.icon-heart12 {
-  color: #ea6767;
-  cursor: pointer;
-}
-.bt-categorygallery {
-  width: 100%;
-  float: left;
-  position: relative;
-}
-.bt-categorygallery figure {
-  margin: 0;
-  width: 100%;
-  float: left;
-}
-.bt-categorygallery figure a {
-  display: block;
-}
-.bt-categorygallery figure a img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.bt-sectionpattren {
-  width: 100%;
-  height: 8px;
-  float: left;
-  background: url(/images/pattran-01.png) no-repeat center center;
-}
-.bt-btnboxloadmore {
-  width: 100%;
-  float: left;
-  padding: 0 0 120px;
-  text-align: center;
-}
-.bt-btnboxloadmore .bt-btn:focus {
-  color: #000;
-}
-.bt-btnboxloadmore .bt-btn:hover {
-  color: #fff;
-}
-.bt-btnboxloadmore .bt-btn {
-  float: none;
-}
 /*==============================================
 			Footer Style
 ==============================================*/
@@ -2250,7 +1907,7 @@ body.bt-homevfive .bt-main {
   width: 100%;
   float: left;
   height: 100%;
-  position: relative;
+  position: relative !important;
 }
 .tg-postfullslider .slick-list,
 .tg-postfullslider .slick-list .slick-track,
@@ -2262,6 +1919,7 @@ body.bt-homevfive .bt-main {
 .bt-item figure {
   margin: 0;
   width: 100%;
+  height: 100%;
   float: left;
   position: relative;
   -webkit-background-size: cover !important;
@@ -2284,9 +1942,10 @@ body.bt-homevfive .bt-main {
   top: 0;
   right: 0;
   z-index: 2;
-  width: 200px;
+  width: 200px !important;
+  height: 70%;
   background: #000;
-  position: absolute;
+  position: absolute !important;
   border: 10px solid #000;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -2294,6 +1953,7 @@ body.bt-homevfive .bt-main {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+
 .tg-postthumbnail .slick-list {
   padding: 0 !important;
 }
@@ -2309,6 +1969,10 @@ body.bt-homevfive .bt-main {
 }
 .tg-postthumbnail .bt-item:hover figure img,
 .tg-postthumbnail .bt-item.slick-current figure img {
+  opacity: 1;
+  cursor: pointer;
+}
+.tg-postthumbnail .bt-item.active figure img {
   opacity: 1;
 }
 .bt-togglethumbnails {
@@ -2587,14 +2251,17 @@ body.bt-homevseven .bt-main {
   float: left;
 }
 .cbp-l-filters-text {
-  margin: 0;
+  margin: 30px 0px 30px 0px;
   clear: both;
-  text-align: left;
+  text-align: center;
   padding: 0 15px 25px;
   text-transform: capitalize;
   font: 300 16px/16px 'Montserrat', Arial, Helvetica, sans-serif;
 }
 .cbp-l-filters-text .cbp-filter-item {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
   margin: 0;
   color: #868686;
   padding: 0 60px 13px 0;
@@ -2641,81 +2308,7 @@ body.bt-homevseven .bt-main {
 .bt-masonrygallery .bt-titleandinfo .bt-shareandlikes li a {
   color: #868686;
 }
-/*==============================================
-			Home Version Eight
-==============================================*/
-.bt-homesliderveight,
-.slick-list,
-.slick-track {
-  width: 100%;
-  float: left;
-  height: 100%;
-  position: relative;
-}
-.bt-homesliderveight .tg-item {
-  float: left;
-  height: 100%;
-  position: relative;
-}
-.bt-homesliderveight figure {
-  margin: 0;
-  width: 100%;
-  float: left;
-  height: 100%;
-  position: relative;
-  background-color: transparent;
-}
-.bt-homesliderveight figure img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.bt-homesliderveight .bt-album {
-  margin: 0;
-  height: 100%;
-  position: relative;
-}
-.tg-btnprev,
-.tg-btnnext {
-  top: 50%;
-  z-index: 2;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  display: block;
-  cursor: pointer;
-  overflow: hidden;
-  line-height: 48px;
-  border-radius: 50%;
-  text-align: center;
-  position: absolute;
-  margin: -25px 0 0 0;
-  border: 1px solid #fff;
-}
-.tg-btnprev {
-  left: 20px;
-}
-.tg-btnnext {
-  right: 20px;
-}
-.tg-btnprev i,
-.tg-btnnext i {
-  display: block;
-  text-align: center;
-  line-height: inherit;
-}
-.bt-homesliderveight .bt-titleandinfo {
-  z-index: 5;
-  opacity: 0;
-  visibility: hidden;
-}
-.bt-homesliderveight .tg-item .bt-album:hover .bt-titleandinfo {
-  opacity: 1;
-  visibility: visible;
-}
-.bt-homesliderveight figure figcaption {
-  background: rgba(0, 0, 0, 0.8);
-}
+
 /*==============================================
 			404 Page
 ==============================================*/
@@ -3649,6 +3242,7 @@ body.bt-homevseven .bt-main {
 .bt-freephotosgallery .cbp-l-filters-text {
   text-align: center;
 }
+
 .bt-freephotosgallery .bt-navfilterbale li {
   float: none;
   display: inline-block;
@@ -4644,4 +4238,63 @@ body.bt-homevseven .bt-main {
 }
 .bt-halfheight {
   height: 75%;
+}
+
+.main-content-layout .container-fluid.photos,
+.main-content-layout .container-fluid.photos .row > * {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-content-layout .container-fluid.photos .bt-album {
+  background-color: rgb(0, 0, 0);
+}
+
+.main-content-layout .container-fluid.photos .bt-album:hover img {
+  opacity: 0.3;
+}
+.main-content-layout .container-fluid.photos .bt-album:hover .photo-text-more {
+  opacity: 1;
+  visibility: visible;
+}
+.photos .photo-item .photo-text-more {
+  position: absolute;
+  z-index: 3;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.photos .photo-item .photo-text-more .heading {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.photos .photo-item .photo-text-more .meta {
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.react-photo-gallery--gallery img {
+  width: 33.333333%;
+  height: auto;
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+.MuiMasonry-root img {
+  cursor: pointer;
 }

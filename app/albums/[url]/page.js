@@ -1,9 +1,10 @@
-import React from 'react'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import Image from 'next/image'
 import { v4 } from 'uuid'
 import Head from 'next/head'
+import PhotoList from '@/components/photoList'
+
 let appSetting = require('/appSetting.json')
 let appData = require('/data.json')
 
@@ -15,12 +16,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
       description: pageData.metaData.description,
       icon: '/favicon.ico',
       openGraph: {
-        images: pageData.photos
-          .map((i) => i.image)
-          .slice(
-            pageData.photos.length > 4 ? pageData.photos.length / 2 : 0,
-            pageData.photos.length
-          ),
+        images: pageData.photos[0].image,
         title: pageData.metaData.title,
         description: pageData.metaData.description,
         url: appSetting.baseUrl + '/albums/' + params.url,
@@ -33,12 +29,16 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 const AlbumDetail = ({ params }) => {
   const pageData = appData.find((x) => x.pageUrl == params.url)
+
   if (pageData) {
     return (
       <>
         <Navigation black></Navigation>
         <main id='bt-main' className='bt-main bt-haslayout bt-portfolio'>
           <div className='bt-freephotosgallery'>
+            <h1 className='heading text-center'>
+              {pageData.metaData.description}
+            </h1>
             <ul id='js-filters-agency' className='cbp-l-filters-text'>
               <li
                 data-filter='*'
@@ -59,29 +59,8 @@ const AlbumDetail = ({ params }) => {
                 Popular<div className='cbp-filter-counter'></div>
               </li>
             </ul>
-            <div id='bt-freephotosgallery' className='bt-photogallery cbp'>
-              {pageData.photos.map((item) => (
-                <div key={v4()} className={`cbp-item ${item.filter}`}>
-                  <article className='bt-album'>
-                    <figure>
-                      <Image
-                        width={632}
-                        height={421}
-                        src={item.image}
-                        alt={item.description}
-                      />
-                      <figcaption>
-                        <a
-                          className='bt-btnviewfreeimg cbp-lightbox'
-                          data-title={item.description}
-                          href={item.image}
-                        ></a>
-                      </figcaption>
-                    </figure>
-                  </article>
-                </div>
-              ))}
-            </div>
+
+            <PhotoList photos={pageData.photos} />
           </div>
           <div className='clearfix'></div>
 

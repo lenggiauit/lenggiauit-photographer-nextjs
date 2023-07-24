@@ -1,20 +1,7 @@
 'use client'
 import React from 'react'
 import Navigation from '@/components/navigation'
-import '../public/css/bootstrap.min.css'
-import '../public/css/normalize.css'
-import '../public/css/icomoon.css'
-import '../public/css/font-awesome.min.css'
-import '../public/css/cubeportfolio.css'
-import '../public/css/jgallery.min.css'
-import '../public/css/pogoslider.css'
-import '../public/css/prettyPhoto.css'
-import '../public/css/slick-theme.css'
-import '../public/css/slick.css'
-import '../public/css/transitions.css'
 import '../public/css/style.css'
-import '../public/css/color.css'
-import '../public/css/responsive.css'
 
 function Page404() {
   return (

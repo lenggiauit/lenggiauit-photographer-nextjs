@@ -1,9 +1,48 @@
 'use client'
+import { useEffect } from 'react'
+
 export default function Navigation(props) {
+  useEffect(() => {
+    require('bootstrap/dist/js/bootstrap.bundle.min.js')
+  }, [])
   return (
     <>
-      <nav id='bt-nav' className='bt-nav'>
-        <a className='bt-btntogglemenu' href='javascript:void(0)'>
+      <header id='bt-header' className='bt-header bt-haslayout'>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='bt-navigationarea'>
+              <a
+                className='bt-btntogglemenu'
+                data-bs-toggle='collapse'
+                role='button'
+                aria-expanded='false'
+                href='#btnav'
+                aria-controls='btnav'
+              >
+                {props.black && (
+                  <>
+                    <img src='/images/icons/icon-04.png' alt='menu' />
+                  </>
+                )}
+                {!props.black && (
+                  <>
+                    <img src='/images/icons/icon-01.png' alt='menu' />
+                  </>
+                )}
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav id='btnav' className='bt-nav collapse'>
+        <a
+          className='bt-btntogglemenu'
+          data-bs-toggle='collapse'
+          role='button'
+          aria-expanded='false'
+          href='#btnav'
+          aria-controls='btnav'
+        >
           X
         </a>
         <div id='bt-navigation' className='bt-navigation'>
@@ -54,26 +93,6 @@ export default function Navigation(props) {
           </ul>
         </div>
       </nav>
-      <header id='bt-header' className='bt-header bt-haslayout'>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='bt-navigationarea'>
-              <a className='bt-btntogglemenu' href='#'>
-                {props.black && (
-                  <>
-                    <img src='/images/icons/icon-04.png' alt='menu' />
-                  </>
-                )}
-                {!props.black && (
-                  <>
-                    <img src='/images/icons/icon-01.png' alt='menu' />
-                  </>
-                )}
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
     </>
   )
 }

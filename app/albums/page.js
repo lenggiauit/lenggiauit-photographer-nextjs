@@ -13,7 +13,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     title: albumsData.metaData.title,
     description: albumsData.metaData.description,
     openGraph: {
-      images: albumsData.albums.map((i) => i.image),
+      images: '/images/photos/all_albums.jpg',
       title: albumsData.metaData.title,
       description: albumsData.metaData.description,
       url: appSetting.baseUrl + '/albums',

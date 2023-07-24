@@ -2,10 +2,14 @@
 import React from 'react'
 import Image from 'next/image'
 import { v4 } from 'uuid'
+import { useEffect } from 'react'
 
 let appSetting = require('/appSetting.json')
 
 function AlbumList(props) {
+  useEffect(() => {
+    require('bootstrap/dist/js/bootstrap.bundle.min.js')
+  }, [])
   const keyStr =
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
   const triplet = (e1, e2, e3) =>
@@ -23,8 +27,12 @@ function AlbumList(props) {
       <div className='bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight'>
         <figure
           className='bt-fullheight'
-          data-vide-bg='poster: images/photos/all_albums.jpg'
-          data-vide-options='position: 0% 50%'
+          style={{
+            backgroundImage: `url('/images/photos/all_albums.jpg')`,
+            backgroundPositionX: 'center',
+            backgroundPositionY: 'bottom',
+            backgroundRepeat: 'no-repeat',
+          }}
         >
           <figcaption>
             <div className='container'>
@@ -46,75 +54,30 @@ function AlbumList(props) {
           </a>
         </figure>
       </div>
-      <main id='bt-main' className='bt-main bt-haslayout'>
-        <div
-          id='bt-threecolumnscubevonegallery'
-          className='bt-photogallery bt-photogallerythreecolumns bt-threecolumnscubegallery cbp'
-        >
-          {props.data.map((item) => (
-            <div key={v4()} className='cbp-item'>
-              <article className='bt-album'>
-                <figure>
-                  <a href={item.link}>
-                    <Image
-                      width={632}
-                      height={421}
-                      blurDataURL={rgbDataURL(237, 181, 6)}
-                      src={item.image}
-                      alt={item.title}
-                    ></Image>
-                  </a>
-                  <figcaption>
-                    <div className='bt-titleandinfo'>
-                      <div className='bt-albumtitle'>
-                        <h3>
-                          <a href={item.link}>{item.title}</a>
-                        </h3>
-                      </div>
-                      <ul className='bt-shareandlikes'>
-                        <li>
-                          <div className='bt-shapreicons'>
-                            <a
-                              target='_blank'
-                              href={`https://twitter.com/intent/tweet?original_referer=${
-                                appSetting.baseUrl + item.link
-                              }&amp;ref_src=${
-                                appSetting.baseUrl + item.link
-                              }&amp;text=${item.title}&amp;url=${
-                                appSetting.baseUrl + item.link
-                              }`}
-                            >
-                              <i className='fa fa-twitter'></i>
-                            </a>
-                            <a
-                              target='_blank'
-                              href={`https://www.facebook.com/sharer/sharer.php?u=${
-                                appSetting.baseUrl + item.link
-                              }`}
-                            >
-                              <i className='fa fa-facebook'></i>
-                            </a>
-                            <a
-                              target='_blank'
-                              href={`http://pinterest.com/pin/create/button/?url=${
-                                appSetting.baseUrl + item.link
-                              }`}
-                            >
-                              <i className='fa fa-pinterest-p'></i>
-                            </a>
-                          </div>
-                          <a className='bt-btnshare' href='#'>
-                            <span className='icon-share4'></span>
-                            <span>Share</span>
-                          </a>
-                        </li>
-                      </ul>
+      <main id='bt-main' className='bt-main bt-haslayout main-content-layout'>
+        <div className='container-fluid photos'>
+          <div className='row align-items-stretch'>
+            {props.data.map((item) => (
+              <div key={v4()} className='col-4 col-md-4 bt-album'>
+                <a className='d-block photo-item' href={item.link}>
+                  <Image
+                    width={632}
+                    height={421}
+                    blurDataURL={rgbDataURL(237, 181, 6)}
+                    src={item.src}
+                    alt={item.title}
+                    className='img-fluid'
+                  ></Image>
+                  <div className='photo-text-more'>
+                    <div className='photo-text-more'>
+                      <h3 className='heading'>{item.title}</h3>
+                      <span className='meta'>{item.description}</span>
                     </div>
-                  </figcaption>
-                </figure>
-              </article>
-            </div>
-          ))}
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </>
