@@ -16,7 +16,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
       description: pageData.metaData.description,
       icon: '/favicon.ico',
       openGraph: {
-        images: pageData.photos[0].image,
+        images: pageData.photos[0].src,
         title: pageData.metaData.title,
         description: pageData.metaData.description,
         url: appSetting.baseUrl + '/albums/' + params.url,
