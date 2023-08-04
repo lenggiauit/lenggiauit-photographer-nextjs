@@ -50,7 +50,7 @@ export default function About() {
                         <h3>Giau Le</h3>
                       </div>
                       <span className='bt-memberdesignation'>
-                        Developer &amp; Photographer
+                        Full-Stack Developer &amp; Photographer
                       </span>
                       <h4>I’m a professional photographer</h4>
                       <div className='bt-description'>
@@ -88,43 +88,59 @@ export default function About() {
                         <div id='bt-memberskills' className='bt-memberskills'>
                           <div className='bt-memberskill'>
                             <h4>Digital Photography</h4>
-                            <div
-                              className='bt-memberskillholder'
-                              data-percent='78%'
-                            >
-                              <div className='bt-memberskillbar'></div>
+                            <div className='progress'>
+                              <div
+                                className='progress-bar bg-dark'
+                                role='progressbar'
+                                style={{ width: '100%' }}
+                                aria-valuenow='25'
+                                aria-valuemin='0'
+                                aria-valuemax='100'
+                              ></div>
                             </div>
                           </div>
                           <div className='bt-memberskill'>
                             <h4>Wedding Photography</h4>
-                            <div
-                              className='bt-memberskillholder'
-                              data-percent='90%'
-                            >
-                              <div className='bt-memberskillbar'></div>
+                            <div className='progress'>
+                              <div
+                                className='progress-bar bg-dark'
+                                role='progressbar'
+                                style={{ width: '70%' }}
+                                aria-valuenow='25'
+                                aria-valuemin='0'
+                                aria-valuemax='100'
+                              ></div>
                             </div>
                           </div>
                           <div className='bt-memberskill'>
                             <h4>Portrait</h4>
-                            <div
-                              className='bt-memberskillholder'
-                              data-percent='82%'
-                            >
-                              <div className='bt-memberskillbar'></div>
+                            <div className='progress'>
+                              <div
+                                className='progress-bar bg-dark'
+                                role='progressbar'
+                                style={{ width: '90%' }}
+                                aria-valuenow='25'
+                                aria-valuemin='0'
+                                aria-valuemax='100'
+                              ></div>
                             </div>
                           </div>
                           <div className='bt-memberskill'>
                             <h4>Commercial</h4>
-                            <div
-                              className='bt-memberskillholder'
-                              data-percent='88%'
-                            >
-                              <div className='bt-memberskillbar'></div>
+                            <div className='progress'>
+                              <div
+                                className='progress-bar bg-dark'
+                                role='progressbar'
+                                style={{ width: '80%' }}
+                                aria-valuenow='25'
+                                aria-valuemin='0'
+                                aria-valuemax='100'
+                              ></div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class='bt-clients mt-5'>
+                      <div className='bt-clients mt-5'>
                         <h3>Contact</h3>
                         <ul className='w-100'>
                           <li>

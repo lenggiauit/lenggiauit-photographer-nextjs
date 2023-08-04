@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import { v4 } from 'uuid'
 import 'keen-slider/keen-slider.min.css'
+import PageLoader from '@/components/pageLoader'
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -26,6 +27,7 @@ function ThumbnailPlugin(mainRef) {
 
     slider.on('created', () => {
       if (!mainRef.current) return
+
       addActive(slider.track.details.rel)
       addClickEvents()
       mainRef.current.on('animationStarted', (main) => {
@@ -39,7 +41,8 @@ function ThumbnailPlugin(mainRef) {
   }
 }
 export default function HomeAlbums(props) {
-  const [currentSlide, setCurrentSlide] = React.useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isLoading, setIsLoading] = useState(true)
 
   const [sliderRef, instanceRef] = useKeenSlider({
     renderMode: 'performance',
@@ -61,76 +64,92 @@ export default function HomeAlbums(props) {
     [ThumbnailPlugin(instanceRef)]
   )
 
+  useEffect(() => {
+    setIsLoading(false)
+  }, [])
+
   return (
     <>
-      <main
-        id='bt-main'
-        className='bt-main bt-haslayout h-100 overflow-hidden position-relative'
-      >
-        <div
-          ref={sliderRef}
-          id='tg-postfullslider'
-          className='tg-postfullslider keen-slider'
-        >
-          {props.data.sliderData.map((item, index) => (
+      {isLoading && <PageLoader />}
+      {!isLoading && (
+        <>
+          <main
+            id='bt-main'
+            className='bt-main bt-haslayout h-100 overflow-hidden position-relative'
+          >
             <div
-              key={v4()}
-              className='bt-item keen-slider__slide lazy__slide'
-              rel={index}
+              ref={sliderRef}
+              id='tg-postfullslider'
+              className='tg-postfullslider keen-slider'
             >
-              <figure
-                style={{
-                  backgroundImage: `url('${item.src}')`,
-                  backgroundPositionX: 'center',
-                  backgroundPositionY: 'bottom',
-                  backgroundRepeat: 'no-repeat',
-                }}
-              >
-                <div className='bt-slidercontent'>
-                  <h1 dangerouslySetInnerHTML={{ __html: item.title }}></h1>
-                  <div className='bt-description'>
-                    <p>{item.description}</p>
-                  </div>
-                  <div className='bt-btnbox'>
-                    <a className='bt-btn' href={item.link}>
-                      <span>view photos</span>
-                    </a>
-                  </div>
+              {props.data.sliderData.map((item, index) => (
+                <div
+                  key={v4()}
+                  className='bt-item keen-slider__slide lazy__slide'
+                  rel={index}
+                >
+                  <figure
+                    style={{
+                      backgroundImage: `url('${item.src}')`,
+                      backgroundPositionX: 'center',
+                      backgroundPositionY: 'bottom',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  >
+                    <div className='bt-slidercontent'>
+                      <h1 dangerouslySetInnerHTML={{ __html: item.title }}></h1>
+                      <div className='bt-description'>
+                        <p>{item.description}</p>
+                      </div>
+                      <div className='bt-btnbox'>
+                        <a className='bt-btn' href={item.link}>
+                          <span>view photos</span>
+                        </a>
+                      </div>
+                    </div>
+                  </figure>
                 </div>
-              </figure>
+              ))}
             </div>
-          ))}
-        </div>
-        <a id='bt-togglethumbnails' className='bt-togglethumbnails' href='#'>
-          thumbs
-        </a>
-        <div
-          ref={thumbnailRef}
-          id='tg-postthumbnail'
-          className='keen-slider tg-postthumbnail  thumbnail'
-        >
-          {props.data.sliderData.map((item) => (
-            <div key={v4()} className='bt-item keen-slider__slide lazy__slide'>
-              <figure>
-                <Image
-                  className='bt-item-thumbnail'
-                  width={200}
-                  height={133}
-                  src={item.thumb}
-                  alt='thumbnail'
-                />
-              </figure>
+            <a
+              id='bt-togglethumbnails'
+              className='bt-togglethumbnails'
+              href='javascript:void(0)'
+            >
+              thumbs
+            </a>
+            <div
+              ref={thumbnailRef}
+              id='tg-postthumbnail'
+              className='keen-slider tg-postthumbnail  thumbnail'
+            >
+              {props.data.sliderData.map((item) => (
+                <div
+                  key={v4()}
+                  className='bt-item keen-slider__slide lazy__slide'
+                >
+                  <figure>
+                    <Image
+                      className='bt-item-thumbnail'
+                      width={200}
+                      height={133}
+                      src={item.thumb}
+                      alt='thumbnail'
+                    />
+                  </figure>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div className='tg-bannerfullwidthslidecount'>
-          <span>
-            {currentSlide}
-            {instanceRef?.current?.track.details.abs}
-          </span>
-          <span>{props.data.sliderData.length}</span>
-        </div>
-      </main>
+            <div className='tg-bannerfullwidthslidecount'>
+              <span>
+                {currentSlide}
+                {instanceRef?.current?.track.details.abs}
+              </span>
+              <span>{props.data.sliderData.length}</span>
+            </div>
+          </main>
+        </>
+      )}
     </>
   )
 }

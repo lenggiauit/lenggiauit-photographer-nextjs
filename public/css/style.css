@@ -2681,7 +2681,7 @@ body.bt-homevseven .bt-main {
   padding: 0 0 30px;
 }
 .bt-membercontent .bt-description {
-  padding: 0 0 20px;
+  padding: 0 0 0px;
 }
 .bt-membercontent .bt-description p {
   margin: 0;
@@ -4132,7 +4132,7 @@ body.bt-homevseven .bt-main {
   -ms-animation: rotating 1.5s linear infinite;
   -o-animation: rotating 1.5s linear infinite;
   animation: rotating 1.5s linear infinite;
-  /* background: url(/images/bgcamera2.png) no-repeat; */
+  background: url(/images/bgcamera2.png) no-repeat;
 }
 @-webkit-keyframes rotating {
   from {
@@ -4297,4 +4297,24 @@ body.bt-homevseven .bt-main {
 
 .MuiMasonry-root img {
   cursor: pointer;
+}
+
+.page-loading-logo {
+  width: 100%;
+  height: 100%;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 99999;
+}
+
+.page-loading-logo > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }

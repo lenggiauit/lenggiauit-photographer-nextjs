@@ -35,7 +35,7 @@ export default function Navigation(props) {
         </div>
       </header>
       <nav id='btnav' className='bt-nav collapse'>
-        <a
+        {/* <a
           className='bt-btntogglemenu'
           data-bs-toggle='collapse'
           role='button'
@@ -44,10 +44,10 @@ export default function Navigation(props) {
           aria-controls='btnav'
         >
           X
-        </a>
+        </a> */}
         <div id='bt-navigation' className='bt-navigation'>
           <strong className='bt-logo'>
-            <a href='index.html'>
+            <a href='/'>
               <img src='/images/logo.png' alt='Logo' />
             </a>
           </strong>

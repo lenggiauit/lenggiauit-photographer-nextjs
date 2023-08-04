@@ -1,9 +1,8 @@
 'use client'
-import React from 'react'
 import Image from 'next/image'
 import { v4 } from 'uuid'
-import { useEffect } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import PageLoader from '@/components/pageLoader'
 let appSetting = require('/appSetting.json')
 
 function AlbumList(props) {
@@ -22,66 +21,79 @@ function AlbumList(props) {
     `data:image/gif;base64,R0lGODlhAQABAPAA${
       triplet(0, r, g) + triplet(b, 255, 255)
     }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
+
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    setIsLoading(false)
+  }, [])
   return (
     <>
-      <div className='bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight'>
-        <figure
-          className='bt-fullheight'
-          style={{
-            backgroundImage: `url('/images/photos/all_albums.jpg')`,
-            backgroundPositionX: 'center',
-            backgroundPositionY: 'bottom',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            minHeight: 500,
-          }}
-        >
-          <figcaption>
-            <div className='container'>
-              <div className='row'>
-                <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-                  <div className='bt-innerbannercontent'>
-                    <h1>Album list</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </figcaption>
-          <a
-            id='bt-btnscrollto'
-            className='bt-btnscrollto bt-btnscroll'
-            href='#bt-main'
-          >
-            scroll
-          </a>
-        </figure>
-      </div>
-      <main id='bt-main' className='bt-main bt-haslayout main-content-layout'>
-        <div className='container-fluid photos'>
-          <div className='row align-items-stretch'>
-            {props.data.map((item) => (
-              <div key={v4()} className='col-4 col-md-4 bt-album'>
-                <a className='d-block photo-item' href={item.link}>
-                  <Image
-                    width={632}
-                    height={421}
-                    blurDataURL={rgbDataURL(237, 181, 6)}
-                    src={item.src}
-                    alt={item.title}
-                    className='img-fluid'
-                  ></Image>
-                  <div className='photo-text-more'>
-                    <div className='photo-text-more'>
-                      <h3 className='heading'>{item.title}</h3>
-                      <span className='meta'>{item.description}</span>
+      {isLoading && <PageLoader />}
+      {!isLoading && (
+        <>
+          <div className='bt-innerpagebanner bt-innerpagebannerv2 bt-fullheight'>
+            <figure
+              className='bt-fullheight'
+              style={{
+                backgroundImage: `url('/images/photos/all_albums.jpg')`,
+                backgroundPositionX: 'center',
+                backgroundPositionY: 'bottom',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                minHeight: 500,
+              }}
+            >
+              <figcaption>
+                <div className='container'>
+                  <div className='row'>
+                    <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                      <div className='bt-innerbannercontent'>
+                        <h1>Album list</h1>
+                      </div>
                     </div>
                   </div>
-                </a>
-              </div>
-            ))}
+                </div>
+              </figcaption>
+              <a
+                id='bt-btnscrollto'
+                className='bt-btnscrollto bt-btnscroll'
+                href='#bt-main'
+              >
+                scroll
+              </a>
+            </figure>
           </div>
-        </div>
-      </main>
+          <main
+            id='bt-main'
+            className='bt-main bt-haslayout main-content-layout'
+          >
+            <div className='container-fluid photos'>
+              <div className='row align-items-stretch'>
+                {props.data.map((item) => (
+                  <div key={v4()} className='col-4 col-md-4 bt-album'>
+                    <a className='d-block photo-item' href={item.link}>
+                      <Image
+                        width={632}
+                        height={421}
+                        blurDataURL={rgbDataURL(237, 181, 6)}
+                        src={item.src}
+                        alt={item.title}
+                        className='img-fluid'
+                      ></Image>
+                      <div className='photo-text-more'>
+                        <div className='photo-text-more'>
+                          <h3 className='heading'>{item.title}</h3>
+                          <span className='meta'>{item.description}</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </main>
+        </>
+      )}
     </>
   )
 }
