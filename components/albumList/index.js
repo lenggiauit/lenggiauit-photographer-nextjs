@@ -73,8 +73,9 @@ function AlbumList(props) {
                   <div key={v4()} className='col-4 col-md-4 bt-album'>
                     <a className='d-block photo-item' href={item.link}>
                       <Image
-                        width={632}
-                        height={421}
+                        width={986}
+                        height={656}
+                        objectFit='cover'
                         blurDataURL={rgbDataURL(237, 181, 6)}
                         src={item.src}
                         alt={item.title}

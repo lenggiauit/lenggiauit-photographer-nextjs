@@ -64,17 +64,12 @@ export default function Navigation(props) {
           </ul>
           <ul className='bt-socialicons'>
             <li>
-              <a href='#'>
+              <a target='_blank' href='https://www.facebook.com/lenggiauit'>
                 <i className='fa fa-facebook'></i>
               </a>
             </li>
             <li>
-              <a href='#'>
-                <i className='fa fa-twitter'></i>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
+              <a target='_blank' href='https://www.instagram.com/lenggiauit/'>
                 <i className='fa fa-instagram'></i>
               </a>
             </li>

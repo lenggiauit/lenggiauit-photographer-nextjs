@@ -92,7 +92,7 @@ export default function HomeAlbums(props) {
                     style={{
                       backgroundImage: `url('${item.src}')`,
                       backgroundPositionX: 'center',
-                      backgroundPositionY: 'bottom',
+                      backgroundPositionY: `${item.alignment}`,
                       backgroundRepeat: 'no-repeat',
                     }}
                   >

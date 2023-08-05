@@ -11,6 +11,7 @@
         "thumb": "/images/photos/album_01/thumbnails/LNG_5889.jpg",
         "title": "<span><span>Raining day</span></span>",
         "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/raining-day"
       },
       {
@@ -18,6 +19,7 @@
         "thumb": "/images/photos/album_02/thumbnails/LNG_6247.jpg",
         "title": "<span>Celebrate <span>Graduation</span></span>Photography",
         "description": "Location: Centennial College, Scarborough, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/celebrate-graduation-photography"
       },
       {
@@ -25,6 +27,7 @@
         "thumb": "/images/photos/album_03/thumbnails/LNG_5759.jpg",
         "title": "<span>High Park - <span>Cherry Blossom</span></span>",
         "description": "Location: High Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/high-park-cherry-blossom"
       },
       {
@@ -32,6 +35,7 @@
         "thumb": "/images/photos/album_04/thumbnails/LNG_6005.jpg",
         "title": "<span>A view in <span> Toronto IsLand</span></span>",
         "description": "Location: Toronto IsLand, Toronto, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/a-view-in-toronto-isLand"
       },
       {
@@ -39,6 +43,7 @@
         "thumb": "/images/photos/album_05/thumbnails/LNG_6321.jpg",
         "title": "<span><span>Fashion Girl</span></span>",
         "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/fashion-girl"
       },
       {
@@ -46,6 +51,7 @@
         "thumb": "/images/photos/album_06/thumbnails/_LNG5399.jpg",
         "title": "<span><span>Fall season</span></span>",
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/fall-season"
       },
       {
@@ -53,6 +59,7 @@
         "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
         "title": "<span>Beautiful <span>Nature</span></span>for Lovers",
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
         "link": "/albums/beautiful-nature-for-lovers"
       },
       {
@@ -60,6 +67,7 @@
         "thumb": "/images/photos/album_08/thumbnails/00.jpg",
         "title": "<span><span>Go to temple</span></span>",
         "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
         "link": "/albums/go-to-temple"
       },
       {
@@ -67,6 +75,7 @@
         "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
         "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
         "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
         "link": "/albums/most-wanted-it-girl-look"
       },
       {
@@ -74,6 +83,7 @@
         "thumb": "/images/photos/album_10/thumbnails/01.jpg",
         "title": "<span>Beautiful <span>Back & White</span></span> for Lovers",
         "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
         "link": "/albums/beautiful-back-white-for-lovers"
       }
     ]

@@ -68,7 +68,7 @@ p {
   margin: 0 0 20px;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover,
 a:focus,
@@ -1250,7 +1250,8 @@ a.bt-btn {
   width: auto;
   float: left;
   color: #6b6b6b;
-  font-size: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 600;
   line-height: 16px;
 }
@@ -1544,11 +1545,14 @@ body.bt-homevfour .bt-homeslider {
   position: static;
 }
 .bt-headervfour {
-  padding: 30px 0;
+  padding: 15px 0 5px 0;
   position: relative;
+  width: 80%;
+  float: right;
 }
+
 .bt-headervfour .bt-navigationarea {
-  color: #000;
+  color: #777;
   width: auto;
   float: right;
   text-transform: uppercase;
@@ -1575,12 +1579,12 @@ body.bt-homevfour .bt-homeslider {
   vertical-align: middle;
 }
 .bt-headervfour ul li a {
-  color: #000;
+  color: #777;
   padding: 0 7px;
   position: relative;
 }
 .bt-headervfour ul li a:before {
-  top: 50%;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 1px;
@@ -1594,6 +1598,9 @@ body.bt-homevfour .bt-homeslider {
 .bt-headervfour .bt-navigationarea ul li span {
   color: #8b8b8b;
   font-weight: 300;
+}
+.bt-headervfour .bt-navigationarea ul li a {
+  text-decoration: none !important;
 }
 .bt-headervfour ul li a.bt-btntogglemenu {
   margin: 0;
@@ -2426,12 +2433,12 @@ body.bt-homevseven .bt-main {
 .bt-headerinnerpage ul > li > a {
 }
 .bt-headerinnerpage .bt-navigationarea > ul > li > a:before {
-  top: 50%;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 1px;
   content: '';
-  background: #fff;
+  background: #111;
   position: absolute;
 }
 .bt-headerinnerpage ul li:last-child a:before {
@@ -3842,143 +3849,7 @@ body.bt-homevseven .bt-main {
   margin: 80px 0 0;
   border-top: 2px solid #000;
 }
-/*==========================================================================================
-								Contact Us Pages Style										
-==========================================================================================*/
-/*==============================================
-			Contact Us Page One
-==============================================*/
-.bt-headerinnerpage .bt-navigationarea > ul > li:last-child {
-  float: left;
-  margin: 0 0 0 30px;
-}
-.bt-headerinnerpage .bt-navigationarea > ul > li:last-child > a {
-  width: auto;
-  height: auto;
-  padding: 0 7px;
-  position: static;
-}
-.bt-contactus {
-  width: 100%;
-  float: left;
-}
-.bt-contactusvone {
-  width: 50%;
-  min-height: 800px;
-  padding: 150px 150px 30px 30px;
-}
-.bt-addresses {
-  width: 100%;
-  float: left;
-}
-.bt-addresses h2 {
-  margin: 0 0 20px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 24px;
-}
-.bt-address {
-  width: 44%;
-  float: left;
-  padding: 0 30px 0 0;
-}
-.bt-address + .bt-address {
-  padding: 0;
-}
-.bt-address ul {
-  color: #000;
-  width: 100%;
-  float: left;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px;
-  list-style: none;
-}
-.bt-address ul li {
-  width: 100%;
-  float: left;
-  line-height: inherit;
-  list-style-type: none;
-}
-.bt-address ul li + li {
-  padding: 20px 0 0;
-}
-.bt-address ul li address {
-  margin: 0;
-  width: 100%;
-  float: left;
-  color: #7f7f7f;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px;
-  font-style: normal;
-}
-.bt-address ul li a,
-.bt-address ul li span {
-  color: #000;
-  position: relative;
-  padding: 0 0 0 50px;
-}
-.bt-address ul li a:before,
-.bt-address ul li span:before {
-  top: 50%;
-  left: 0;
-  width: 40px;
-  height: 1px;
-  content: '';
-  background: #000;
-  position: absolute;
-}
-.bt-contactus .bt-followus {
-  width: 100%;
-  padding: 40px 0;
-}
-.bt-getintouch {
-  width: 100%;
-  float: left;
-  padding: 0 0 40px;
-}
-.bt-getintouch h2 {
-  margin: 0 0 20px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 24px;
-}
-.bt-formcontactus .form-group {
-  width: 100%;
-  float: left;
-}
-.bt-formcontactus .bt-select,
-.bt-formcontactus .bt-select select,
-.bt-formcontactus .form-control {
-  border: 0;
-  width: 100%;
-  float: left;
-  background: #f2f2f2;
-}
-.bt-formcontactus textarea.form-control {
-  width: 100%;
-  height: 210px;
-  resize: none;
-}
-.bt-formcontactus .bt-btn {
-  background: none;
-}
-.bt-formcontactus .bt-btn:hover {
-  color: #fff;
-  background: #000;
-}
-.bt-contactus .bt-copyright {
-  width: 100%;
-  float: left;
-}
-.bt-content .bt-locationmap {
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  position: fixed !important;
-}
+
 /*==============================================
 			Contact Us Page Two
 ==============================================*/

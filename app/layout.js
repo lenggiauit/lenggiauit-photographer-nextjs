@@ -1,6 +1,7 @@
 import Script from 'next/script'
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import '../public/css/font-awesome.min.css'
 import '../public/css/style.css'
 import Link from 'next/link'
 
