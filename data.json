@@ -2,8 +2,8 @@
   {
     "pageUrl": "/",
     "metaData": {
-      "title": "lenggiauit - Photographer Portfolio",
-      "description": "lenggiauit - Photographer Portfolio"
+      "title": "Lenggiauit - Photographer Portfolio",
+      "description": "Lenggiauit - Photographer Portfolio"
     },
     "sliderData": [
       {
@@ -91,8 +91,8 @@
   {
     "pageUrl": "/albums",
     "metaData": {
-      "title": "All albums - lenggiauit photographer",
-      "description": "All albums - lenggiauit photographer"
+      "title": "All Albums - Lenggiauit Photographer",
+      "description": "All Albums - Lenggiauit Photographer"
     },
     "albums": [
       {
@@ -160,7 +160,7 @@
   {
     "pageUrl": "raining-day",
     "metaData": {
-      "title": "Raining day album - lenggiauit photographer",
+      "title": "Raining day Album - Lenggiauit Photographer",
       "description": "Some pictures that I took in a rainy day at Scarborough Bluffs, Ontario, Canada"
     },
     "nextPage": {
@@ -208,8 +208,8 @@
   {
     "pageUrl": "celebrate-graduation-photography",
     "metaData": {
-      "title": "Celebrate Graduation Photography album - lenggiauit photographer",
-      "description": "Celebrate Graduation Photography"
+      "title": "Celebrate Graduation Photography Album - Lenggiauit Photographer",
+      "description": "Celebrate Graduation Photography Album"
     },
     "nextPage": {
       "title": "High Park Cherry Blossom",
@@ -270,8 +270,8 @@
   {
     "pageUrl": "high-park-cherry-blossom",
     "metaData": {
-      "title": "High Park Cherry Blossom album - lenggiauit photographer",
-      "description": "High Park Cherry Blossom album"
+      "title": "High Park Cherry Blossom Album - Lenggiauit Photographer",
+      "description": "High Park Cherry Blossom Album"
     },
     "nextPage": {
       "title": "A view in Toronto IsLand",
@@ -338,8 +338,8 @@
   {
     "pageUrl": "a-view-in-toronto-isLand",
     "metaData": {
-      "title": "A view in Toronto IsLand album - lenggiauit photographer",
-      "description": "A view in Toronto IsLand album"
+      "title": "A view in Toronto IsLand Album - Lenggiauit Photographer",
+      "description": "A view in Toronto IsLand Album"
     },
     "prevPage": {
       "title": "High Park Cherry Blossom",
@@ -395,15 +395,15 @@
   {
     "pageUrl": "fashion-girl",
     "metaData": {
-      "title": "Fashion Girl album - lenggiauit photographer",
-      "description": "Fashion Girl album"
+      "title": "Fashion Girl Album - Lenggiauit Photographer",
+      "description": "Fashion Girl Album"
     },
     "prevPage": {
       "title": "A view in Toronto IsLand",
       "link": "/albums/a-view-in-toronto-isLand"
     },
     "nextPage": {
-      "title": "Fall season",
+      "title": "Fall Season",
       "link": "/albums/fall-season"
     },
     "photos": [
@@ -467,8 +467,8 @@
   {
     "pageUrl": "fall-season",
     "metaData": {
-      "title": "Fall season album - lenggiauit photographer",
-      "description": "Fall season album"
+      "title": "Fall Season Album - Lenggiauit Photographer",
+      "description": "Fall Season Album"
     },
     "prevPage": {
       "title": "Fashion Girl",
@@ -494,8 +494,8 @@
   {
     "pageUrl": "beautiful-nature-for-lovers",
     "metaData": {
-      "title": "Beautiful Nature for Lovers album - lenggiauit photographer",
-      "description": "Beautiful Nature for Lovers album"
+      "title": "Beautiful Nature for Lovers Album - Lenggiauit Photographer",
+      "description": "Beautiful Nature for Lovers Album"
     },
     "prevPage": {
       "title": "Fall season",
@@ -601,8 +601,8 @@
   {
     "pageUrl": "go-to-temple",
     "metaData": {
-      "title": "Go to temple album - lenggiauit photographer",
-      "description": "Go to temple album"
+      "title": "Go to temple Album - Lenggiauit Photographer",
+      "description": "Go to temple Album"
     },
     "prevPage": {
       "title": "Beautiful Nature for Lovers",
@@ -633,8 +633,8 @@
   {
     "pageUrl": "most-wanted-it-girl-look",
     "metaData": {
-      "title": "Most Wanted It Girl Look album - lenggiauit photographer",
-      "description": "Most Wanted It Girl Look album"
+      "title": "Most Wanted It Girl Look Album - Lenggiauit Photographer",
+      "description": "Most Wanted It Girl Look Album"
     },
     "prevPage": {
       "title": "Go to temple",
@@ -720,8 +720,8 @@
   {
     "pageUrl": "beautiful-back-white-for-lovers",
     "metaData": {
-      "title": "Beautiful Back & White for Lovers album - lenggiauit photographer",
-      "description": "Beautiful Back & White for Lovers album"
+      "title": "Beautiful Back & White for Lovers Album - Lenggiauit Photographer",
+      "description": "Beautiful Back & White for Lovers Album"
     },
     "prevPage": {
       "title": "Most Wanted It Girl Look",
