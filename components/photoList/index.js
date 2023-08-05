@@ -23,7 +23,7 @@ const PhotoList = ({ photos }) => {
         {isLoading && <PageLoader />}
         {!isLoading && (
           <>
-            <Masonry columns={3} spacing={0.5} style={{ marginLeft: '2px' }}>
+            <Masonry columns={4} spacing={0.5} style={{ marginLeft: '2px' }}>
               {photos.map((item, index) => (
                 <div key={index}>
                   <img
