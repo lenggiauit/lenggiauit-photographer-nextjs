@@ -48,7 +48,12 @@ export default function HomeAlbums(props) {
     renderMode: 'performance',
     loop: true,
     initial: 0,
+    slideChanged: (s) => {
+      //setCurrentSlide(s.track.details.rel)
+      //console.log(s.track.details.rel)
+    },
   })
+
   const [thumbnailRef] = useKeenSlider(
     {
       renderMode: 'performance',
@@ -114,7 +119,7 @@ export default function HomeAlbums(props) {
             <a
               id='bt-togglethumbnails'
               className='bt-togglethumbnails'
-              href='javascript:void(0)'
+              role='button'
             >
               thumbs
             </a>
@@ -141,10 +146,7 @@ export default function HomeAlbums(props) {
               ))}
             </div>
             <div className='tg-bannerfullwidthslidecount'>
-              <span>
-                {currentSlide}
-                {instanceRef?.current?.track.details.abs}
-              </span>
+              <span>{currentSlide}</span>
               <span>{props.data.sliderData.length}</span>
             </div>
           </main>

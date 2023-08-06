@@ -259,8 +259,8 @@ option {
   padding: 5px 15px;
 }
 li {
-  line-height: 28px;
-  list-style: disc inside none;
+  /* line-height: 28px;
+  list-style: disc inside none; */
 }
 ul ul {
   margin-left: 20px;
@@ -679,8 +679,8 @@ a.bt-btn {
 .bt-header {
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 999;
+  width: 30%;
+  z-index: 101;
   position: absolute;
   padding: 30px 30px 0;
 }
@@ -697,6 +697,7 @@ a.bt-btn {
 }
 .bt-btntogglemenu {
   float: right;
+  z-index: 9999;
   margin: 13px 0;
 }
 .bt-nav {

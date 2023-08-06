@@ -3,11 +3,10 @@ import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../public/css/font-awesome.min.css'
 import '../public/css/style.css'
-import Link from 'next/link'
 
 export const metadata = {
-  title: 'lenggiauit - Photographer Portfolio',
-  description: 'lenggiauit - Photographer Portfolio',
+  title: 'Lenggiauit - Photographer Portfolio',
+  description: 'Lenggiauit - Photographer Portfolio',
 }
 export default function RootLayout({ children }) {
   return (

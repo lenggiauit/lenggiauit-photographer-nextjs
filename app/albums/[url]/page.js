@@ -34,7 +34,7 @@ const AlbumDetail = ({ params }) => {
     return (
       <>
         <Navigation black></Navigation>
-        <main id='bt-main' className='bt-main bt-haslayout bt-portfolio mt-1'>
+        <main id='bt-main' className='bt-main bt-haslayout bt-portfolio'>
           <div className='bt-freephotosgallery'>
             <h1 className='heading text-center'>
               {pageData.metaData.description}
