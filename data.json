@@ -63,12 +63,12 @@
         "link": "/albums/beautiful-nature-for-lovers"
       },
       {
-        "src": "/images/photos/album_08/00.jpg",
-        "thumb": "/images/photos/album_08/thumbnails/00.jpg",
-        "title": "<span><span>Go to temple</span></span>",
-        "description": "Location: Ho Chi Minh, Viet Nam",
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
+        "title": "<span><span>Spring Girl</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
         "alignment": "top",
-        "link": "/albums/go-to-temple"
+        "link": "/albums/spring-girl"
       },
       {
         "src": "/images/photos/album_09/_lng815.jpg",
@@ -138,10 +138,10 @@
         "link": "/albums/beautiful-nature-for-lovers"
       },
       {
-        "src": "/images/photos/album_08/00.jpg",
-        "title": "Go to temple",
-        "description": "Location: Ho Chi Minh, Viet Nam",
-        "link": "/albums/go-to-temple"
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "title": "Spring Girl",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "link": "/albums/spring-girl"
       },
       {
         "src": "/images/photos/album_09/_lng815.jpg",
@@ -502,8 +502,8 @@
       "link": "/albums/fall-season"
     },
     "nextPage": {
-      "title": "Go to temple",
-      "link": "/albums/go-to-temple"
+      "title": "Spring Girl",
+      "link": "/albums/spring-girl"
     },
     "photos": [
       {
@@ -599,10 +599,10 @@
     ]
   },
   {
-    "pageUrl": "go-to-temple",
+    "pageUrl": "spring-girl",
     "metaData": {
-      "title": "Go to temple Album - Lenggiauit Photographer",
-      "description": "Go to temple Album"
+      "title": "Spring Girl Album - Lenggiauit Photographer",
+      "description": "Spring Girl Album"
     },
     "prevPage": {
       "title": "Beautiful Nature for Lovers",
@@ -614,18 +614,88 @@
     },
     "photos": [
       {
-        "src": "/images/photos/album_08/00.jpg",
-        "description": "Go to temple",
+        "src": "/images/photos/album_08/LNG_6677.jpg",
+        "description": "Spring Girl",
         "filter": "new"
       },
       {
-        "src": "/images/photos/album_08/01.jpg",
-        "description": "Go to temple",
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
         "filter": "most-recent"
       },
       {
-        "src": "/images/photos/album_08/04.jpg",
-        "description": "Go to temple",
+        "src": "/images/photos/album_08/LNG_6620.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6441.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6482.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6487.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6494.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6501.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6504.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6506.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6515.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6541.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6581.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6611.jpg",
+        "description": "Spring Girl",
         "filter": "new"
       }
     ]
@@ -637,8 +707,8 @@
       "description": "Most Wanted It Girl Look Album"
     },
     "prevPage": {
-      "title": "Go to temple",
-      "link": "/albums/go-to-temple"
+      "title": "Spring Girl",
+      "link": "/albums/spring-girl"
     },
     "nextPage": {
       "title": "Beautiful Back & White for Lovers",
