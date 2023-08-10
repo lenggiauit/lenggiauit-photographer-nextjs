@@ -1794,7 +1794,7 @@ li.bt-hasdropdown .bt-submenu li a:hover {
   padding: 0 0 30px;
 }
 .bt-album {
-  width: 100%;
+  /* width: 100%; */
   float: left;
   margin: 15px 0;
   overflow: hidden;
