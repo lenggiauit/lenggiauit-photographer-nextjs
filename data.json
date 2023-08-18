@@ -7,6 +7,22 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
+        "title": "<span><span>Spring Girl</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/spring-girl"
+      },
+      {
+        "src": "/images/photos/album_09/_lng815.jpg",
+        "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
+        "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/most-wanted-it-girl-look"
+      },
+      {
         "src": "/images/photos/album_01/LNG_5889.jpg",
         "thumb": "/images/photos/album_01/thumbnails/LNG_5889.jpg",
         "title": "<span><span>Raining day</span></span>",
@@ -61,22 +77,6 @@
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
         "alignment": "bottom",
         "link": "/albums/beautiful-nature-for-lovers"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
-        "title": "<span><span>Spring Girl</span></span>",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "top",
-        "link": "/albums/spring-girl"
-      },
-      {
-        "src": "/images/photos/album_09/_lng815.jpg",
-        "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
-        "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
-        "description": "Location: Ho Chi Minh, Viet Nam",
-        "alignment": "top",
-        "link": "/albums/most-wanted-it-girl-look"
       },
       {
         "src": "/images/photos/album_10/01.jpg",
