@@ -1951,7 +1951,8 @@ body.bt-homevfive .bt-main {
   right: 0;
   z-index: 2;
   width: 200px !important;
-  height: 70%;
+  height: 60%;
+  min-height: 450px;
   background: #000;
   position: absolute !important;
   border: 10px solid #000;
@@ -4194,17 +4195,30 @@ body.bt-homevseven .bt-main {
 @media (max-width: 600px) {
   .tg-postthumbnail {
     width: 100px !important;
-    height: 50%;
+    height: 35%;
+    min-height: 370px;
   }
   .bt-togglethumbnails {
     right: 66px;
   }
 }
 
-@media (min-width: 601px) and (max-width: 901px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .tg-postthumbnail {
     width: 135px !important;
-    height: 60%;
+    height: 42%;
+    min-height: 370px;
+  }
+  .bt-togglethumbnails {
+    right: 104px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1025px) {
+  .tg-postthumbnail {
+    width: 135px !important;
+    height: 38%;
+    min-height: 370px;
   }
   .bt-togglethumbnails {
     right: 104px;

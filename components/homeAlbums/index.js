@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
 import { v4 } from 'uuid'
 import 'keen-slider/keen-slider.min.css'
@@ -43,7 +43,7 @@ function ThumbnailPlugin(mainRef) {
 export default function HomeAlbums(props) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
-
+  const windowSize = useRef([window.innerWidth, window.innerHeight])
   const [sliderRef, instanceRef] = useKeenSlider({
     renderMode: 'performance',
     loop: true,
@@ -62,12 +62,14 @@ export default function HomeAlbums(props) {
       vertical: true,
       slides: {
         origin: 'center',
-        perView: 7,
+        perView: 6,
         spacing: 10,
       },
     },
     [ThumbnailPlugin(instanceRef)]
   )
+
+  console.log(windowSize.current[0])
 
   useEffect(() => {
     setIsLoading(false)
