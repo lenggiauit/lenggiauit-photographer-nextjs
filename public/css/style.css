@@ -4190,3 +4190,23 @@ body.bt-homevseven .bt-main {
   text-align: center;
   min-height: 100vh;
 }
+
+@media (max-width: 600px) {
+  .tg-postthumbnail {
+    width: 100px !important;
+    height: 50%;
+  }
+  .bt-togglethumbnails {
+    right: 66px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 901px) {
+  .tg-postthumbnail {
+    width: 135px !important;
+    height: 60%;
+  }
+  .bt-togglethumbnails {
+    right: 104px;
+  }
+}
