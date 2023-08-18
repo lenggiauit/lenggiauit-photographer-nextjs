@@ -69,8 +69,6 @@ export default function HomeAlbums(props) {
     [ThumbnailPlugin(instanceRef)]
   )
 
-  console.log(windowSize.current[0])
-
   useEffect(() => {
     setIsLoading(false)
   }, [])
