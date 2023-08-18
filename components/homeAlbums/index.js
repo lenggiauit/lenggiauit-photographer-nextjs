@@ -43,7 +43,6 @@ function ThumbnailPlugin(mainRef) {
 export default function HomeAlbums(props) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
-  const windowSize = useRef([window.innerWidth, window.innerHeight])
   const [sliderRef, instanceRef] = useKeenSlider({
     renderMode: 'performance',
     loop: true,
