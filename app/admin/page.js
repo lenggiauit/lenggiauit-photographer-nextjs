@@ -44,15 +44,15 @@ export default function Admin() {
 
   return (
     <>
-      <div id='bt-wrapper' className='bt-wrapper bt-haslayout'>
+      <div id='bt-wrapper' className='bt-wrapper bt-haslayout '>
         <Navigation black />
         <main id='bt-main' className='bt-main bt-sectionspace bt-haslayout'>
           {user == null || user?.email != 'lenggiauit@gmail.com' ? (
             <SignIn signIn={signInWithGoogle} />
           ) : (
             <>
-              <div className='row'>
-                <div className='col-md-11 text-end pr-5'>
+              <div className='row px-5'>
+                <div className='col-md-12 text-end'>
                   <button className='btn btn-success' onClick={logOut}>
                     Logout
                   </button>

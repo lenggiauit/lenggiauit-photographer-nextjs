@@ -1,9 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
 import PageLoader from '../pageLoader'
-import { getDatabase, ref, set, get, onValue, update } from 'firebase/database'
+import { ref, onValue, update } from 'firebase/database'
 import { db } from '@/app/firebase'
-import { v4 } from 'uuid'
 import DataTable, { SortOrder, TableColumn } from 'react-data-table-component'
 import Button from '@mui/material/Button'
 import Dialog from '@mui/material/Dialog'
@@ -11,7 +10,13 @@ import DialogActions from '@mui/material/DialogActions'
 import DialogContent from '@mui/material/DialogContent'
 import DialogTitle from '@mui/material/DialogTitle'
 import MenuItem from '@mui/material/MenuItem'
-import Select, { SelectChangeEvent } from '@mui/material/Select'
+import Select from '@mui/material/Select'
+
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar'
+import dayjs, { Dayjs } from 'dayjs'
+import dateFormat from 'dateformat'
 
 export default function AdminBookingList(props) {
   useEffect(() => {
@@ -20,18 +25,16 @@ export default function AdminBookingList(props) {
   const [openModal, setOpenModal] = useState(false)
   const handleOpen = () => setOpenModal(true)
   const handleClose = () => setOpenModal(false)
+  const [openModalChangeDate, setOpenModalChangeDate] = useState(false)
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [BookingList, setBookingList] = useState([])
   const [selectedBookingItem, setSelectedBookingItem] = useState()
   const [selectedBookingItemStatus, setSelectedBookingItemStatus] = useState('')
+  const [selectedBookingItemShootingDate, setSelectedBookingItemShootingDate] =
+    useState('')
   // Data grid columns
   const columns = [
-    // {
-    //   id: 'id',
-    //   name: 'id',
-    //   selector: (row) => row.id,
-    //   sortable: true,
-    // },
     {
       id: 'photoshootType',
       name: 'Photoshoot Type',
@@ -57,6 +60,12 @@ export default function AdminBookingList(props) {
       sortable: false,
     },
     {
+      id: 'description',
+      name: 'Description',
+      selector: (row) => row.description,
+      sortable: true,
+    },
+    {
       id: 'submittedDate',
       name: 'Submitted Date',
       selector: (row) => row.submittedDate,
@@ -75,19 +84,39 @@ export default function AdminBookingList(props) {
       sortable: true,
     },
     {
+      name: 'Change shooting date',
+      button: true,
+      cell: (row) => (
+        <>
+          <button
+            className='btn btn-primary btn-sm'
+            onClick={() => {
+              setSelectedBookingItem(row)
+              setSelectedBookingItemShootingDate(row.shootingDate)
+              setOpenModalChangeDate(true)
+            }}
+          >
+            Change date
+          </button>
+        </>
+      ),
+    },
+    {
       name: 'Edit',
       button: true,
       cell: (row) => (
-        <button
-          className='btn btn-primary btn-sm'
-          onClick={() => {
-            setSelectedBookingItem(row)
-            setSelectedBookingItemStatus(row.status)
-            setOpenModal(true)
-          }}
-        >
-          Edit
-        </button>
+        <>
+          <button
+            className='btn btn-primary btn-sm'
+            onClick={() => {
+              setSelectedBookingItem(row)
+              setSelectedBookingItemStatus(row.status)
+              setOpenModal(true)
+            }}
+          >
+            Edit
+          </button>
+        </>
       ),
     },
   ]
@@ -104,6 +133,32 @@ export default function AdminBookingList(props) {
 
   const handleChangeStatus = (e) => {
     setSelectedBookingItemStatus(e.target.value)
+  }
+
+  const handleChangeShootingDate = () => {
+    const updates = {}
+    updates['/PhotoshootBooking/' + selectedBookingItem.id] = {
+      id: selectedBookingItem.id,
+      photoshootType: selectedBookingItem.photoshootType,
+      shootingDate: selectedBookingItemShootingDate,
+      name: selectedBookingItem.name,
+      email: selectedBookingItem.email,
+      description: selectedBookingItem.description,
+      price: selectedBookingItem.price,
+      submittedDate: selectedBookingItem.submittedDate,
+      status: selectedBookingItem.status,
+    }
+    setIsSubmitting(true)
+    update(ref(db), updates)
+      .catch(() => {
+        setIsSubmitting(false)
+        setOpenModalChangeDate(false)
+        alert('Error')
+      })
+      .then(() => {
+        setIsSubmitting(false)
+        setOpenModalChangeDate(false)
+      })
   }
 
   const handleUpdateStatus = () => {
@@ -135,7 +190,7 @@ export default function AdminBookingList(props) {
   return (
     <>
       {isSubmitting && <PageLoader />}
-      <div className='container'>
+      <div className='container1 mx-5'>
         <div className='row'>
           <h2>Admin page</h2>
         </div>
@@ -179,6 +234,41 @@ export default function AdminBookingList(props) {
           <Button onClick={handleClose}>Close</Button>
           <Button onClick={handleUpdateStatus} autoFocus>
             Update
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      <Dialog
+        open={openModalChangeDate}
+        onClose={() => {
+          setOpenModalChangeDate(false)
+        }}
+        aria-labelledby='alert-dialog-title'
+        aria-describedby='alert-dialog-description'
+      >
+        <DialogTitle id='alert-dialog-title'>Change shooting date</DialogTitle>
+        <DialogContent sx={{ width: 500, textAlign: 'center' }}>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DateCalendar
+              disablePast
+              onChange={(value) => {
+                setSelectedBookingItemShootingDate(
+                  dateFormat(dayjs(value), 'mm/dd/yyyy')
+                )
+              }}
+            />
+          </LocalizationProvider>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            onClick={() => {
+              setOpenModalChangeDate(false)
+            }}
+          >
+            Close
+          </Button>
+          <Button onClick={handleChangeShootingDate} autoFocus>
+            Change
           </Button>
         </DialogActions>
       </Dialog>
