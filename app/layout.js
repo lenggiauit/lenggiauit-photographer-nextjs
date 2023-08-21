@@ -1,5 +1,4 @@
 import Script from 'next/script'
-import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../public/css/font-awesome.min.css'
 import '../public/css/style.css'
@@ -13,6 +12,10 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
+        <meta
+          httpEquiv='Cross-Origin-Opener-Policy'
+          content='same-origin-allow-popups'
+        ></meta>
       </head>
       <body suppressHydrationWarning={true} className='bt-home'>
         {children}

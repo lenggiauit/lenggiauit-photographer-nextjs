@@ -135,9 +135,12 @@ function Footer() {
                     <li>
                       <a href='/about'>About</a>
                     </li>
+                    <li>
+                      <a href='/bookaphotoshoot'>Book a photoshoot</a>
+                    </li>
                   </ul>
                 </nav>
-                <div className='bt-copyright'>
+                <div className='bt-copyright mt-2'>
                   Copyrights 2023 Lenggiauit. All rights reserved
                 </div>
               </div>

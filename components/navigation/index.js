@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation'
 export default function Navigation(props) {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
-  console.log(pathname)
   useEffect(() => {
     require('bootstrap/dist/js/bootstrap.bundle.min.js')
   }, [])
@@ -52,17 +51,17 @@ export default function Navigation(props) {
               </a>
             </strong>
             <ul className='bt-menu'>
-              <li className='bt-active'>
+              <li className={pathname == '/' ? 'bt-active' : ''}>
                 <a href='/'>Home</a>
               </li>
-              <li>
+              <li className={pathname == '/about' ? 'bt-active' : ''}>
                 <a href='/about'>About</a>
               </li>
-              <li>
+              <li className={pathname == '/albums' ? 'bt-active' : ''}>
                 <a href='/albums'>Albums</a>
               </li>
-              <li>
-                <a href='/tours'>Tours</a>
+              <li className={pathname == '/book' ? 'bt-active' : ''}>
+                <a href='/bookaphotoshoot'>Book a photoshoot</a>
               </li>
             </ul>
             <ul className='bt-socialicons'>
