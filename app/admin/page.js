@@ -3,7 +3,7 @@ import Navigation from '@/components/navigation'
 import AdminBookingList from '@/components/adminBookingList'
 import { auth, googleProvider } from '../firebase'
 import SignIn from '@/components/auth'
-import { signInWithPopup, signOut } from 'firebase/auth'
+import { signInWithPopup, signInWithRedirect, signOut } from 'firebase/auth'
 
 let appSetting = require('/appSetting.json')
 let appData = require('/data.json')
@@ -11,7 +11,7 @@ let appData = require('/data.json')
 export default function Admin() {
   const signInWithGoogle = async () => {
     try {
-      await signInWithPopup(auth, googleProvider)
+      await signInWithRedirect(auth, googleProvider)
     } catch (err) {
       console.error(err)
     }
