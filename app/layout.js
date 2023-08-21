@@ -16,14 +16,6 @@ export default function RootLayout({ children }) {
           httpEquiv='Cross-Origin-Opener-Policy'
           content='unsafe-none'
         ></meta>
-        <meta
-          httpEquiv='Cross-Origin-Opener-Policy'
-          content='same-origin'
-        ></meta>
-        <meta
-          httpEquiv='Cross-Origin-Opener-Policy'
-          content='same-origin-allow-popups'
-        ></meta>
       </head>
       <body suppressHydrationWarning={true} className='bt-home'>
         {children}
