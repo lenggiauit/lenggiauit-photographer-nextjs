@@ -14,6 +14,10 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/favicon.ico' sizes='any' />
         <meta
           httpEquiv='Cross-Origin-Opener-Policy'
+          content='unsafe-none'
+        ></meta>
+        <meta
+          httpEquiv='Cross-Origin-Opener-Policy'
           content='same-origin'
         ></meta>
         <meta
