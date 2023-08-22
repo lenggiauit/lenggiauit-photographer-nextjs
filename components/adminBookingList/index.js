@@ -36,55 +36,27 @@ export default function AdminBookingList(props) {
   // Data grid columns
   const columns = [
     {
-      id: 'photoshootType',
-      name: 'Photoshoot Type',
-      selector: (row) => row.photoshootType,
-      sortable: true,
-    },
-    {
-      id: 'name',
-      name: 'Name',
-      selector: (row) => row.name,
-      sortable: true,
-    },
-    {
-      id: 'email',
-      name: 'Email',
-      selector: (row) => row.email,
-      sortable: false,
-    },
-    {
-      id: 'phone',
-      name: 'Phone',
-      selector: (row) => row.phone,
-      sortable: false,
-    },
-    {
-      id: 'description',
-      name: 'Description',
-      selector: (row) => row.description,
-      sortable: true,
-    },
-    {
-      id: 'submittedDate',
-      name: 'Submitted Date',
-      selector: (row) => row.submittedDate,
-      sortable: false,
-    },
-    {
-      id: 'date',
-      name: 'Shooting Date',
-      selector: (row) => row.shootingDate,
-      sortable: false,
-    },
-    {
-      id: 'status',
-      name: 'Status',
-      selector: (row) => row.status,
-      sortable: true,
+      name: 'Change Status',
+      button: true,
+      width: '100px',
+      cell: (row) => (
+        <>
+          <button
+            className='btn btn-primary btn-sm'
+            onClick={() => {
+              setSelectedBookingItem(row)
+              setSelectedBookingItemStatus(row.status)
+              setOpenModal(true)
+            }}
+          >
+            Edit
+          </button>
+        </>
+      ),
     },
     {
       name: 'Change shooting date',
+      width: '100px',
       button: true,
       cell: (row) => (
         <>
@@ -102,22 +74,62 @@ export default function AdminBookingList(props) {
       ),
     },
     {
-      name: 'Edit',
-      button: true,
-      cell: (row) => (
-        <>
-          <button
-            className='btn btn-primary btn-sm'
-            onClick={() => {
-              setSelectedBookingItem(row)
-              setSelectedBookingItemStatus(row.status)
-              setOpenModal(true)
-            }}
-          >
-            Edit
-          </button>
-        </>
-      ),
+      id: 'photoshootType',
+      name: 'Photoshoot Type',
+      width: '150px',
+      selector: (row) => row.photoshootType,
+      sortable: true,
+    },
+    {
+      id: 'name',
+      name: 'Name',
+      width: '165px',
+      selector: (row) => row.name,
+      sortable: true,
+    },
+    {
+      id: 'email',
+      name: 'Email',
+      width: '175px',
+      selector: (row) => <a href={`mailto:${row.email}`}> {row.email} </a>,
+      sortable: false,
+    },
+    {
+      id: 'phone',
+      name: 'Phone',
+      width: '100px',
+      selector: (row) => row.phone,
+      sortable: false,
+    },
+    {
+      id: 'submittedDate',
+      name: 'Submitted Date',
+      width: '100px',
+      selector: (row) => row.submittedDate,
+      sortable: false,
+    },
+    {
+      id: 'date',
+      name: 'Shooting Date',
+      width: '100px',
+      selector: (row) => row.shootingDate,
+      sortable: false,
+    },
+    {
+      id: 'status',
+      name: 'Status',
+      width: '100px',
+      selector: (row) => row.status,
+      sortable: true,
+    },
+
+    {
+      id: 'description',
+      name: 'Description',
+
+      selector: (row) => <p title={row.description}>{row.description}</p>,
+
+      sortable: true,
     },
   ]
 
@@ -143,6 +155,7 @@ export default function AdminBookingList(props) {
       shootingDate: selectedBookingItemShootingDate,
       name: selectedBookingItem.name,
       email: selectedBookingItem.email,
+      phone: selectedBookingItem.phone,
       description: selectedBookingItem.description,
       price: selectedBookingItem.price,
       submittedDate: selectedBookingItem.submittedDate,
@@ -169,6 +182,7 @@ export default function AdminBookingList(props) {
       shootingDate: selectedBookingItem.shootingDate,
       name: selectedBookingItem.name,
       email: selectedBookingItem.email,
+      phone: selectedBookingItem.phone,
       description: selectedBookingItem.description,
       price: selectedBookingItem.price,
       submittedDate: selectedBookingItem.submittedDate,
