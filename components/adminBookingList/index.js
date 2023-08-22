@@ -97,8 +97,8 @@ export default function AdminBookingList(props) {
     {
       id: 'phone',
       name: 'Phone',
-      width: '100px',
-      selector: (row) => row.phone,
+      width: '150px',
+      selector: (row) => <a href={`tel:${row.phone}`}> {row.phone} </a>,
       sortable: false,
     },
     {
