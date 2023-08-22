@@ -38,7 +38,7 @@ export default function AdminBookingList(props) {
     {
       name: 'Change Status',
       button: true,
-      width: '100px',
+      width: '120px',
       cell: (row) => (
         <>
           <button
@@ -56,7 +56,7 @@ export default function AdminBookingList(props) {
     },
     {
       name: 'Change shooting date',
-      width: '100px',
+      width: '125px',
       button: true,
       cell: (row) => (
         <>
