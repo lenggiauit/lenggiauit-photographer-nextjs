@@ -175,8 +175,9 @@ export default function Booking(props) {
                             <li> Outfit Changes 2</li>
                             <li>
                               <b>
-                                Based on your expect we will setup a concept for
-                                you (The price depend on your concept)
+                                Based on your expectation, we will setup a
+                                concept for you (The price depends on your
+                                concept)
                               </b>
                             </li>
                           </ul>
@@ -220,7 +221,7 @@ export default function Booking(props) {
                                 }))
                               }}
                             >
-                              <span>Select Outdoor</span>
+                              <span>Select</span>
                             </a>
                             <h3>
                               <sup>$</sup>
@@ -236,9 +237,23 @@ export default function Booking(props) {
                             {basicPackageplan()}
                             <li> Outfit Changes 2</li>
                             <li>
+                              Reference:
+                              <a target='_blank' href='/albums/spring-girl'>
+                                Spring Girl
+                              </a>
+                              ,&nbsp;
+                              <a
+                                target='_blank'
+                                href='/albums/most-wanted-it-girl-look'
+                              >
+                                Most Wanted It Girl Look
+                              </a>
+                            </li>
+                            <li>
                               <b>
-                                Based on your expect we will setup a concept for
-                                you (The price depend on your concept)
+                                Based on your expectation, we will setup a
+                                concept for you (The price depends on your
+                                concept)
                               </b>
                             </li>
                           </ul>
@@ -266,8 +281,19 @@ export default function Booking(props) {
                       </div>
                       <div className='col-md-4 '>
                         <div className='bt-packageplan'>
-                          <h2>Family Outdoor</h2>
-                          <ul>{basicPackageplan()}</ul>
+                          <h2>Family Outdoor, Party, Celebrate</h2>
+                          <ul>
+                            {basicPackageplan()}
+                            <li>
+                              Reference:
+                              <a
+                                target='_blank'
+                                href='/albums/celebrate-graduation-photography'
+                              >
+                                Celebrate Graduation
+                              </a>
+                            </li>
+                          </ul>
                           <div className='bt-packageplanfoot'>
                             <a
                               className='bt-btn bt-btnblack '
@@ -536,8 +562,9 @@ export default function Booking(props) {
                             <li> Outfit Changes 2</li>
                             <li>
                               <b>
-                                Based on your expect we will setup a concept for
-                                you (The price depend on your concept)
+                                Based on your expectation, we will setup a
+                                concept for you (The price depends on your
+                                concept)
                               </b>
                             </li>
                             <li>
@@ -623,9 +650,23 @@ export default function Booking(props) {
                             {basicPackageplan()}
                             <li> Outfit Changes 2</li>
                             <li>
+                              Reference:
+                              <a target='_blank' href='/albums/spring-girl'>
+                                Spring Girl
+                              </a>
+                              ,&nbsp;
+                              <a
+                                target='_blank'
+                                href='/albums/most-wanted-it-girl-look'
+                              >
+                                Most Wanted It Girl Look
+                              </a>
+                            </li>
+                            <li>
                               <b>
-                                Based on your expect we will setup a concept for
-                                you (The price depend on your concept)
+                                Based on your expectation, we will setup a
+                                concept for you (The price depends on your
+                                concept)
                               </b>
                             </li>
                             <li>
@@ -664,16 +705,19 @@ export default function Booking(props) {
                 {bookingDetail.type == PhotoshootType.FamilyOutdoor && (
                   <>
                     <div className='bt-packageplan'>
-                      <h2>Family Outdoor</h2>
+                      <h2>Family Outdoor, Party, Celebrate</h2>
                       <div className='row'>
                         <div className='col-md-6 '>
                           <ul>
                             {basicPackageplan()}
                             <li>
-                              <b>
-                                Based on your expect we will setup a concept for
-                                you (The price depend on your concept)
-                              </b>
+                              Reference:
+                              <a
+                                target='_blank'
+                                href='/albums/celebrate-graduation-photography'
+                              >
+                                Celebrate Graduation
+                              </a>
                             </li>
                             <li>
                               Date shoot: <strong>{bookingDetail.date}</strong>
