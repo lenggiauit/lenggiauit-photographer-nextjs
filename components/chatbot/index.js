@@ -9,7 +9,7 @@ import { v4 } from 'uuid'
 
 export default function Chatbot(props) {
   const localStorageKey = 'chatboxUserInfo'
-  var chatboxUserInfoStorage = null
+  var chatboxUserInfoStorage
   if (typeof window !== 'undefined') {
     chatboxUserInfoStorage = window.localStorage.getItem(localStorageKey)
   }
@@ -58,6 +58,8 @@ export default function Chatbot(props) {
         })
       )
     }
+
+    getResponeMessage(values.message)
   }
 
   useEffect(() => {
@@ -79,6 +81,12 @@ export default function Chatbot(props) {
 
   const AddMessage = (userId, message) => {
     var newChatboxUserInfo = chatboxUserInfo
+    if (newChatboxUserInfo == null && typeof window !== 'undefined') {
+      newChatboxUserInfo = JSON.parse(
+        window.localStorage.getItem(localStorageKey)
+      )
+    }
+
     newChatboxUserInfo.messages.push({
       userId: userId,
       message: message,
@@ -100,10 +108,10 @@ export default function Chatbot(props) {
     }
   }
 
-  const getResponeMessage = async () => {
+  const getResponeMessage = async (msg) => {
     setIsResponding(true)
-    console.log(currentMessage)
-    const res = await fetch(`/api/chatbot?message=${currentMessage}`, {
+    //console.log(msg)
+    const res = await fetch(`/api/chatbot?message=${msg}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -129,7 +137,7 @@ export default function Chatbot(props) {
 
   const sendMessage = () => {
     AddMessage(chatboxUserInfo.userId, currentMessage)
-    getResponeMessage()
+    getResponeMessage(currentMessage)
   }
 
   return (
@@ -254,7 +262,7 @@ export default function Chatbot(props) {
                 {isResponding && (
                   <div className='chatbot-message-responding text-muted d-flex justify-content-start align-items-center'>
                     <i
-                      className='bi bi-person-circle'
+                      className='bi bi-robot'
                       style={{ fontSize: 24, color: '#eee' }}
                     ></i>
                     <div className='dot-container'>
