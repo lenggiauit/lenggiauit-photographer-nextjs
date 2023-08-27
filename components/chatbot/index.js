@@ -6,6 +6,7 @@ import PageLoader from '../pageLoader'
 import { getDatabase, ref, set } from 'firebase/database'
 import { db } from '@/app/firebase'
 import { v4 } from 'uuid'
+import dateFormat from 'dateformat'
 
 export default function Chatbot(props) {
   const localStorageKey = 'chatboxUserInfo'
@@ -58,7 +59,7 @@ export default function Chatbot(props) {
         })
       )
     }
-
+    savetoDb(userID, values.name, values.email, values.message)
     getResponeMessage(values.message)
   }
 
@@ -79,12 +80,35 @@ export default function Chatbot(props) {
     }
   }
 
+  const savetoDb = (userId, userName, userEmail, firstMessage) => {
+    set(ref(db, 'chatbot/' + userId), {
+      userId: userId,
+      userName: userName,
+      email: userEmail,
+      firstMessage: firstMessage,
+      date: dateFormat(new Date(), 'mm/dd/yyyy hh:mm:ss'),
+    }).catch(() => {
+      console.log('Error!')
+    })
+  }
+
+  const saveMessagetoDb = (userId, message) => {
+    set(ref(db, 'messages/' + v4()), {
+      userId: userId,
+      message: message,
+      datetime: dateFormat(new Date(), 'mm/dd/yyyy hh:mm:ss'),
+    }).catch(() => {
+      console.log('Error!')
+    })
+  }
+
   const AddMessage = (userId, message) => {
     var newChatboxUserInfo = chatboxUserInfo
     if (newChatboxUserInfo == null && typeof window !== 'undefined') {
-      newChatboxUserInfo = JSON.parse(
-        window.localStorage.getItem(localStorageKey)
-      )
+      const localStorage = window.localStorage.getItem(localStorageKey)
+      if (localStorage != null) {
+        newChatboxUserInfo = JSON.parse(localStorage)
+      }
     }
 
     newChatboxUserInfo.messages.push({
@@ -103,9 +127,10 @@ export default function Chatbot(props) {
     if (typeof window !== 'undefined') {
       window.localStorage.setItem(
         localStorageKey,
-        JSON.stringify(chatboxUserInfo)
+        JSON.stringify(newChatboxUserInfo)
       )
     }
+    if (userId != 'chatbot') saveMessagetoDb(userId, message)
   }
 
   const getResponeMessage = async (msg) => {
