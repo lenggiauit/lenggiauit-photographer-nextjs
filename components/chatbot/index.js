@@ -106,7 +106,7 @@ export default function Chatbot(props) {
     var newChatboxUserInfo = chatboxUserInfo
     if (newChatboxUserInfo == null && typeof window !== 'undefined') {
       const localStorage = window.localStorage.getItem(localStorageKey)
-      if (localStorage != null) {
+      if (localStorage != null && localStorage != '') {
         newChatboxUserInfo = JSON.parse(localStorage)
       }
     }

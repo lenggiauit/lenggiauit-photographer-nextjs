@@ -10,98 +10,58 @@ function Footer() {
               <ul>
                 <li>
                   <figure>
-                    <a
-                      href='/images/instagram/02.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/02.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/02.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                   <figure>
-                    <a
-                      href='/images/instagram/05.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/05.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/05.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <a
-                      href='/images/instagram/06.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/06.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/06.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                   <figure>
-                    <a
-                      href='/images/instagram/01.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/01.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/01.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                   <figure>
-                    <a
-                      href='/images/instagram/08.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/08.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/08.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <a
-                      href='/images/instagram/03.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/03.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/03.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                   <figure>
-                    <a
-                      href='/images/instagram/07.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/07.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/07.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <a
-                      href='/images/instagram/04.jpg'
-                      data-rel='prettyPhoto[instagramphotos]'
-                    >
-                      <img
-                        src='/images/instagram/04.jpg'
-                        alt='lenggiauit Photographer'
-                      />
-                    </a>
+                    <img
+                      src='/images/instagram/04.jpg'
+                      alt='lenggiauit Photographer'
+                    />
                   </figure>
                 </li>
               </ul>
