@@ -9,7 +9,7 @@ import { v4 } from 'uuid'
 
 export default function Chatbot(props) {
   const localStorageKey = 'chatboxUserInfo'
-  const chatboxUserInfoStorage = null
+  var chatboxUserInfoStorage = null
   if (typeof window !== 'undefined') {
     chatboxUserInfoStorage = window.localStorage.getItem(localStorageKey)
   }
