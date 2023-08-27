@@ -9,7 +9,10 @@ import { v4 } from 'uuid'
 
 export default function Chatbot(props) {
   const localStorageKey = 'chatboxUserInfo'
-  const chatboxUserInfoStorage = window.localStorage.getItem(localStorageKey)
+  const chatboxUserInfoStorage = null
+  if (typeof window !== 'undefined') {
+    chatboxUserInfoStorage = window.localStorage.getItem(localStorageKey)
+  }
 
   const [chatboxUserInfo, setChatboxUserInfo] = useState(
     JSON.parse(chatboxUserInfoStorage) || null
@@ -42,17 +45,19 @@ export default function Chatbot(props) {
         { userId: userID, message: values.message, datetime: new Date() },
       ],
     })
-    window.localStorage.setItem(
-      localStorageKey,
-      JSON.stringify({
-        userId: userID,
-        name: values.name,
-        email: values.email,
-        messages: [
-          { userId: userID, message: values.message, datetime: new Date() },
-        ],
-      })
-    )
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(
+        localStorageKey,
+        JSON.stringify({
+          userId: userID,
+          name: values.name,
+          email: values.email,
+          messages: [
+            { userId: userID, message: values.message, datetime: new Date() },
+          ],
+        })
+      )
+    }
   }
 
   useEffect(() => {
@@ -87,11 +92,12 @@ export default function Chatbot(props) {
     }
 
     setChatboxUserInfo(newChatboxUserInfo)
-
-    window.localStorage.setItem(
-      localStorageKey,
-      JSON.stringify(chatboxUserInfo)
-    )
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(
+        localStorageKey,
+        JSON.stringify(chatboxUserInfo)
+      )
+    }
   }
 
   const getResponeMessage = async () => {

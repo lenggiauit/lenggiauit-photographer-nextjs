@@ -6,21 +6,6 @@ export async function GET(request) {
   try {
     const params = new URL(request.url).searchParams
     const message = params.get('message')
-
-    // const res = await fetch('https://www.botlibre.com/rest/json/chat', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     messages: message,
-    //     application: '3760202369780456668',
-    //     instance: '48996468',
-    //   }),
-    // })
-
-    // const data = await res.json()
-
     const res = await fetch(
       `https://api.wit.ai/message?v=20230826&q=${message}`,
       {
