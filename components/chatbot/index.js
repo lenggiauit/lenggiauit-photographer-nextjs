@@ -16,8 +16,7 @@ export default function Chatbot(props) {
   }
 
   const [chatboxUserInfo, setChatboxUserInfo] = useState(
-    //JSON.parse(chatboxUserInfoStorage) || null
-    null
+    chatboxUserInfoStorage ? JSON.parse(chatboxUserInfoStorage) : null
   )
   const [isResponding, setIsResponding] = useState(false)
   const [currentMessage, setCurrentMessage] = useState('')
@@ -108,7 +107,7 @@ export default function Chatbot(props) {
     if (newChatboxUserInfo == null && typeof window !== 'undefined') {
       const localStorage = window.localStorage.getItem(localStorageKey)
       if (localStorage != null && localStorage != '') {
-        // newChatboxUserInfo = JSON.parse(localStorage)
+        newChatboxUserInfo = JSON.parse(localStorage)
       }
     }
 
