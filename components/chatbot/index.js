@@ -16,7 +16,8 @@ export default function Chatbot(props) {
   }
 
   const [chatboxUserInfo, setChatboxUserInfo] = useState(
-    JSON.parse(chatboxUserInfoStorage) || null
+    //JSON.parse(chatboxUserInfoStorage) || null
+    null
   )
   const [isResponding, setIsResponding] = useState(false)
   const [currentMessage, setCurrentMessage] = useState('')
