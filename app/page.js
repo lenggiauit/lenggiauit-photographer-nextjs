@@ -1,7 +1,6 @@
 import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
-import Head from 'next/head'
-import { v4 } from 'uuid'
+import Chatbot from '@/components/chatbot'
 let appData = require('/data.json')
 let appSetting = require('/appSetting.json')
 
@@ -31,6 +30,7 @@ export default function Home() {
         <Navigation></Navigation>
         <HomeAlbums data={appData.find((x) => x.pageUrl == '/')}></HomeAlbums>
       </div>
+      <Chatbot />
     </>
   )
 }

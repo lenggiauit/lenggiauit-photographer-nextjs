@@ -1,8 +1,6 @@
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
-import Image from 'next/image'
-import { v4 } from 'uuid'
-import Head from 'next/head'
+import Chatbot from '@/components/chatbot'
 import PhotoList from '@/components/photoList'
 
 let appSetting = require('/appSetting.json')
@@ -98,6 +96,7 @@ const AlbumDetail = ({ params }) => {
           </div>
         </main>
         <Footer />
+        <Chatbot />
       </>
     )
   } else {

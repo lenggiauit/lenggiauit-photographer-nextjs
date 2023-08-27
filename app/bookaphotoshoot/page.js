@@ -1,8 +1,7 @@
 import React from 'react'
 import Navigation from '@/components/navigation'
 import Booking from '@/components/booking'
-import Footer from '@/components/footer'
-
+import Chatbot from '@/components/chatbot'
 let appSetting = require('/appSetting.json')
 let appData = require('/data.json')
 
@@ -27,6 +26,7 @@ const BookingPage = () => {
       <main id='bt-main' className='bt-main bt-sectionspace bt-haslayout'>
         <Booking />
       </main>
+      <Chatbot />
     </>
   )
 }

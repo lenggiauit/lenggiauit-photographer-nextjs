@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from '@/components/navigation'
 import AlbumList from '@/components/albumList'
 import Footer from '@/components/footer'
-import Head from 'next/head'
+import Chatbot from '@/components/chatbot'
 
 let appSetting = require('/appSetting.json')
 let appData = require('/data.json')
@@ -28,6 +28,7 @@ const AlbumPage = () => {
       <Navigation></Navigation>
       <AlbumList data={albumsData.albums} />
       <Footer />
+      <Chatbot />
     </>
   )
 }

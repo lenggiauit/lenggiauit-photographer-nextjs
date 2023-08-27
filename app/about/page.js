@@ -1,6 +1,6 @@
 import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
-import Head from 'next/head'
+import Chatbot from '@/components/chatbot'
 let appSetting = require('/appSetting.json')
 let appData = require('/data.json')
 const pageData = appData.find((x) => x.pageUrl == '/about')
@@ -163,6 +163,7 @@ export default function About() {
           </div>
         </main>
       </div>
+      <Chatbot />
     </>
   )
 }

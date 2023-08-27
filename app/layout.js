@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../public/css/font-awesome.min.css'
 import '../public/css/style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import Chatbot from '@/components/chatbot'
 
 export const metadata = {
   title: 'Lenggiauit - Photographer Portfolio',
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning={true} className='bt-home'>
         {children}
-        <Chatbot />
         <Script
           strategy='afterInteractive'
           src='https://www.googletagmanager.com/gtag/js?id=G-3YWSY2422R'
