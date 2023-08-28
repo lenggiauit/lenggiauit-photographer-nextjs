@@ -10,14 +10,18 @@ import dateFormat from 'dateformat'
 
 export default function Chatbot(props) {
   const localStorageKey = 'chatboxUserInfo'
-  var chatboxUserInfoStorage
+  var chatboxUserInfoStorage = null
   if (typeof window !== 'undefined') {
     chatboxUserInfoStorage = window.localStorage.getItem(localStorageKey)
   }
 
-  const [chatboxUserInfo, setChatboxUserInfo] = useState(
-    chatboxUserInfoStorage ? JSON.parse(chatboxUserInfoStorage) : null
-  )
+  const [chatboxUserInfo, setChatboxUserInfo] = useState()
+
+  useEffect(() => {
+    setChatboxUserInfo(
+      chatboxUserInfoStorage ? JSON.parse(chatboxUserInfoStorage) : null
+    )
+  }, [])
   const [isResponding, setIsResponding] = useState(false)
   const [currentMessage, setCurrentMessage] = useState('')
 
