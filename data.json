@@ -158,6 +158,32 @@
     ]
   },
   {
+    "pageUrl": "/concepts",
+    "metaData": {
+      "title": "All concepts - Lenggiauit Photographer",
+      "description": "All concepts - Lenggiauit Photographer"
+    },
+    "concepts": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "title": "Spring Girl",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/concepts/spring-girl",
+        "status": "Published"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "title": "Countryside Girl",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/concepts/countryside-girl",
+        "status": "Upcoming"
+      }
+    ]
+  },
+
+  {
     "pageUrl": "raining-day",
     "metaData": {
       "title": "Raining day Album - Lenggiauit Photographer",
@@ -697,6 +723,36 @@
         "src": "/images/photos/album_08/LNG_6611.jpg",
         "description": "Spring Girl",
         "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6871.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6878.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6880.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6909.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6971.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_7004.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
       }
     ]
   },
@@ -837,6 +893,114 @@
         "src": "/images/photos/album_10/08.jpg",
         "description": "Beautiful Back & White for Lovers",
         "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/spring-girl",
+    "metaData": {
+      "title": "Spring Girl Concept - Lenggiauit Photographer",
+      "description": "Spring Girl Concept"
+    },
+    "prevPage": {
+      "title": "Beautiful Nature for Lovers",
+      "link": "/concepts/beautiful-nature-for-lovers"
+    },
+    "nextPage": {
+      "title": "Most Wanted It Girl Look",
+      "link": "/concepts/most-wanted-it-girl-look"
+    },
+    "pageheader": {
+      "title": "Spring Girl Concept",
+      "src": "/images/photos/album_08/LNG_6477.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+      "createddDate": "DEC 08 2023"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6620.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6441.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6482.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6487.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6494.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6501.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6504.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6506.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6515.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6541.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6581.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6611.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
       }
     ]
   }
