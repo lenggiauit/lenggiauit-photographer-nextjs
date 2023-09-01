@@ -7,6 +7,14 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "thumb": "/images/photos/album_11/thumbnails/LNG_7133.jpg",
+        "title": "<span>Play with<span> Paper Boats</span></span>",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/play-with-paper-boats"
+      },
+      {
         "src": "/images/photos/album_08/LNG_6477.jpg",
         "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
         "title": "<span><span>Spring Girl</span></span>",
@@ -96,8 +104,15 @@
     },
     "albums": [
       {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "title": "Play With Paper Boats",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "link": "/albums/play-with-paper-boats"
+      },
+
+      {
         "src": "/images/photos/album_01/LNG_5889.jpg",
-        "title": "Raining day",
+        "title": "Raining Day",
         "description": "Location: Scarborough Bluffs, Ontario, Canada",
         "link": "/albums/raining-day"
       },
@@ -182,7 +197,110 @@
       }
     ]
   },
+  {
+    "pageUrl": "play-with-paper-boats",
+    "metaData": {
+      "title": "Play With Paper Boats Album - Lenggiauit Photographer",
+      "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada"
+    },
+    "nextPage": {
+      "title": "Raining Day",
+      "link": "/albums/raining-day"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7023.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7042.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
 
+      {
+        "src": "/images/photos/album_11/LNG_7068.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7071.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7080.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7084.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7092.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7097.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7101.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7107.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7114.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7121.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7126.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7142.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7143.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7145.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7146.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      }
+    ]
+  },
   {
     "pageUrl": "raining-day",
     "metaData": {
@@ -192,6 +310,10 @@
     "nextPage": {
       "title": "Celebrate Graduation Photography",
       "link": "/albums/celebrate-graduation-photography"
+    },
+    "prevPage": {
+      "title": "Play With Paper Boats",
+      "link": "/albums/play-with-paper-boats"
     },
     "photos": [
       {
