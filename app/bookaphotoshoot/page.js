@@ -26,7 +26,7 @@ const BookingPage = () => {
       <main id='bt-main' className='bt-main bt-sectionspace bt-haslayout'>
         <Booking />
       </main>
-      <Chatbot />
+      {/* <Chatbot /> */}
     </>
   )
 }

@@ -96,7 +96,7 @@ const AlbumDetail = ({ params }) => {
           </div>
         </main>
         <Footer />
-        <Chatbot />
+        {/* <Chatbot /> */}
       </>
     )
   } else {

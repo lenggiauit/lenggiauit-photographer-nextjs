@@ -28,7 +28,7 @@ const AlbumPage = () => {
       <Navigation></Navigation>
       <AlbumList data={albumsData.albums} />
       <Footer />
-      <Chatbot />
+      {/* <Chatbot /> */}
     </>
   )
 }

@@ -163,7 +163,7 @@ export default function About() {
           </div>
         </main>
       </div>
-      <Chatbot />
+      {/* <Chatbot /> */}
     </>
   )
 }

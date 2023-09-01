@@ -30,7 +30,7 @@ export default function Home() {
         <Navigation></Navigation>
         <HomeAlbums data={appData.find((x) => x.pageUrl == '/')}></HomeAlbums>
       </div>
-      <Chatbot />
+      {/* <Chatbot /> */}
     </>
   )
 }
