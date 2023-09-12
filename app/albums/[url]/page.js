@@ -37,6 +37,7 @@ const AlbumDetail = ({ params }) => {
             <h1 className='heading text-center'>
               {pageData.metaData.description}
             </h1>
+            <p className='text-center'>{pageData.metaData.location} </p>
             <ul id='js-filters-agency' className='cbp-l-filters-text'>
               <li
                 data-filter='*'

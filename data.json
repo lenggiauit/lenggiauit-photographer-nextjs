@@ -7,6 +7,14 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
+        "title": "<span><span>Hong Kong 90's</span> Retro</span>",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/retro-hongkong-90s"
+      },
+      {
         "src": "/images/photos/album_11/LNG_7133.jpg",
         "thumb": "/images/photos/album_11/thumbnails/LNG_7133.jpg",
         "title": "<span>Play with<span> Paper Boats</span></span>",
@@ -104,6 +112,12 @@
     },
     "albums": [
       {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "title": "Retro - HongKong 90's",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "link": "/albums/retro-hongkong-90s"
+      },
+      {
         "src": "/images/photos/album_11/LNG_7133.jpg",
         "title": "Play With Paper Boats",
         "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
@@ -198,10 +212,157 @@
     ]
   },
   {
+    "pageUrl": "retro-hongkong-90s",
+    "metaData": {
+      "title": "Retro - HongKong 90's Album - Lenggiauit Photographer",
+      "description": "Retro - HongKong 90's Album",
+      "location": "Chinatown Toronto, Ontario, Canada"
+    },
+    "nextPage": {
+      "title": "Play With Paper Boats",
+      "link": "/albums/play-with-paper-boats"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+
+      {
+        "src": "/images/photos/album_12/LNG_7201.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7216.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7261.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7325.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7332.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7328.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7392.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+
+      {
+        "src": "/images/photos/album_12/LNG_7398.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7405.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7410.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7411.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7415.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7416.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7436.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7458.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7468.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6746.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6760.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6765.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6768.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6788.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6789.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6793.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6798.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      }
+    ]
+  },
+
+  {
     "pageUrl": "play-with-paper-boats",
     "metaData": {
       "title": "Play With Paper Boats Album - Lenggiauit Photographer",
-      "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada"
+      "description": "Play With Paper Boats Album",
+      "location": "Doris McCarthy, Scarborough, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Retro - HongKong 90's",
+      "link": "/albums/retro-hongkong-90s"
     },
     "nextPage": {
       "title": "Raining Day",
@@ -305,7 +466,8 @@
     "pageUrl": "raining-day",
     "metaData": {
       "title": "Raining day Album - Lenggiauit Photographer",
-      "description": "Some pictures that I took in a rainy day at Scarborough Bluffs, Ontario, Canada"
+      "description": "Raining day Album",
+      "location": "Scarborough Bluffs, Ontario, Canada"
     },
     "nextPage": {
       "title": "Celebrate Graduation Photography",
@@ -357,7 +519,8 @@
     "pageUrl": "celebrate-graduation-photography",
     "metaData": {
       "title": "Celebrate Graduation Photography Album - Lenggiauit Photographer",
-      "description": "Celebrate Graduation Photography Album"
+      "description": "Celebrate Graduation Photography Album",
+      "location": "Centennial College, Scarborough, Ontario, Canada"
     },
     "nextPage": {
       "title": "High Park Cherry Blossom",
@@ -419,7 +582,8 @@
     "pageUrl": "high-park-cherry-blossom",
     "metaData": {
       "title": "High Park Cherry Blossom Album - Lenggiauit Photographer",
-      "description": "High Park Cherry Blossom Album"
+      "description": "High Park Cherry Blossom Album",
+      "location": "High Park, Toronto, Ontario, Canada"
     },
     "nextPage": {
       "title": "A view in Toronto IsLand",
@@ -487,7 +651,8 @@
     "pageUrl": "a-view-in-toronto-isLand",
     "metaData": {
       "title": "A view in Toronto IsLand Album - Lenggiauit Photographer",
-      "description": "A view in Toronto IsLand Album"
+      "description": "A view in Toronto IsLand Album",
+      "location": "Toronto IsLand, Ontario, Canada"
     },
     "prevPage": {
       "title": "High Park Cherry Blossom",
@@ -544,7 +709,8 @@
     "pageUrl": "fashion-girl",
     "metaData": {
       "title": "Fashion Girl Album - Lenggiauit Photographer",
-      "description": "Fashion Girl Album"
+      "description": "Fashion Girl Album",
+      "location": "Woodbine beach, Toronto, Ontario, Canada"
     },
     "prevPage": {
       "title": "A view in Toronto IsLand",
@@ -616,7 +782,8 @@
     "pageUrl": "fall-season",
     "metaData": {
       "title": "Fall Season Album - Lenggiauit Photographer",
-      "description": "Fall Season Album"
+      "description": "Fall Season Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
       "title": "Fashion Girl",
@@ -643,7 +810,8 @@
     "pageUrl": "beautiful-nature-for-lovers",
     "metaData": {
       "title": "Beautiful Nature for Lovers Album - Lenggiauit Photographer",
-      "description": "Beautiful Nature for Lovers Album"
+      "description": "Beautiful Nature for Lovers Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
       "title": "Fall season",
@@ -750,7 +918,8 @@
     "pageUrl": "spring-girl",
     "metaData": {
       "title": "Spring Girl Album - Lenggiauit Photographer",
-      "description": "Spring Girl Album"
+      "description": "Spring Girl Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
       "title": "Beautiful Nature for Lovers",
@@ -882,7 +1051,8 @@
     "pageUrl": "most-wanted-it-girl-look",
     "metaData": {
       "title": "Most Wanted It Girl Look Album - Lenggiauit Photographer",
-      "description": "Most Wanted It Girl Look Album"
+      "description": "Most Wanted It Girl Look Album",
+      "location": "Ho Chi Minh, Viet Nam"
     },
     "prevPage": {
       "title": "Spring Girl",
@@ -969,7 +1139,8 @@
     "pageUrl": "beautiful-back-white-for-lovers",
     "metaData": {
       "title": "Beautiful Back & White for Lovers Album - Lenggiauit Photographer",
-      "description": "Beautiful Back & White for Lovers Album"
+      "description": "Beautiful Back & White for Lovers Album",
+      "location": "Ho Chi Minh, Viet Nam"
     },
     "prevPage": {
       "title": "Most Wanted It Girl Look",
