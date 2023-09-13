@@ -133,22 +133,26 @@ export default function HomeAlbums(props) {
               id='tg-postthumbnail'
               className='keen-slider tg-postthumbnail  thumbnail'
             >
-              {props.data.sliderData.map((item) => (
-                <div
-                  key={v4()}
-                  className='bt-item keen-slider__slide lazy__slide'
-                >
-                  <figure>
-                    <Image
-                      className='bt-item-thumbnail'
-                      width={200}
-                      height={133}
-                      src={item.thumb}
-                      alt='thumbnail'
-                    />
-                  </figure>
-                </div>
-              ))}
+              {props.data.sliderData
+                .filter((item) => {
+                  return item.visible == true
+                })
+                .map((item) => (
+                  <div
+                    key={v4()}
+                    className='bt-item keen-slider__slide lazy__slide'
+                  >
+                    <figure>
+                      <Image
+                        className='bt-item-thumbnail'
+                        width={200}
+                        height={133}
+                        src={item.thumb}
+                        alt='thumbnail'
+                      />
+                    </figure>
+                  </div>
+                ))}
             </div>
             <div className='tg-bannerfullwidthslidecount'>
               <span>{currentSlide}</span>
