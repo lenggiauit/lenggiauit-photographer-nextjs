@@ -86,34 +86,40 @@ export default function HomeAlbums(props) {
               id='tg-postfullslider'
               className='tg-postfullslider keen-slider'
             >
-              {props.data.sliderData.map((item, index) => (
-                <div
-                  key={v4()}
-                  className='bt-item keen-slider__slide lazy__slide'
-                  rel={index}
-                >
-                  <figure
-                    style={{
-                      backgroundImage: `url('${item.src}')`,
-                      backgroundPositionX: 'center',
-                      backgroundPositionY: `${item.alignment}`,
-                      backgroundRepeat: 'no-repeat',
-                    }}
+              {props.data.sliderData
+                .filter((item) => {
+                  return item.visible == true
+                })
+                .map((item, index) => (
+                  <div
+                    key={v4()}
+                    className='bt-item keen-slider__slide lazy__slide'
+                    rel={index}
                   >
-                    <div className='bt-slidercontent'>
-                      <h1 dangerouslySetInnerHTML={{ __html: item.title }}></h1>
-                      <div className='bt-description'>
-                        <p>{item.description}</p>
+                    <figure
+                      style={{
+                        backgroundImage: `url('${item.src}')`,
+                        backgroundPositionX: 'center',
+                        backgroundPositionY: `${item.alignment}`,
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                    >
+                      <div className='bt-slidercontent'>
+                        <h1
+                          dangerouslySetInnerHTML={{ __html: item.title }}
+                        ></h1>
+                        <div className='bt-description'>
+                          <p>{item.description}</p>
+                        </div>
+                        <div className='bt-btnbox'>
+                          <a className='bt-btn' href={item.link}>
+                            <span>view photos</span>
+                          </a>
+                        </div>
                       </div>
-                      <div className='bt-btnbox'>
-                        <a className='bt-btn' href={item.link}>
-                          <span>view photos</span>
-                        </a>
-                      </div>
-                    </div>
-                  </figure>
-                </div>
-              ))}
+                    </figure>
+                  </div>
+                ))}
             </div>
             <a
               id='bt-togglethumbnails'
