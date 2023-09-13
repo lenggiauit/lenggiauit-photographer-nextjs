@@ -85,6 +85,22 @@
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
         "alignment": "bottom",
         "link": "/albums/fall-season"
+      },
+      {
+        "src": "/images/photos/album_07/_LNG5419.jpg",
+        "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
+        "title": "<span>Beautiful <span>Nature</span></span>for Lovers",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/beautiful-nature-for-lovers"
+      },
+      {
+        "src": "/images/photos/album_10/01.jpg",
+        "thumb": "/images/photos/album_10/thumbnails/01.jpg",
+        "title": "<span>Beautiful <span>Back & White</span></span> for Lovers",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/beautiful-back-white-for-lovers"
       }
     ]
   },
