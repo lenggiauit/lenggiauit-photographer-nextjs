@@ -31,12 +31,12 @@ export default function Booking(props) {
   }
 
   const PhotoshootPrice = {
-    PortraitIndoor: 500,
-    PortraitOutdoor: 750,
-    UniqueConceptIndoor: 600,
-    UniqueConceptOutdoor: 850,
-    FamilyOutdoor: 750,
-    Prewedding: 2000,
+    PortraitIndoor: 299,
+    PortraitOutdoor: 449,
+    UniqueConceptIndoor: 399,
+    UniqueConceptOutdoor: 599,
+    FamilyOutdoor: 699,
+    Prewedding: 1999,
   }
 
   const [bookingStep, setBookingStep] = useState(BookingSteps.SelectType)
@@ -119,10 +119,10 @@ export default function Booking(props) {
     return (
       <>
         <li>Half Day Event</li>
-        <li>Printed High-res Images 20</li>
-        <li> Framed Image 1</li>
-        <li> Outfit Changes 2</li>
+        <li>Printable High-res Images 20</li>
+        <li>Makeup + Hair (+ $150)</li>
         <li>Up to 100 High-res Images</li>
+        <li>Online Gallery</li>
       </>
     )
   }
