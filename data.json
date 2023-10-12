@@ -7,6 +7,15 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
+        "title": "<span><span>Color of Autumn</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/color-of-autumn",
+        "visible": true
+      },
+      {
         "src": "/images/photos/album_12/LNG_7271.jpg",
         "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
         "title": "<span><span>Hong Kong 90's</span> Retro</span>",
@@ -87,15 +96,7 @@
         "link": "/albums/fashion-girl",
         "visible": true
       },
-      {
-        "src": "/images/photos/album_06/_LNG5399.jpg",
-        "thumb": "/images/photos/album_06/thumbnails/_LNG5399.jpg",
-        "title": "<span><span>Fall season</span></span>",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/fall-season",
-        "visible": true
-      },
+
       {
         "src": "/images/photos/album_07/_LNG5419.jpg",
         "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
@@ -167,10 +168,10 @@
         "link": "/albums/fashion-girl"
       },
       {
-        "src": "/images/photos/album_06/_LNG5399.jpg",
-        "title": "Fall season",
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "title": "Color Of Autumn",
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "link": "/albums/fall-season"
+        "link": "/albums/color-of-autumn"
       },
       {
         "src": "/images/photos/album_07/_LNG5419.jpg",
@@ -729,8 +730,8 @@
       "link": "/albums/a-view-in-toronto-isLand"
     },
     "nextPage": {
-      "title": "Fall Season",
-      "link": "/albums/fall-season"
+      "title": "Color Of Autumn",
+      "link": "/albums/color-of-autumn"
     },
     "photos": [
       {
@@ -791,10 +792,10 @@
     ]
   },
   {
-    "pageUrl": "fall-season",
+    "pageUrl": "color-of-autumn",
     "metaData": {
-      "title": "Fall Season Album - Lenggiauit Photographer",
-      "description": "Fall Season Album",
+      "title": "Color Of Autumn Album - Lenggiauit Photographer",
+      "description": "Color Of Autumn Album",
       "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
@@ -807,13 +808,93 @@
     },
     "photos": [
       {
-        "src": "/images/photos/album_06/_LNG5297.jpg",
-        "description": "Fall season",
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "description": "Color Of Autumn",
         "filter": "new"
       },
       {
-        "src": "/images/photos/album_06/_LNG5399.jpg",
-        "description": "Fall season",
+        "src": "/images/photos/album_06/LNG_7977.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_7942.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8009.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8049.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8052.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8087.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8111.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8119.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8165.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8217.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8220.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8235.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8239.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8255.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8262.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8275.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8279.jpg",
+        "description": "Color Of Autumn",
         "filter": "most-recent"
       }
     ]
@@ -826,8 +907,8 @@
       "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
-      "title": "Fall season",
-      "link": "/albums/fall-season"
+      "title": "Color Of Autumn",
+      "link": "/albums/color-of-autumn"
     },
     "nextPage": {
       "title": "Spring Girl",
