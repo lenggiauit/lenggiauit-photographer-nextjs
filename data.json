@@ -125,6 +125,12 @@
     },
     "albums": [
       {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "title": "Color Of Autumn",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "link": "/albums/color-of-autumn"
+      },
+      {
         "src": "/images/photos/album_12/LNG_7271.jpg",
         "title": "Retro - HongKong 90's",
         "description": "Location: Chinatown Toronto, Ontario, Canada",
@@ -167,12 +173,7 @@
         "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
         "link": "/albums/fashion-girl"
       },
-      {
-        "src": "/images/photos/album_06/LNG_7879.jpg",
-        "title": "Color Of Autumn",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "link": "/albums/color-of-autumn"
-      },
+
       {
         "src": "/images/photos/album_07/_LNG5419.jpg",
         "title": "Beautiful Nature for Lovers",
