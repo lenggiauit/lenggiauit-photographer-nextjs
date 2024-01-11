@@ -1,123 +1,5 @@
 [
   {
-    "pageUrl": "/",
-    "metaData": {
-      "title": "Lenggiauit - Photographer Portfolio",
-      "description": "Lenggiauit - Photographer Portfolio"
-    },
-    "sliderData": [
-      {
-        "src": "/images/photos/album_06/LNG_7879.jpg",
-        "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
-        "title": "<span><span>Color of Autumn</span></span>",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/color-of-autumn",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_12/LNG_7271.jpg",
-        "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
-        "title": "<span><span>Hong Kong 90's</span> Retro</span>",
-        "description": "Location: Chinatown Toronto, Ontario, Canada",
-        "alignment": "top",
-        "link": "/albums/retro-hongkong-90s",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_11/LNG_7133.jpg",
-        "thumb": "/images/photos/album_11/thumbnails/LNG_7133.jpg",
-        "title": "<span>Play with<span> Paper Boats</span></span>",
-        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
-        "alignment": "top",
-        "link": "/albums/play-with-paper-boats",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
-        "title": "<span><span>Spring Girl</span></span>",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "top",
-        "link": "/albums/spring-girl",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_09/_lng815.jpg",
-        "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
-        "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
-        "description": "Location: Ho Chi Minh, Viet Nam",
-        "alignment": "top",
-        "link": "/albums/most-wanted-it-girl-look",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_01/LNG_5889.jpg",
-        "thumb": "/images/photos/album_01/thumbnails/LNG_5889.jpg",
-        "title": "<span><span>Raining day</span></span>",
-        "description": "Location: Scarborough Bluffs, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/raining-day",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_02/LNG_6247.jpg",
-        "thumb": "/images/photos/album_02/thumbnails/LNG_6247.jpg",
-        "title": "<span>Celebrate <span>Graduation</span></span>Photography",
-        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/celebrate-graduation-photography",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_03/LNG_5759.jpg",
-        "thumb": "/images/photos/album_03/thumbnails/LNG_5759.jpg",
-        "title": "<span>High Park - <span>Cherry Blossom</span></span>",
-        "description": "Location: High Park, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/high-park-cherry-blossom",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_04/LNG_6005.jpg",
-        "thumb": "/images/photos/album_04/thumbnails/LNG_6005.jpg",
-        "title": "<span>A view in <span> Toronto IsLand</span></span>",
-        "description": "Location: Toronto IsLand, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/a-view-in-toronto-isLand",
-        "visible": true
-      },
-      {
-        "src": "/images/photos/album_05/LNG_6321.jpg",
-        "thumb": "/images/photos/album_05/thumbnails/LNG_6321.jpg",
-        "title": "<span><span>Fashion Girl</span></span>",
-        "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/fashion-girl",
-        "visible": true
-      },
-
-      {
-        "src": "/images/photos/album_07/_LNG5419.jpg",
-        "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
-        "title": "<span>Beautiful <span>Nature</span></span>for Lovers",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/beautiful-nature-for-lovers",
-        "visible": false
-      },
-      {
-        "src": "/images/photos/album_10/01.jpg",
-        "thumb": "/images/photos/album_10/thumbnails/01.jpg",
-        "title": "<span>Beautiful <span>Back & White</span></span> for Lovers",
-        "description": "Location: Ho Chi Minh, Viet Nam",
-        "alignment": "top",
-        "link": "/albums/beautiful-back-white-for-lovers",
-        "visible": false
-      }
-    ]
-  },
-  {
     "pageUrl": "/albums",
     "metaData": {
       "title": "All Albums - Lenggiauit Photographer",
@@ -200,28 +82,112 @@
       }
     ]
   },
+
   {
-    "pageUrl": "/concepts",
+    "pageUrl": "color-of-autumn",
     "metaData": {
-      "title": "All concepts - Lenggiauit Photographer",
-      "description": "All concepts - Lenggiauit Photographer"
+      "title": "Color Of Autumn Album - Lenggiauit Photographer",
+      "description": "Color Of Autumn Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
-    "concepts": [
+    "prevPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
+    "nextPage": {
+      "title": "Retro - HongKong 90's",
+      "link": "/albums/retro-hongkong-90s"
+    },
+    "photos": [
       {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "title": "Spring Girl",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-        "location": "Woodbine beach, Toronto, Ontario, Canada",
-        "link": "/concepts/spring-girl",
-        "status": "Published"
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "description": "Color Of Autumn",
+        "filter": "new"
       },
       {
-        "src": "/images/photos/album_05/LNG_6321.jpg",
-        "title": "Countryside Girl",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-        "location": "Woodbine beach, Toronto, Ontario, Canada",
-        "link": "/concepts/countryside-girl",
-        "status": "Upcoming"
+        "src": "/images/photos/album_06/LNG_7977.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_7942.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8009.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8049.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8052.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8087.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8111.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8119.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8165.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8217.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8220.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8235.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8239.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8255.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8262.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8275.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8279.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
       }
     ]
   },
@@ -231,6 +197,10 @@
       "title": "Retro - HongKong 90's Album - Lenggiauit Photographer",
       "description": "Retro - HongKong 90's Album",
       "location": "Chinatown Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Color Of Autumn",
+      "link": "/albums/color-of-autumn"
     },
     "nextPage": {
       "title": "Play With Paper Boats",
@@ -731,8 +701,8 @@
       "link": "/albums/a-view-in-toronto-isLand"
     },
     "nextPage": {
-      "title": "Color Of Autumn",
-      "link": "/albums/color-of-autumn"
+      "title": "Beautiful Nature for Lovers",
+      "link": "/albums/beautiful-nature-for-lovers"
     },
     "photos": [
       {
@@ -792,114 +762,7 @@
       }
     ]
   },
-  {
-    "pageUrl": "color-of-autumn",
-    "metaData": {
-      "title": "Color Of Autumn Album - Lenggiauit Photographer",
-      "description": "Color Of Autumn Album",
-      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
-    },
-    "prevPage": {
-      "title": "Fashion Girl",
-      "link": "/albums/fashion-girl"
-    },
-    "nextPage": {
-      "title": "Beautiful Nature for Lovers",
-      "link": "/albums/beautiful-nature-for-lovers"
-    },
-    "photos": [
-      {
-        "src": "/images/photos/album_06/LNG_7879.jpg",
-        "description": "Color Of Autumn",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_7977.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_7942.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8009.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8049.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8052.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8087.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8111.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8119.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8165.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8217.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8220.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8235.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8239.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8255.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8262.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8275.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_06/LNG_8279.jpg",
-        "description": "Color Of Autumn",
-        "filter": "most-recent"
-      }
-    ]
-  },
+
   {
     "pageUrl": "beautiful-nature-for-lovers",
     "metaData": {
@@ -908,8 +771,8 @@
       "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
     },
     "prevPage": {
-      "title": "Color Of Autumn",
-      "link": "/albums/color-of-autumn"
+      "title": "Fashion Girl",
+      "link": "/albums/fashion-girl"
     },
     "nextPage": {
       "title": "Spring Girl",
@@ -1240,6 +1103,10 @@
       "title": "Most Wanted It Girl Look",
       "link": "/albums/most-wanted-it-girl-look"
     },
+    "nextPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
     "photos": [
       {
         "src": "/images/photos/album_10/01.jpg",
@@ -1280,114 +1147,6 @@
         "src": "/images/photos/album_10/08.jpg",
         "description": "Beautiful Back & White for Lovers",
         "filter": "popular"
-      }
-    ]
-  },
-  {
-    "pageUrl": "concepts/spring-girl",
-    "metaData": {
-      "title": "Spring Girl Concept - Lenggiauit Photographer",
-      "description": "Spring Girl Concept"
-    },
-    "prevPage": {
-      "title": "Beautiful Nature for Lovers",
-      "link": "/concepts/beautiful-nature-for-lovers"
-    },
-    "nextPage": {
-      "title": "Most Wanted It Girl Look",
-      "link": "/concepts/most-wanted-it-girl-look"
-    },
-    "pageheader": {
-      "title": "Spring Girl Concept",
-      "src": "/images/photos/album_08/LNG_6477.jpg",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      "createddDate": "DEC 08 2023"
-    },
-    "photos": [
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6628.jpg",
-        "description": "Spring Girl",
-        "filter": "most-recent"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6620.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6441.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6462.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6463.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6482.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6487.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6494.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6501.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6504.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6506.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6515.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6541.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6581.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6611.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
       }
     ]
   }

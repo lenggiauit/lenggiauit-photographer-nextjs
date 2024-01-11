@@ -60,6 +60,9 @@ export default function Navigation(props) {
               <li className={pathname == '/albums' ? 'bt-active' : ''}>
                 <a href='/albums'>Albums</a>
               </li>
+              <li className={pathname == '/concepts' ? 'bt-active' : ''}>
+                <a href='/concepts'>Concepts</a>
+              </li>
               <li className={pathname == '/bookaphotoshoot' ? 'bt-active' : ''}>
                 <a href='/bookaphotoshoot'>Book a photoshoot</a>
               </li>

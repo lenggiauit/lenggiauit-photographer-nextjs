@@ -2,9 +2,10 @@ import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import Chatbot from '@/components/chatbot'
 import PhotoList from '@/components/photoList'
+import BtnBooking from '@/components/btnBooking'
 
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
+let appData = require('/data/albums.json')
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const pageData = appData.find((x) => x.pageUrl == params.url)
@@ -37,8 +38,9 @@ const AlbumDetail = ({ params }) => {
             <h1 className='heading text-center'>
               {pageData.metaData.description}
             </h1>
+            <BtnBooking />
             <p className='text-center'>{pageData.metaData.location} </p>
-            <ul id='js-filters-agency' className='cbp-l-filters-text'>
+            {/* <ul id='js-filters-agency' className='cbp-l-filters-text'>
               <li
                 data-filter='*'
                 className='cbp-filter-item-active cbp-filter-item pe-auto'
@@ -57,7 +59,7 @@ const AlbumDetail = ({ params }) => {
               <li data-filter='.popular' className='cbp-filter-item pe-auto'>
                 Popular<div className='cbp-filter-counter'></div>
               </li>
-            </ul>
+            </ul> */}
 
             <PhotoList photos={pageData.photos} />
           </div>
@@ -69,11 +71,11 @@ const AlbumDetail = ({ params }) => {
               {pageData.prevPage != undefined && (
                 <li>
                   <h3>
-                    <a href={appSetting.baseUrl + pageData.prevPage.link}>
+                    <a href={pageData.prevPage.link}>
                       {pageData.prevPage.title}
                     </a>
                   </h3>
-                  <a href={appSetting.baseUrl + pageData.prevPage.link}>
+                  <a href={pageData.prevPage.link}>
                     <i className='icon-arrow-left22'></i>
                     <span>Previous album</span>
                   </a>
@@ -83,12 +85,12 @@ const AlbumDetail = ({ params }) => {
               {pageData.nextPage != undefined && (
                 <li>
                   <h3>
-                    <a href={appSetting.baseUrl + pageData.nextPage.link}>
+                    <a href={pageData.nextPage.link}>
                       {pageData.nextPage.title}
                     </a>
                   </h3>
-                  <a href={appSetting.baseUrl + pageData.nextPage.link}>
-                    <span>next Album</span>
+                  <a href={pageData.nextPage.link}>
+                    <span>Next Album</span>
                     <i className='icon-arrow-right22'></i>
                   </a>
                 </li>

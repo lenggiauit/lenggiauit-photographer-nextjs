@@ -1,0 +1,134 @@
+[
+  {
+    "pageUrl": "/concepts",
+    "metaData": {
+      "title": "Concepts - Lenggiauit Photographer",
+      "description": "Ecstatic to collaborate with photographers and models! Excited about merging creative visions and crafting unique stories together. Let's capture magic through our collective artistry!"
+    },
+    "pageheader": {
+      "title": "Concepts",
+      "description": "Ecstatic to collaborate with photographers and models! Excited about merging creative visions and crafting unique stories together. Let's capture magic through our collective artistry!"
+    },
+    "concepts": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "title": "Spring Girl",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/concepts/spring-girl",
+        "status": "Published"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "title": "Retro Hongkong 90s",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Chinatown Toronto, Ontario, Canada",
+        "link": "/concepts/retro-hongkong-90s",
+        "status": "Upcoming"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/spring-girl",
+    "metaData": {
+      "title": "Spring Girl Concept - Lenggiauit Photographer",
+      "description": "Spring Girl Concept"
+    },
+    "openForRegister": {
+      "photographer": true,
+      "model": true,
+      "makeup": true
+    },
+    "prevPage": {
+      "title": "Concepts List",
+      "link": "/concepts/"
+    },
+    "nextPage": {
+      "title": "Retro Hongkong 90s",
+      "link": "/concepts/retro-hongkong-90s"
+    },
+    "pageheader": {
+      "title": "Spring Girl Concept",
+      "src": "/images/photos/album_08/LNG_6477.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+      "createddDate": "DEC 08 2023"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
+        "filter": "most-recent"
+      },
+
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/retro-hongkong-90s",
+    "metaData": {
+      "title": "Retro Hongkong 90s Concept - Lenggiauit Photographer",
+      "description": "Retro Hongkong 90s Concept "
+    },
+    "openForRegister": {
+      "photographer": true,
+      "model": true,
+      "makeup": true
+    },
+    "nextPage": {
+      "title": "Concepts List",
+      "link": "/concepts/"
+    },
+    "prevPage": {
+      "title": "Spring Girl",
+      "link": "/concepts/spring-girl"
+    },
+    "pageheader": {
+      "title": "Retro Hongkong 90s Concept ",
+      "src": "/album_12/LNG_7271.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+      "createddDate": "DEC 08 2023"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+
+      {
+        "src": "/images/photos/album_12/LNG_7201.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7216.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7415.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      }
+    ]
+  }
+]

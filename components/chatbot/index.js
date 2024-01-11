@@ -178,7 +178,7 @@ export default function Chatbot(props) {
           <i className='bi bi-x-lg close'></i>
         </label>
 
-        <div className='chatbot-wrapper'>
+        <div className='chatbot-wrapper shadow-sm'>
           <div className='chatbot-header'>
             <h6>Chat</h6>
           </div>

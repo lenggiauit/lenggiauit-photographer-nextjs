@@ -3,7 +3,7 @@ import Navigation from '@/components/navigation'
 import Booking from '@/components/booking'
 import Chatbot from '@/components/chatbot'
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
+let appData = require('/data/pages.json')
 
 export async function generateMetadata({ params, searchParams }, parent) {
   return {

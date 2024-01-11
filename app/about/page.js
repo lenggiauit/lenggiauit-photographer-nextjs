@@ -2,7 +2,7 @@ import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
 import Chatbot from '@/components/chatbot'
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
+let appData = require('/data/pages.json')
 const pageData = appData.find((x) => x.pageUrl == '/about')
 
 export async function generateMetadata({ params, searchParams }, parent) {

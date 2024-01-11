@@ -1,0 +1,127 @@
+[
+  {
+    "pageUrl": "/",
+    "metaData": {
+      "title": "Lenggiauit - Photographer Portfolio",
+      "description": "Lenggiauit - Photographer Portfolio"
+    },
+    "sliderData": [
+      {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
+        "title": "<span><span>Color of Autumn</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/color-of-autumn",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
+        "title": "<span><span>Hong Kong 90's</span> Retro</span>",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/retro-hongkong-90s",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "thumb": "/images/photos/album_11/thumbnails/LNG_7133.jpg",
+        "title": "<span>Play with<span> Paper Boats</span></span>",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/play-with-paper-boats",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
+        "title": "<span><span>Spring Girl</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/spring-girl",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_09/_lng815.jpg",
+        "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
+        "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/most-wanted-it-girl-look",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5889.jpg",
+        "thumb": "/images/photos/album_01/thumbnails/LNG_5889.jpg",
+        "title": "<span><span>Raining day</span></span>",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/raining-day",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6247.jpg",
+        "thumb": "/images/photos/album_02/thumbnails/LNG_6247.jpg",
+        "title": "<span>Celebrate <span>Graduation</span></span>Photography",
+        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/celebrate-graduation-photography",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5759.jpg",
+        "thumb": "/images/photos/album_03/thumbnails/LNG_5759.jpg",
+        "title": "<span>High Park - <span>Cherry Blossom</span></span>",
+        "description": "Location: High Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/high-park-cherry-blossom",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6005.jpg",
+        "thumb": "/images/photos/album_04/thumbnails/LNG_6005.jpg",
+        "title": "<span>A view in <span> Toronto IsLand</span></span>",
+        "description": "Location: Toronto IsLand, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/a-view-in-toronto-isLand",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "thumb": "/images/photos/album_05/thumbnails/LNG_6321.jpg",
+        "title": "<span><span>Fashion Girl</span></span>",
+        "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/fashion-girl",
+        "visible": true
+      },
+
+      {
+        "src": "/images/photos/album_07/_LNG5419.jpg",
+        "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
+        "title": "<span>Beautiful <span>Nature</span></span>for Lovers",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/beautiful-nature-for-lovers",
+        "visible": false
+      },
+      {
+        "src": "/images/photos/album_10/01.jpg",
+        "thumb": "/images/photos/album_10/thumbnails/01.jpg",
+        "title": "<span>Beautiful <span>Back & White</span></span> for Lovers",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/beautiful-back-white-for-lovers",
+        "visible": false
+      }
+    ]
+  },
+  {
+    "pageUrl": "/about",
+    "metaData": {
+      "title": "Giau Le - Full-Stack Developer & Photographer",
+      "description": "I’m a professional photographer. With a love for travel and exploration, I connect with people and share stories. My passion for discovery, both in new places and cuisines, brings me endless joy. Through my lens, I create captivating images that transport viewers to ethereal realms, capturing cherished moments with a touch of enchantment."
+    }
+  }
+]

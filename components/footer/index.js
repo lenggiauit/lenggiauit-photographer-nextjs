@@ -93,10 +93,13 @@ function Footer() {
                       <a href='/albums'>Albums</a>
                     </li>
                     <li>
-                      <a href='/about'>About</a>
+                      <a href='/concepts'>Concepts</a>
                     </li>
                     <li>
                       <a href='/bookaphotoshoot'>Book a photoshoot</a>
+                    </li>
+                    <li>
+                      <a href='/about'>About</a>
                     </li>
                   </ul>
                 </nav>

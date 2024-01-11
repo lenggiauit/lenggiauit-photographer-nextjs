@@ -2,6 +2,35 @@
 			Theme Reset Style
 ============================================= */
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900); */
+
+:root {
+  --theme-color: #0dc0c0;
+  --smoke-color: #f3f3f3;
+  --smoke-color2: #f6f6f7;
+  --smoke-color3: #f5f5f6;
+  --smoke-color4: #f4f4f4;
+  --smoke-color5: #f0f2f4;
+  --black-color: #202020;
+  --gray-color: #303030;
+  --white-color: #ffffff;
+  --light-color: #9fa2ad;
+  --yellow-color: #ffb539;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #e3e3e3;
+  --title-font: 'Kanit', sans-serif;
+  --body-font: 'Kumbh Sans', sans-serif;
+  --icon-font: 'Font Awesome 6 Pro';
+  --main-container: 1220px;
+  --container-gutters: 24px;
+  --section-space: 80px;
+  --section-space-mobile: 60px;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
+
+  --theme-color-rgb: rgba(13, 192, 192);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -2965,17 +2994,36 @@ body.bt-homevseven .bt-main {
   overflow: hidden;
 }
 .bt-post {
-  width: 25%;
-  margin: 0 -2px;
+  width: 50%;
+  /* margin: 0 -2px; */
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 0 50px 120px;
+  padding: 0 20px 20px;
+  min-height: 390px;
+  min-width: 435px;
+
+  /* background: var(--smoke-color2);
+  border: 1px solid var(--smoke-color2);
+  display: block;
+  border-radius: 15px;
+  padding: 0px;
+  transition: 0.4s; */
 }
+
+.bt-post:hover figure,
+.bt-post:hover .bt-postcontent {
+  background: var(--white-color);
+  border: 1px solid rgba(237, 237, 237, 0.89);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.07);
+  filter: none;
+}
+
 .bt-post figure {
+  background: var(--smoke-color2);
   margin: 0;
   width: 100%;
-  float: left;
+  filter: grayscale(0.2) brightness(1);
 }
 .bt-post figure > a {
   display: block;
@@ -2987,15 +3035,23 @@ body.bt-homevseven .bt-main {
   height: auto;
   display: block;
   position: relative;
+  border-radius: 10px 10px 0px 0px;
 }
 .bt-post .bt-postcontent {
-  padding: 30px 0 0;
+  padding: 30px 30px;
+  position: relative;
+  background: var(--smoke-color2);
+  border-radius: 0px 0px 10px 10px;
 }
 .bt-post .bt-postcontent .bt-postmatadata {
   width: 100%;
   padding: 0 0 30px;
+  list-style: none;
 }
-.bt-post .bt-postcontent .bt-postmatadata li + li {
+.bt-post .bt-postcontent .bt-postmatadata li {
+  display: inline-block;
+}
+.bt-post .bt-postcontent .bt-postmatadata li:last-child {
   float: right;
 }
 .bt-post .bt-postcontent .bt-postmatadata li span {
@@ -3020,8 +3076,9 @@ body.bt-homevseven .bt-main {
   line-height: 28px;
 }
 .bt-postcontent .bt-description {
-  padding: 0 0 20px;
+  min-height: 125px;
 }
+
 .bt-postdetail {
   width: 100%;
   padding: 120px;
@@ -3246,8 +3303,7 @@ body.bt-homevseven .bt-main {
 ==========================================================================================*/
 .bt-freephotosgallery {
   width: 100%;
-  float: left;
-  padding: 50px 0 0;
+  padding: 80px 0 0;
 }
 .bt-freephotosgallery .bt-btnboxloadmore {
   padding: 120px 0;
@@ -3593,7 +3649,6 @@ body.bt-homevseven .bt-main {
 .bt-featuredimg {
   margin: 0;
   width: 100%;
-  float: left;
   overflow: hidden;
   position: relative;
 }
@@ -3609,6 +3664,7 @@ body.bt-homevseven .bt-main {
 .bt-featuredimg .bt-postmatadata {
   font-size: 16px;
   line-height: 16px;
+  list-style: none !important;
 }
 .bt-featuredimg .bt-postmatadata li {
   float: left;
@@ -3631,8 +3687,7 @@ body.bt-homevseven .bt-main {
   position: relative;
 }
 .bt-portfolioinfo {
-  width: 100%;
-  float: left;
+  margin: 0px 1px;
   padding: 40px 0;
   border-bottom: 2px solid #000;
 }
@@ -3644,6 +3699,7 @@ body.bt-homevseven .bt-main {
   line-height: 16px;
   list-style: none;
   text-transform: capitalize;
+  padding: 0;
 }
 .bt-clientinfo li {
   float: left;
@@ -3651,7 +3707,7 @@ body.bt-homevseven .bt-main {
   list-style-type: none;
 }
 .bt-clientinfo li + li {
-  padding: 0 0 0 120px;
+  padding: 0 0 0 100px;
 }
 .bt-clientinfo li span {
   display: block;
@@ -3672,20 +3728,18 @@ body.bt-homevseven .bt-main {
   color: #868686;
 }
 .bt-portfoliotextbox {
-  width: 100%;
-  float: left;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0px 1px;
   border-bottom: 2px solid #000;
 }
 .bt-portfoliotextbox .bt-textbox {
-  width: 50%;
-  float: left;
   color: #7f7f7f;
   font-size: 16px;
   line-height: 28px;
   padding: 0 0 0 50px;
 }
-.bt-portfoliotextbox .bt-textbox:first-child {
+.bt-portfoliotextbox .bt-textbox {
   padding: 0 50px 0 0;
 }
 .bt-portfoliotextbox .bt-textbox h2 {
@@ -4209,6 +4263,9 @@ body.bt-homevseven .bt-main {
   .bt-togglethumbnails {
     right: 66px;
   }
+  .bt-post {
+    width: 100%;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -4220,6 +4277,9 @@ body.bt-homevseven .bt-main {
   .bt-togglethumbnails {
     right: 104px;
   }
+  .bt-post {
+    width: 100%;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1025px) {
@@ -4230,6 +4290,9 @@ body.bt-homevseven .bt-main {
   }
   .bt-togglethumbnails {
     right: 104px;
+  }
+  .bt-post {
+    width: 100%;
   }
 }
 
@@ -4433,4 +4496,65 @@ body.bt-homevseven .bt-main {
   60% {
     background-position: center;
   }
+}
+
+.bt-authorimgname {
+  overflow: hidden;
+}
+.bt-authorimgname > a {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bt-shareandlikes {
+  /* float: right; */
+  color: #868686;
+  font-size: 13px;
+  line-height: 16px;
+  list-style: none;
+  padding: 15px 15px 15px;
+  text-transform: uppercase;
+}
+.bt-shareandlikes li {
+  float: left;
+  position: relative;
+  line-height: inherit;
+  list-style-type: none;
+}
+.bt-shareandlikes li + li {
+  margin: 0 0 0 15px;
+}
+.bt-shareandlikes li a {
+  color: #fff;
+  display: block;
+}
+.bt-shareandlikes li a i {
+  margin-left: 10px;
+  color: red;
+}
+.bookaphotoshoot-container {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 98;
+  display: block;
+}
+
+.btn-bookaphotoshoot span {
+  color: #e67e22;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+.modal.show {
+  display: block !important;
+}
+.modal.hide {
+  display: none !important;
 }

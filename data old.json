@@ -1,0 +1,1404 @@
+[
+  {
+    "pageUrl": "/",
+    "metaData": {
+      "title": "Lenggiauit - Photographer Portfolio",
+      "description": "Lenggiauit - Photographer Portfolio"
+    },
+    "sliderData": [
+      {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
+        "title": "<span><span>Color of Autumn</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/color-of-autumn",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
+        "title": "<span><span>Hong Kong 90's</span> Retro</span>",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/retro-hongkong-90s",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "thumb": "/images/photos/album_11/thumbnails/LNG_7133.jpg",
+        "title": "<span>Play with<span> Paper Boats</span></span>",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/play-with-paper-boats",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "thumb": "/images/photos/album_08/thumbnails/LNG_6477.jpg",
+        "title": "<span><span>Spring Girl</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "top",
+        "link": "/albums/spring-girl",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_09/_lng815.jpg",
+        "thumb": "/images/photos/album_09/thumbnails/_lng815.jpg",
+        "title": "<span>Most-<span>Wanted</span></span>It Girl Look",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/most-wanted-it-girl-look",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5889.jpg",
+        "thumb": "/images/photos/album_01/thumbnails/LNG_5889.jpg",
+        "title": "<span><span>Raining day</span></span>",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/raining-day",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6247.jpg",
+        "thumb": "/images/photos/album_02/thumbnails/LNG_6247.jpg",
+        "title": "<span>Celebrate <span>Graduation</span></span>Photography",
+        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/celebrate-graduation-photography",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5759.jpg",
+        "thumb": "/images/photos/album_03/thumbnails/LNG_5759.jpg",
+        "title": "<span>High Park - <span>Cherry Blossom</span></span>",
+        "description": "Location: High Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/high-park-cherry-blossom",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6005.jpg",
+        "thumb": "/images/photos/album_04/thumbnails/LNG_6005.jpg",
+        "title": "<span>A view in <span> Toronto IsLand</span></span>",
+        "description": "Location: Toronto IsLand, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/a-view-in-toronto-isLand",
+        "visible": true
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "thumb": "/images/photos/album_05/thumbnails/LNG_6321.jpg",
+        "title": "<span><span>Fashion Girl</span></span>",
+        "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/fashion-girl",
+        "visible": true
+      },
+
+      {
+        "src": "/images/photos/album_07/_LNG5419.jpg",
+        "thumb": "/images/photos/album_07/thumbnails/_LNG5419.jpg",
+        "title": "<span>Beautiful <span>Nature</span></span>for Lovers",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/beautiful-nature-for-lovers",
+        "visible": false
+      },
+      {
+        "src": "/images/photos/album_10/01.jpg",
+        "thumb": "/images/photos/album_10/thumbnails/01.jpg",
+        "title": "<span>Beautiful <span>Back & White</span></span> for Lovers",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "alignment": "top",
+        "link": "/albums/beautiful-back-white-for-lovers",
+        "visible": false
+      }
+    ]
+  },
+  {
+    "pageUrl": "/albums",
+    "metaData": {
+      "title": "All Albums - Lenggiauit Photographer",
+      "description": "All Albums - Lenggiauit Photographer"
+    },
+    "albums": [
+      {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "title": "Color Of Autumn",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "link": "/albums/color-of-autumn"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "title": "Retro - HongKong 90's",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "link": "/albums/retro-hongkong-90s"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "title": "Play With Paper Boats",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "link": "/albums/play-with-paper-boats"
+      },
+
+      {
+        "src": "/images/photos/album_01/LNG_5889.jpg",
+        "title": "Raining Day",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "link": "/albums/raining-day"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6247.jpg",
+        "title": "Celebrate Graduation Photography",
+        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
+        "link": "/albums/celebrate-graduation-photography"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5759.jpg",
+        "title": "High Park - Cherry Blossom",
+        "description": "Location: High Park, Toronto, Ontario, Canada",
+        "link": "/albums/high-park-cherry-blossom"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6005.jpg",
+        "title": "A view in Toronto IsLand",
+        "description": "Location: Toronto IsLand, Toronto, Ontario, Canada",
+        "link": "/albums/a-view-in-toronto-isLand"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "title": "Fashion Girl",
+        "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/albums/fashion-girl"
+      },
+
+      {
+        "src": "/images/photos/album_07/_LNG5419.jpg",
+        "title": "Beautiful Nature for Lovers",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "link": "/albums/beautiful-nature-for-lovers"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "title": "Spring Girl",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "link": "/albums/spring-girl"
+      },
+      {
+        "src": "/images/photos/album_09/_lng815.jpg",
+        "title": "Most-Wanted It Girl Look",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "link": "/albums/most-wanted-it-girl-look"
+      },
+      {
+        "src": "/images/photos/album_10/01.jpg",
+        "title": "Beautiful Back & White for Lovers",
+        "description": "Location: Ho Chi Minh, Viet Nam",
+        "link": "/albums/beautiful-back-white-for-lovers"
+      }
+    ]
+  },
+
+  {
+    "pageUrl": "color-of-autumn",
+    "metaData": {
+      "title": "Color Of Autumn Album - Lenggiauit Photographer",
+      "description": "Color Of Autumn Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
+    "nextPage": {
+      "title": "Retro - HongKong 90's",
+      "link": "/albums/retro-hongkong-90s"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_06/LNG_7879.jpg",
+        "description": "Color Of Autumn",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_7977.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_7942.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8009.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8049.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8052.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8087.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8111.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8119.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8165.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8217.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8220.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8235.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8239.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8255.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8262.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8275.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_06/LNG_8279.jpg",
+        "description": "Color Of Autumn",
+        "filter": "most-recent"
+      }
+    ]
+  },
+  {
+    "pageUrl": "retro-hongkong-90s",
+    "metaData": {
+      "title": "Retro - HongKong 90's Album - Lenggiauit Photographer",
+      "description": "Retro - HongKong 90's Album",
+      "location": "Chinatown Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Color Of Autumn",
+      "link": "/albums/color-of-autumn"
+    },
+    "nextPage": {
+      "title": "Play With Paper Boats",
+      "link": "/albums/play-with-paper-boats"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_12/LNG_7271.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+
+      {
+        "src": "/images/photos/album_12/LNG_7201.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7216.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7261.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7325.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7332.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7328.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7392.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+
+      {
+        "src": "/images/photos/album_12/LNG_7398.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7405.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7410.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7411.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7415.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7416.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7436.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7458.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_7468.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6746.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6760.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6765.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6768.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6788.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6789.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6793.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_12/LNG_6798.jpg",
+        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "filter": "new"
+      }
+    ]
+  },
+
+  {
+    "pageUrl": "play-with-paper-boats",
+    "metaData": {
+      "title": "Play With Paper Boats Album - Lenggiauit Photographer",
+      "description": "Play With Paper Boats Album",
+      "location": "Doris McCarthy, Scarborough, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Retro - HongKong 90's",
+      "link": "/albums/retro-hongkong-90s"
+    },
+    "nextPage": {
+      "title": "Raining Day",
+      "link": "/albums/raining-day"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_11/LNG_7133.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7023.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7042.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+
+      {
+        "src": "/images/photos/album_11/LNG_7068.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7071.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7080.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7084.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7092.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7097.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7101.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7107.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7114.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7121.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7126.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7142.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7143.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7145.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_11/LNG_7146.jpg",
+        "description": "Location: Doris McCarthy, Scarborough, Ontario, Canada",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "raining-day",
+    "metaData": {
+      "title": "Raining day Album - Lenggiauit Photographer",
+      "description": "Raining day Album",
+      "location": "Scarborough Bluffs, Ontario, Canada"
+    },
+    "nextPage": {
+      "title": "Celebrate Graduation Photography",
+      "link": "/albums/celebrate-graduation-photography"
+    },
+    "prevPage": {
+      "title": "Play With Paper Boats",
+      "link": "/albums/play-with-paper-boats"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_01/LNG_5889.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5924.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5882.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5876.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5870.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5863.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_01/LNG_5846.jpg",
+        "description": "Location: Scarborough Bluffs, Ontario, Canada",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "celebrate-graduation-photography",
+    "metaData": {
+      "title": "Celebrate Graduation Photography Album - Lenggiauit Photographer",
+      "description": "Celebrate Graduation Photography Album",
+      "location": "Centennial College, Scarborough, Ontario, Canada"
+    },
+    "nextPage": {
+      "title": "High Park Cherry Blossom",
+      "link": "/albums/high-park-cherry-blossom"
+    },
+    "prevPage": {
+      "title": "Raining day",
+      "link": "/albums/raining-day"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_02/LNG_6243.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6247.jpg",
+        "description": "Centennial College",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6248.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6249.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6250.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6252.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6254.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6256.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_6260.jpg",
+        "description": "Centennial College",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "high-park-cherry-blossom",
+    "metaData": {
+      "title": "High Park Cherry Blossom Album - Lenggiauit Photographer",
+      "description": "High Park Cherry Blossom Album",
+      "location": "High Park, Toronto, Ontario, Canada"
+    },
+    "nextPage": {
+      "title": "A view in Toronto IsLand",
+      "link": "/albums/a-view-in-toronto-isLand"
+    },
+    "prevPage": {
+      "title": "Celebrate Graduation Photography",
+      "link": "/albums/celebrate-graduation-photography"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_03/LNG_5618.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5622.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5632.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5639.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5648.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5717.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5748.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5759.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5785.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_03/LNG_5809.jpg",
+        "description": "High Park Cherry Blossom",
+        "filter": "popular"
+      }
+    ]
+  },
+
+  {
+    "pageUrl": "a-view-in-toronto-isLand",
+    "metaData": {
+      "title": "A view in Toronto IsLand Album - Lenggiauit Photographer",
+      "description": "A view in Toronto IsLand Album",
+      "location": "Toronto IsLand, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "High Park Cherry Blossom",
+      "link": "/albums/high-park-cherry-blossom"
+    },
+    "nextPage": {
+      "title": "Fashion Girl",
+      "link": "/albums/fashion-girl"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_04/LNG_5552.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_5951.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_5965.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_5974.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_5979.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6005.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6006.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_04/LNG_6045.jpg",
+        "description": "A view in Toronto IsLand",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "fashion-girl",
+    "metaData": {
+      "title": "Fashion Girl Album - Lenggiauit Photographer",
+      "description": "Fashion Girl Album",
+      "location": "Woodbine beach, Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "A view in Toronto IsLand",
+      "link": "/albums/a-view-in-toronto-isLand"
+    },
+    "nextPage": {
+      "title": "Beautiful Nature for Lovers",
+      "link": "/albums/beautiful-nature-for-lovers"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_05/LNG_6281.jpg",
+        "description": "Fashion Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6282.jpg",
+        "description": "Fashion Girl",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6294.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6297.jpg",
+        "description": "Fashion Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6317.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6305.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6306.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6310.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6312.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6314.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "description": "Fashion Girl",
+        "filter": "popular"
+      }
+    ]
+  },
+
+  {
+    "pageUrl": "beautiful-nature-for-lovers",
+    "metaData": {
+      "title": "Beautiful Nature for Lovers Album - Lenggiauit Photographer",
+      "description": "Beautiful Nature for Lovers Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Fashion Girl",
+      "link": "/albums/fashion-girl"
+    },
+    "nextPage": {
+      "title": "Spring Girl",
+      "link": "/albums/spring-girl"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_07/_LNG5356.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_07/_LNG5362.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_07/_LNG5419.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/_LNG5443.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_07/_LNG5481.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_5800.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_5899.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_5904.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6019.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6022.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6027.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6278.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6279.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6288.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6371.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6378.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6388.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_07/LNG_6391.jpg",
+        "description": "Beautiful Nature for Lovers",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "spring-girl",
+    "metaData": {
+      "title": "Spring Girl Album - Lenggiauit Photographer",
+      "description": "Spring Girl Album",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada"
+    },
+    "prevPage": {
+      "title": "Beautiful Nature for Lovers",
+      "link": "/albums/beautiful-nature-for-lovers"
+    },
+    "nextPage": {
+      "title": "Most Wanted It Girl Look",
+      "link": "/albums/most-wanted-it-girl-look"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6677.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6620.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6441.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6482.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6487.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6494.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6501.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6504.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6506.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6515.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6541.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6581.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6611.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6871.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6878.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6880.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6909.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6971.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_7004.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      }
+    ]
+  },
+  {
+    "pageUrl": "most-wanted-it-girl-look",
+    "metaData": {
+      "title": "Most Wanted It Girl Look Album - Lenggiauit Photographer",
+      "description": "Most Wanted It Girl Look Album",
+      "location": "Ho Chi Minh, Viet Nam"
+    },
+    "prevPage": {
+      "title": "Spring Girl",
+      "link": "/albums/spring-girl"
+    },
+    "nextPage": {
+      "title": "Beautiful Back & White for Lovers",
+      "link": "/albums/beautiful-back-white-for-lovers"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_09/_lng815.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8001.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8024.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8031.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8036.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8055.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8077.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8135.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/_lng8145.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/02.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/03.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/05.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/06.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_09/07.jpg",
+        "description": "Most Wanted It Girl Look",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "beautiful-back-white-for-lovers",
+    "metaData": {
+      "title": "Beautiful Back & White for Lovers Album - Lenggiauit Photographer",
+      "description": "Beautiful Back & White for Lovers Album",
+      "location": "Ho Chi Minh, Viet Nam"
+    },
+    "prevPage": {
+      "title": "Most Wanted It Girl Look",
+      "link": "/albums/most-wanted-it-girl-look"
+    },
+    "nextPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_10/01.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_10/02.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_10/03.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_10/04.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_10/05.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_10/06.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_10/07.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_10/08.jpg",
+        "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "/concepts",
+    "metaData": {
+      "title": "Concepts - Lenggiauit Photographer",
+      "description": "Ecstatic to collaborate with photographers and models! Excited about merging creative visions and crafting unique stories together. Let's capture magic through our collective artistry!"
+    },
+    "concepts": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "title": "Spring Girl",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/concepts/spring-girl",
+        "status": "Published"
+      },
+      {
+        "src": "/images/photos/album_05/LNG_6321.jpg",
+        "title": "Countryside Girl",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "location": "Woodbine beach, Toronto, Ontario, Canada",
+        "link": "/concepts/countryside-girl",
+        "status": "Upcoming"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/spring-girl",
+    "metaData": {
+      "title": "Spring Girl Concept - Lenggiauit Photographer",
+      "description": "Spring Girl Concept"
+    },
+    "openForRegister": {
+      "photographer": true,
+      "model": true,
+      "makeup": true
+    },
+    "prevPage": {
+      "title": "Concepts List",
+      "link": "/concepts/"
+    },
+    "nextPage": {
+      "title": "Countryside Girl",
+      "link": "/concepts/countryside-girl"
+    },
+    "pageheader": {
+      "title": "Spring Girl Concept",
+      "src": "/images/photos/album_08/LNG_6477.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+      "createddDate": "DEC 08 2023"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
+        "filter": "most-recent"
+      },
+
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/countryside-girl",
+    "metaData": {
+      "title": "Countryside Girl Concept - Lenggiauit Photographer",
+      "description": "Countryside Girl Concept"
+    },
+    "openForRegister": {
+      "photographer": true,
+      "model": true,
+      "makeup": true
+    },
+    "nextPage": {
+      "title": "Concepts List",
+      "link": "/concepts/"
+    },
+    "prevPage": {
+      "title": "Spring Girl",
+      "link": "/concepts/spring-girl"
+    },
+    "pageheader": {
+      "title": "Countryside Girl Concept",
+      "src": "/album_12/LNG_7271.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
+      "createddDate": "DEC 08 2023"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6628.jpg",
+        "description": "Spring Girl",
+        "filter": "most-recent"
+      },
+
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6463.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
+        "filter": "new"
+      }
+    ]
+  }
+]

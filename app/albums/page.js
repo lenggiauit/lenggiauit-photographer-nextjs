@@ -5,7 +5,7 @@ import Footer from '@/components/footer'
 import Chatbot from '@/components/chatbot'
 
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
+let appData = require('/data/albums.json')
 var albumsData = appData.find((x) => x.pageUrl == '/albums')
 
 export async function generateMetadata({ params, searchParams }, parent) {

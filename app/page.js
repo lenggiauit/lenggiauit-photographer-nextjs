@@ -1,7 +1,7 @@
 import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
 import Chatbot from '@/components/chatbot'
-let appData = require('/data.json')
+let appData = require('/data/pages.json')
 let appSetting = require('/appSetting.json')
 
 var homeData = appData.find((x) => x.pageUrl == '/')
