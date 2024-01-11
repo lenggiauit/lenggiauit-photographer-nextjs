@@ -5,7 +5,6 @@ import Footer from '@/components/footer'
 import Head from 'next/head'
 
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
 
 export async function generateMetadata({ params, searchParams }, parent) {
   return {

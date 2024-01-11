@@ -7,7 +7,6 @@ import { signInWithPopup, signInWithRedirect, signOut } from 'firebase/auth'
 import { useEffect, useState } from 'react'
 
 let appSetting = require('/appSetting.json')
-let appData = require('/data.json')
 
 export default function Admin() {
   const [user, setUser] = useState(null)
