@@ -34,7 +34,7 @@
       "title": "Spring Girl Concept - Lenggiauit Photographer",
       "description": "Spring Girl Concept"
     },
-    "openForRegister": {
+    "openForJoin": {
       "photographer": true,
       "model": true,
       "makeup": true
@@ -51,7 +51,11 @@
       "title": "Spring Girl Concept",
       "src": "/images/photos/album_08/LNG_6477.jpg",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      "createddDate": "DEC 08 2023"
+      "location": "Chinatown Toronto, Ontario, Canada",
+      "createddDate": "DEC 08 2023",
+      "shootingDateTime": "10AM - DEC 08 2023",
+      "shootingType": "TFP",
+      "status": "Upcoming"
     },
     "photos": [
       {
@@ -88,7 +92,7 @@
       "title": "Retro Hongkong 90s Concept - Lenggiauit Photographer",
       "description": "Retro Hongkong 90s Concept "
     },
-    "openForRegister": {
+    "openForJoin": {
       "photographer": true,
       "model": true,
       "makeup": true
@@ -102,10 +106,14 @@
       "link": "/concepts/spring-girl"
     },
     "pageheader": {
-      "title": "Retro Hongkong 90s Concept ",
+      "title": "Retro Hongkong 90s Concept",
       "src": "/album_12/LNG_7271.jpg",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      "createddDate": "DEC 08 2023"
+      "createddDate": "DEC 08 2023",
+      "shootingDateTime": "10AM - DEC 08 2023",
+      "location": "Chinatown Toronto, Ontario, Canada",
+      "shootingType": "TFP",
+      "status": "Upcoming"
     },
     "photos": [
       {

@@ -5,29 +5,95 @@ import PageLoader from '@/components/pageLoader'
 import Image from 'next/image'
 import BtnBooking from '@/components/btnBooking'
 import PhotoList from '@/components/photoList'
-import Button from '@mui/material/Button'
-import Modal from '@mui/material/Dialog'
-import Box from '@mui/material/Box'
-import DialogActions from '@mui/material/DialogActions'
-import DialogContent from '@mui/material/DialogContent'
-import DialogTitle from '@mui/material/DialogTitle'
-import MenuItem from '@mui/material/MenuItem'
-import Select from '@mui/material/Select'
-
+import * as Yup from 'yup'
+import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik'
+import dateFormat from 'dateformat'
 let appSetting = require('/appSetting.json')
 let appData = require('/data/concepts.json')
 
+import { getDatabase, ref, set } from 'firebase/database'
+import { db } from '@/app/firebase'
+
 const ConceptDetail = (props) => {
-  const [index, setIndex] = useState(-1)
   const [isLoading, setIsLoading] = useState(true)
   const [openModal, setOpenModal] = useState(false)
-  const [registerType, setRegisterType] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const handleClose = () => setOpenModal(false)
   useEffect(() => {
     setIsLoading(false)
   }, [])
 
-  const handleRegister = (e) => {}
+  const getRegisterList = async (url) => {
+    const query = ref(db, 'joinConcepts')
+    onValue(query, (snapshot) => {
+      const data = snapshot.val()
+      if (snapshot.exists()) {
+        // setBookingList(Object.values(data))
+      }
+    })
+  }
+
+  const handleJoin = (e) => {}
+
+  const JoinAs = {
+    Photographer: 'Photographer',
+    Model: 'Model',
+    Makeup: 'Makeup',
+  }
+
+  let initialValues = {
+    joinAs: JoinAs.Photographer,
+    concept: '',
+    fullName: '',
+    email: '',
+    socailLink: '',
+  }
+
+  const [joinInfo, setJoinInfo] = useState({
+    joinAs: JoinAs.Photographer,
+    fullName: '',
+    email: '',
+    socailLink: '',
+  })
+
+  const socialRegExp = /^.*((facebook\.com)|(instagram\.com)).*$/gi
+
+  const validationSchema = () => {
+    return Yup.object().shape({
+      fullName: Yup.string().required('This is requred field').max(100),
+      email: Yup.string().email().required('This is requred field').max(150),
+      socailLink: Yup.string()
+        .matches(socialRegExp, 'Facebook or Instgram link is not valid')
+        .required('This is requred field'),
+    })
+  }
+
+  const handleOnSubmitInputInfor = (values, actions) => {
+    setIsSubmitting(true)
+    const today = new Date()
+    var id = v4()
+    set(ref(db, 'joinConcepts/' + id), {
+      id: id,
+      joinAs: values.joinAs,
+      concept: props.data.pageheader.title,
+      conceptUrl: props.data.pageUrl,
+      fullName: values.fullName,
+      email: values.email,
+      socailLink: values.socailLink,
+      submittedDate: dateFormat(today, 'mm/dd/yyyy'),
+    })
+      .then(() => {
+        setIsSubmitting(false)
+        setOpenModal(false)
+        alert(
+          `Register successfully!. Please come to location:${props.data.pageheader.location} at ${props.data.pageheader.shootingDateTime}. Thank you`
+        )
+      })
+      .catch(() => {
+        setIsSubmitting(false)
+        alert('Error! Please try again. Thank you')
+      })
+  }
 
   return (
     <>
@@ -47,12 +113,12 @@ const ConceptDetail = (props) => {
                       {props.data.pageheader.description}
                     </p>
                   </div>
-                  {(props.data.openForRegister.photographer ||
-                    props.data.openForRegister.model ||
-                    props.data.openForRegister.makeup) && (
+                  {(props.data.openForJoin.photographer ||
+                    props.data.openForJoin.model ||
+                    props.data.openForJoin.makeup) && (
                     <>
                       <div className='row bt-portfolioinfo1 justify-content-center'>
-                        {props.data.openForRegister.photographer && (
+                        {props.data.openForJoin.photographer && (
                           <>
                             <div className='col-md-4 text-center mt-2'>
                               <p>If you want to take photos</p>
@@ -60,16 +126,20 @@ const ConceptDetail = (props) => {
                                 className='bt-btn bt-btnblack'
                                 href='#'
                                 onClick={() => {
-                                  setRegisterType('Photographer')
+                                  setJoinInfo((prevState) => ({
+                                    ...prevState,
+                                    joinAs: JoinAs.Photographer,
+                                  }))
+
                                   setOpenModal(true)
                                 }}
                               >
-                                <span>Register as a photographer</span>
+                                <span>Join as a photographer</span>
                               </a>
                             </div>
                           </>
                         )}
-                        {props.data.openForRegister.model && (
+                        {props.data.openForJoin.model && (
                           <>
                             <div className='col-md-4 text-center mt-2'>
                               <p>If you want to have more beautiful pictures</p>
@@ -77,16 +147,19 @@ const ConceptDetail = (props) => {
                                 className='bt-btn bt-btnblack'
                                 href='#'
                                 onClick={() => {
-                                  setRegisterType('Model')
+                                  setJoinInfo((prevState) => ({
+                                    ...prevState,
+                                    joinAs: JoinAs.Model,
+                                  }))
                                   setOpenModal(true)
                                 }}
                               >
-                                <span>Register as a model</span>
+                                <span>Join as a model</span>
                               </a>
                             </div>
                           </>
                         )}
-                        {props.data.openForRegister.makeup && (
+                        {props.data.openForJoin.makeup && (
                           <>
                             <div className='col-md-4 text-center mt-2'>
                               <p> If you want to practice makeup</p>
@@ -94,11 +167,14 @@ const ConceptDetail = (props) => {
                                 className='bt-btn bt-btnblack'
                                 href='#'
                                 onClick={() => {
-                                  setRegisterType('Makeup')
+                                  setJoinInfo((prevState) => ({
+                                    ...prevState,
+                                    joinAs: JoinAs.Makeup,
+                                  }))
                                   setOpenModal(true)
                                 }}
                               >
-                                <span>Register as a makeup</span>
+                                <span>Join as a makeup</span>
                               </a>
                             </div>
                           </>
@@ -107,37 +183,37 @@ const ConceptDetail = (props) => {
                     </>
                   )}
                   <div className='row bt-portfolioinfo'>
-                    <div className='col-md-3'>
+                    <div className='col-md-2'>
                       <span>Shooting Date</span>
                       <br />
-                      <strong>Dec-12-2023</strong>
+                      <strong>{props.data.pageheader.shootingDateTime}</strong>
                     </div>
-                    <div className='col-md-3'>
+                    <div className='col-md-2'>
                       <span>Shoot type</span>
                       <br />
-                      <strong>TFP</strong>
+                      <strong>{props.data.pageheader.shootingType}</strong>
                     </div>
-                    <div className='col-md-3'>
+                    <div className='col-md-5'>
                       <span>Location</span>
                       <br />
-                      <strong>Chinatown</strong>
+                      <strong>{props.data.pageheader.location}</strong>
                     </div>
                     <div className='col-md-3'>
                       <span>Status</span>
                       <br />
-                      <strong>Up comming</strong>
+                      <strong>{props.data.pageheader.status}</strong>
                     </div>
                   </div>
                   <div className='row bt-portfolioinfo'>
                     <div className='col-md-4'>
                       <span>Photographers</span>
                       <br />
-                      <strong>lenggiauit</strong>
+                      <strong>...</strong>
                     </div>
                     <div className='col-md-4'>
                       <span>Models</span>
                       <br />
-                      <strong>Chi Van</strong>
+                      <strong>...</strong>
                     </div>
                     <div className='col-md-4'>
                       <span>Stylist / Makeup</span>
@@ -188,13 +264,13 @@ const ConceptDetail = (props) => {
           </main>
         </>
       )}
-
+      {isSubmitting && <PageLoader />}
       <div className={`modal fade ${openModal ? 'show' : 'hide'}`}>
         <div className='modal-dialog modal-dialog-centered'>
           <div className='modal-content'>
             <div className='modal-header'>
               <h5 className='modal-title'>
-                You are registering as a {registerType}
+                You are joining as a {joinInfo.joinAs}
               </h5>
               <button
                 type='button'
@@ -205,53 +281,83 @@ const ConceptDetail = (props) => {
               ></button>
             </div>
             <div className='modal-body'>
-              <form>
-                <div className='form-group'>
-                  <label className='small'>Full name</label>
-                  <input
-                    type='text'
-                    className='form-control'
-                    aria-describedby='emailHelp'
-                    placeholder='Enter your full name'
-                  />
-                </div>
-                <div className='form-group'>
-                  <label className='small'>Email address</label>
-                  <input
-                    type='email'
-                    className='form-control'
-                    aria-describedby='emailHelp'
-                    placeholder='Enter email'
-                  />
-                </div>
-                <div className='form-group'>
-                  <label className='small'>Instagram | Facebook</label>
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Instagram'
-                  />
-                </div>
+              <Formik
+                initialValues={initialValues}
+                onSubmit={handleOnSubmitInputInfor}
+                validationSchema={validationSchema}
+                validateOnChange={false}
+              >
+                {({ values, errors, touched, setFieldValue }) => (
+                  <Form autoComplete='off'>
+                    <div className='form-group'>
+                      <label className='small'>Full name</label>
+                      <Field
+                        type='text'
+                        className='form-control'
+                        name='fullName'
+                        max={150}
+                        placeholder='Enter your full name'
+                      />
+                      <ErrorMessage
+                        name='fullName'
+                        component='div'
+                        className='alert alert-field alert-danger'
+                      />
+                    </div>
+                    <div className='form-group'>
+                      <label className='small'>Email address</label>
 
-                <div className='form-group text-center'>
-                  <button
-                    className='bt-btn bt-btnblack'
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleClose}
-                  >
-                    &nbsp; &nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;
-                  </button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;
-                  <button
-                    className='bt-btn bt-btnblack'
-                    style={{ cursor: 'pointer' }}
-                    onClick={handleRegister}
-                    type='submit'
-                  >
-                    &nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;
-                  </button>
-                </div>
-              </form>
+                      <Field
+                        type='email'
+                        className='form-control'
+                        name='email'
+                        max={250}
+                        placeholder='Enter your email'
+                      />
+                      <ErrorMessage
+                        name='email'
+                        component='div'
+                        className='alert alert-field alert-danger'
+                      />
+                    </div>
+                    <div className='form-group'>
+                      <label className='small'>Instagram | Facebook</label>
+
+                      <Field
+                        type='text'
+                        className='form-control'
+                        name='socailLink'
+                        max={250}
+                        placeholder='Enter your Instagram | Facebook link'
+                      />
+                      <ErrorMessage
+                        name='socailLink'
+                        component='div'
+                        className='alert alert-field alert-danger'
+                      />
+                    </div>
+
+                    <div className='form-group text-center'>
+                      <button
+                        className='bt-btn bt-btnblack'
+                        style={{ cursor: 'pointer' }}
+                        onClick={handleClose}
+                      >
+                        &nbsp; &nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;
+                      </button>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <button
+                        className='bt-btn bt-btnblack'
+                        style={{ cursor: 'pointer' }}
+                        onClick={handleJoin}
+                        type='submit'
+                      >
+                        &nbsp;&nbsp;&nbsp;&nbsp;Join&nbsp;&nbsp;&nbsp;&nbsp;
+                      </button>
+                    </div>
+                  </Form>
+                )}
+              </Formik>
             </div>
           </div>
         </div>
