@@ -12,7 +12,7 @@ import dateFormat from 'dateformat'
 let appSetting = require('/appSetting.json')
 let appData = require('/data/concepts.json')
 
-import { onValue, ref } from 'firebase/database'
+import { onValue, ref, set } from 'firebase/database'
 import { db } from '@/app/firebase'
 
 const ConceptDetail = (props) => {
@@ -42,8 +42,6 @@ const ConceptDetail = (props) => {
       }
     })
   }
-
-  const handleJoin = (e) => {}
 
   const JoinAs = {
     Photographer: 'Photographer',
@@ -98,9 +96,11 @@ const ConceptDetail = (props) => {
         alert(
           `Register successfully!. Please come to location:${props.data.pageheader.location} at ${props.data.pageheader.shootingDateTime}. Thank you`
         )
+        getRegisterList(props.data.pageUrl)
       })
       .catch(() => {
         setIsSubmitting(false)
+        setOpenModal(false)
         alert('Error! Please try again. Thank you')
       })
   }
@@ -193,7 +193,7 @@ const ConceptDetail = (props) => {
                     </>
                   )}
                   <div className='row bt-portfolioinfo'>
-                    <h3>Concepts Information </h3>
+                    <h3>Information </h3>
                     <div className='col-md-2'>
                       <span>Shooting Date</span>
                       <br />
@@ -216,7 +216,7 @@ const ConceptDetail = (props) => {
                     </div>
                   </div>
                   <div className='row bt-portfolioinfo'>
-                    <h3>Concepts joining list </h3>
+                    <h3>Joining list </h3>
                     <div className='col-md-4'>
                       <span>Photographers</span>
                       {RegisterList.filter(
@@ -224,7 +224,14 @@ const ConceptDetail = (props) => {
                       ).map((m) => (
                         <>
                           <br />
-                          <strong key={v4()}>{m.fullName}</strong>
+                          <strong key={v4()}>
+                            {m.fullName}
+                            <a href={m.socailLink} target='_blank'>
+                              {m.socailLink.indexOf('facebook') != -1
+                                ? ' @facebook'
+                                : ' @instagram'}
+                            </a>
+                          </strong>
                         </>
                       ))}
                     </div>
@@ -234,7 +241,14 @@ const ConceptDetail = (props) => {
                         (m) => (
                           <>
                             <br />
-                            <strong key={v4()}>{m.fullName}</strong>
+                            <strong key={v4()}>
+                              {m.fullName}
+                              <a href={m.socailLink} target='_blank'>
+                                {m.socailLink.indexOf('facebook') != -1
+                                  ? ' @facebook'
+                                  : ' @instagram'}
+                              </a>
+                            </strong>
                           </>
                         )
                       )}
@@ -246,7 +260,14 @@ const ConceptDetail = (props) => {
                       ).map((m) => (
                         <>
                           <br />
-                          <strong key={v4()}>{m.fullName}</strong>
+                          <strong key={v4()}>
+                            {m.fullName}
+                            <a href={m.socailLink} target='_blank'>
+                              {m.socailLink.indexOf('facebook') != -1
+                                ? ' @facebook'
+                                : ' @instagram'}
+                            </a>
+                          </strong>
                         </>
                       ))}
                     </div>
@@ -369,6 +390,7 @@ const ConceptDetail = (props) => {
 
                     <div className='form-group text-center'>
                       <button
+                        type='button'
                         className='bt-btn bt-btnblack'
                         style={{ cursor: 'pointer' }}
                         onClick={handleClose}
@@ -379,7 +401,6 @@ const ConceptDetail = (props) => {
                       <button
                         className='bt-btn bt-btnblack'
                         style={{ cursor: 'pointer' }}
-                        onClick={handleJoin}
                         type='submit'
                       >
                         &nbsp;&nbsp;&nbsp;&nbsp;Join&nbsp;&nbsp;&nbsp;&nbsp;
