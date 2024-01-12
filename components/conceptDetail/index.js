@@ -8,27 +8,37 @@ import PhotoList from '@/components/photoList'
 import * as Yup from 'yup'
 import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik'
 import dateFormat from 'dateformat'
+
 let appSetting = require('/appSetting.json')
 let appData = require('/data/concepts.json')
 
-import { getDatabase, ref, set } from 'firebase/database'
+import { onValue, ref } from 'firebase/database'
 import { db } from '@/app/firebase'
 
 const ConceptDetail = (props) => {
   const [isLoading, setIsLoading] = useState(true)
   const [openModal, setOpenModal] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [RegisterList, setRegisterList] = useState([])
   const handleClose = () => setOpenModal(false)
   useEffect(() => {
+    getRegisterList(props.data.pageUrl)
     setIsLoading(false)
   }, [])
 
   const getRegisterList = async (url) => {
+    setRegisterList([])
     const query = ref(db, 'joinConcepts')
+    var list = []
     onValue(query, (snapshot) => {
-      const data = snapshot.val()
       if (snapshot.exists()) {
-        // setBookingList(Object.values(data))
+        snapshot.forEach((groupSnapshot) => {
+          if (groupSnapshot.child('conceptUrl').val() == url) {
+            list.push(groupSnapshot.val())
+          }
+        })
+        setRegisterList(list)
+        console.log(list)
       }
     })
   }
@@ -74,7 +84,7 @@ const ConceptDetail = (props) => {
     var id = v4()
     set(ref(db, 'joinConcepts/' + id), {
       id: id,
-      joinAs: values.joinAs,
+      joinAs: joinInfo.joinAs,
       concept: props.data.pageheader.title,
       conceptUrl: props.data.pageUrl,
       fullName: values.fullName,
@@ -183,6 +193,7 @@ const ConceptDetail = (props) => {
                     </>
                   )}
                   <div className='row bt-portfolioinfo'>
+                    <h3>Concepts Information </h3>
                     <div className='col-md-2'>
                       <span>Shooting Date</span>
                       <br />
@@ -205,20 +216,39 @@ const ConceptDetail = (props) => {
                     </div>
                   </div>
                   <div className='row bt-portfolioinfo'>
+                    <h3>Concepts joining list </h3>
                     <div className='col-md-4'>
                       <span>Photographers</span>
-                      <br />
-                      <strong>...</strong>
+                      {RegisterList.filter(
+                        (m) => m.joinAs == JoinAs.Photographer
+                      ).map((m) => (
+                        <>
+                          <br />
+                          <strong key={v4()}>{m.fullName}</strong>
+                        </>
+                      ))}
                     </div>
                     <div className='col-md-4'>
                       <span>Models</span>
-                      <br />
-                      <strong>...</strong>
+                      {RegisterList.filter((m) => m.joinAs == JoinAs.Model).map(
+                        (m) => (
+                          <>
+                            <br />
+                            <strong key={v4()}>{m.fullName}</strong>
+                          </>
+                        )
+                      )}
                     </div>
                     <div className='col-md-4'>
                       <span>Stylist / Makeup</span>
-                      <br />
-                      <strong>...</strong>
+                      {RegisterList.filter(
+                        (m) => m.joinAs == JoinAs.Makeup
+                      ).map((m) => (
+                        <>
+                          <br />
+                          <strong key={v4()}>{m.fullName}</strong>
+                        </>
+                      ))}
                     </div>
                   </div>
                   <div className='row bt-portfolioinfo '>
