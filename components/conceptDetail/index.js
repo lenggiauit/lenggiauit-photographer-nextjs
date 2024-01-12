@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { v4 } from 'uuid'
 import PageLoader from '@/components/pageLoader'
 import Image from 'next/image'
@@ -18,13 +18,19 @@ import { db } from '@/app/firebase'
 const ConceptDetail = (props) => {
   const [isLoading, setIsLoading] = useState(true)
   const [openModal, setOpenModal] = useState(false)
+  const [openModalConfirm, setOpenModalConfirm] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [RegisterList, setRegisterList] = useState([])
+
+  const formRegister = useRef()
+
   const handleClose = () => setOpenModal(false)
   useEffect(() => {
     getRegisterList(props.data.pageUrl)
     setIsLoading(false)
   }, [])
+
+  const handleCloseConfirm = () => setOpenModalConfirm(false)
 
   const getRegisterList = async (url) => {
     setRegisterList([])
@@ -93,9 +99,7 @@ const ConceptDetail = (props) => {
       .then(() => {
         setIsSubmitting(false)
         setOpenModal(false)
-        alert(
-          `Register successfully!. Please come to location:${props.data.pageheader.location} at ${props.data.pageheader.shootingDateTime}. Thank you`
-        )
+        setOpenModalConfirm(true)
         getRegisterList(props.data.pageUrl)
       })
       .catch(() => {
@@ -140,7 +144,7 @@ const ConceptDetail = (props) => {
                                     ...prevState,
                                     joinAs: JoinAs.Photographer,
                                   }))
-
+                                  formRegister.current?.resetForm()
                                   setOpenModal(true)
                                 }}
                               >
@@ -161,6 +165,7 @@ const ConceptDetail = (props) => {
                                     ...prevState,
                                     joinAs: JoinAs.Model,
                                   }))
+                                  formRegister.current?.resetForm()
                                   setOpenModal(true)
                                 }}
                               >
@@ -181,6 +186,7 @@ const ConceptDetail = (props) => {
                                     ...prevState,
                                     joinAs: JoinAs.Makeup,
                                   }))
+                                  formRegister.current?.resetForm()
                                   setOpenModal(true)
                                 }}
                               >
@@ -333,6 +339,7 @@ const ConceptDetail = (props) => {
             </div>
             <div className='modal-body'>
               <Formik
+                innerRef={formRegister}
                 initialValues={initialValues}
                 onSubmit={handleOnSubmitInputInfor}
                 validationSchema={validationSchema}
@@ -409,6 +416,43 @@ const ConceptDetail = (props) => {
                   </Form>
                 )}
               </Formik>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={`modal fade ${openModalConfirm ? 'show' : 'hide'}`}>
+        <div className='modal-dialog modal-dialog-centered'>
+          <div className='modal-content'>
+            <div className='modal-header'>
+              <h5 className='modal-title'>
+                Thank you for joining as a {joinInfo.joinAs}
+              </h5>
+              <button
+                type='button'
+                className='btn-close'
+                data-bs-dismiss='modal'
+                aria-label='Close'
+                onClick={handleCloseConfirm}
+              ></button>
+            </div>
+            <div className='modal-body'>
+              <div className='form-group text-center'>
+                Thank you for participating as a {joinInfo.joinAs}. I'll reach
+                out to you via email to confirm the details regarding the time
+                and location of the upcoming photoshoot.
+              </div>
+              <div className='form-group text-center'>
+                <button
+                  type='button'
+                  className='bt-btn bt-btnblack'
+                  style={{ cursor: 'pointer' }}
+                  onClick={handleCloseConfirm}
+                >
+                  &nbsp; &nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
             </div>
           </div>
         </div>
