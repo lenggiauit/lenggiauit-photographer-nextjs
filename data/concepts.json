@@ -11,86 +11,28 @@
     },
     "concepts": [
       {
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/1.jpg",
+        "title": "Winter Whispers: A Snow-kissed Photo Shoot",
+        "description": "Step into the enchanting world of 'Winter Whispers,' where our model graces the snow-covered landscape in a palette of icy blues and pristine whites. Adorned in luxurious winter attire, she emanates sophistication with shimmering silver makeup and elegant accessories. Our photographer skillfully captures the interplay of natural light on the snow, highlighting the Winter Girl's grace against the frosty backdrop. From daytime elegance to the magic of winter nights, this photo shoot encapsulates the quiet beauty and timeless allure of winter.",
+        "location": "Toronto, Ontario, Canada",
+        "link": "/concepts/winter-whispers-a-snow-kissed-photo-shoot",
+        "status": "Upcoming"
+      },
+      {
         "src": "/images/photos/album_08/LNG_6477.jpg",
         "title": "Spring Girl",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "description": "Step into the magic of spring with our photo shoot capturing the essence of a Spring Girl. Picture a sunlit garden filled with vibrant blossoms, where the model, adorned in soft pastels, dances among the flowers. Our skilled photographer will capture the organic beauty, with close-ups highlighting dew-kissed petals and the golden hour casting a warm, romantic glow. Floral crowns, butterflies, and flowing scarves complete the enchanting look, offering a visual celebration of the season's rebirth and the Spring Girl's timeless grace.",
         "location": "Woodbine beach, Toronto, Ontario, Canada",
         "link": "/concepts/spring-girl",
         "status": "Published"
-      },
-      {
-        "src": "/images/photos/album_12/LNG_7271.jpg",
-        "title": "Retro Hongkong 90s",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-        "location": "Chinatown Toronto, Ontario, Canada",
-        "link": "/concepts/retro-hongkong-90s",
-        "status": "Upcoming"
       }
     ]
   },
   {
-    "pageUrl": "concepts/spring-girl",
+    "pageUrl": "concepts/winter-whispers-a-snow-kissed-photo-shoot",
     "metaData": {
-      "title": "Spring Girl Concept - Lenggiauit Photographer",
-      "description": "Spring Girl Concept"
-    },
-    "openForJoin": {
-      "photographer": true,
-      "model": true,
-      "makeup": true
-    },
-    "prevPage": {
-      "title": "Concepts List",
-      "link": "/concepts/"
-    },
-    "nextPage": {
-      "title": "Retro Hongkong 90s",
-      "link": "/concepts/retro-hongkong-90s"
-    },
-    "pageheader": {
-      "title": "Spring Girl Concept",
-      "src": "/images/photos/album_08/LNG_6477.jpg",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      "location": "Chinatown Toronto, Ontario, Canada",
-      "createddDate": "DEC 08 2023",
-      "shootingDateTime": "10AM - DEC 08 2023",
-      "shootingType": "TFP",
-      "status": "Upcoming"
-    },
-    "photos": [
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6628.jpg",
-        "description": "Spring Girl",
-        "filter": "most-recent"
-      },
-
-      {
-        "src": "/images/photos/album_08/LNG_6462.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6463.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      },
-      {
-        "src": "/images/photos/album_08/LNG_6477.jpg",
-        "description": "Spring Girl",
-        "filter": "new"
-      }
-    ]
-  },
-  {
-    "pageUrl": "concepts/retro-hongkong-90s",
-    "metaData": {
-      "title": "Retro Hongkong 90s Concept - Lenggiauit Photographer",
-      "description": "Retro Hongkong 90s Concept "
+      "title": "Winter Whispers: A Snow-kissed Photo Shoot - Lenggiauit Photographer",
+      "description": "Step into the enchanting world of 'Winter Whispers,' where our model graces the snow-covered landscape in a palette of icy blues and pristine whites. Adorned in luxurious winter attire, she emanates sophistication with shimmering silver makeup and elegant accessories. Our photographer skillfully captures the interplay of natural light on the snow, highlighting the Winter Girl's grace against the frosty backdrop. From daytime elegance to the magic of winter nights, this photo shoot encapsulates the quiet beauty and timeless allure of winter."
     },
     "openForJoin": {
       "photographer": true,
@@ -106,36 +48,81 @@
       "link": "/concepts/spring-girl"
     },
     "pageheader": {
-      "title": "Retro Hongkong 90s Concept",
+      "title": "Winter Whispers: A Snow-kissed Photo Shoot",
       "src": "/album_12/LNG_7271.jpg",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here",
-      "createddDate": "DEC 08 2023",
-      "shootingDateTime": "10AM - DEC 08 2023",
-      "location": "Chinatown Toronto, Ontario, Canada",
+      "description": "Step into the enchanting world of 'Winter Whispers,' where our model graces the snow-covered landscape in a palette of icy blues and pristine whites. Adorned in luxurious winter attire, she emanates sophistication with shimmering silver makeup and elegant accessories. Our photographer skillfully captures the interplay of natural light on the snow, highlighting the Winter Girl's grace against the frosty backdrop. From daytime elegance to the magic of winter nights, this photo shoot encapsulates the quiet beauty and timeless allure of winter.",
+      "createddDate": "MAR 08 2024",
+      "shootingDateTime": "1:00 PM - MAR 08 2024",
+      "location": "Toronto, Ontario, Canada",
       "shootingType": "TFP",
       "status": "Upcoming"
     },
     "photos": [
       {
-        "src": "/images/photos/album_12/LNG_7271.jpg",
-        "description": "Location: Chinatown Toronto, Ontario, Canada",
-        "filter": "new"
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/1.jpg"
       },
 
       {
-        "src": "/images/photos/album_12/LNG_7201.jpg",
-        "description": "Location: Chinatown Toronto, Ontario, Canada",
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/2.jpg"
+      },
+      {
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/3.jpg"
+      },
+      {
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/4.jpg"
+      },
+      {
+        "src": "/images/concepts/winter-whispers-a-snow-kissed-photo-shoot/5.jpg"
+      }
+    ]
+  },
+  {
+    "pageUrl": "concepts/spring-girl",
+    "metaData": {
+      "title": "Spring Girl Concept - Lenggiauit Photographer",
+      "description": "Spring Girl Concept"
+    },
+    "openForJoin": {
+      "photographer": false,
+      "model": false,
+      "makeup": false
+    },
+    "prevPage": {
+      "title": "Concepts List",
+      "link": "/concepts/"
+    },
+    "nextPage": {
+      "title": "Winter Whispers: A Snow-kissed Photo Shoot",
+      "link": "/concepts/winter-whispers-a-snow-kissed-photo-shoot"
+    },
+    "pageheader": {
+      "title": "Spring Girl Concept",
+      "src": "/images/photos/album_08/LNG_6477.jpg",
+      "description": "Step into the magic of spring with our photo shoot capturing the essence of a Spring Girl. Picture a sunlit garden filled with vibrant blossoms, where the model, adorned in soft pastels, dances among the flowers. Our skilled photographer will capture the organic beauty, with close-ups highlighting dew-kissed petals and the golden hour casting a warm, romantic glow. Floral crowns, butterflies, and flowing scarves complete the enchanting look, offering a visual celebration of the season's rebirth and the Spring Girl's timeless grace.",
+      "location": "Rouge National Urban Park, Toronto, Ontario, Canada",
+      "createddDate": "DEC 08 2023",
+      "shootingDateTime": "10AM - DEC 08 2023",
+      "shootingType": "TFP",
+      "status": "Closed"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg",
+        "description": "Spring Girl",
         "filter": "new"
       },
       {
-        "src": "/images/photos/album_12/LNG_7216.jpg",
-        "description": "Location: Chinatown Toronto, Ontario, Canada",
-        "filter": "new"
+        "src": "/images/photos/album_08/LNG_6628.jpg"
+      },
+
+      {
+        "src": "/images/photos/album_08/LNG_6462.jpg"
       },
       {
-        "src": "/images/photos/album_12/LNG_7415.jpg",
-        "description": "Location: Chinatown Toronto, Ontario, Canada",
-        "filter": "new"
+        "src": "/images/photos/album_08/LNG_6463.jpg"
+      },
+      {
+        "src": "/images/photos/album_08/LNG_6477.jpg"
       }
     ]
   }
