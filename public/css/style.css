@@ -517,10 +517,7 @@ address {
   display: inline-block;
   vertical-align: middle;
 }
-.bt-description {
-  width: 100%;
-  float: left;
-}
+
 .bt-bglight {
   background: #f3f3f3;
 }
@@ -822,7 +819,7 @@ a.bt-btn {
   width: 100%;
   float: left;
   text-align: center;
-  padding: 60px 0 120px;
+  padding: 60px 0 60px;
 }
 .bt-navigation .bt-socialicons li {
   float: none;
@@ -2530,8 +2527,66 @@ body.bt-homevseven .bt-main {
   background: #000;
   color: #fff !important;
 }
-.bt-innerpagebannerv3 {
-  background: url(/images/bg/giaule.jpg) no-repeat left bottom;
+.bt-innerbannercontent.about {
+  position: relative;
+}
+
+.avatar-frame-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 50px;
+}
+.avatar-frame-container .avatar-image {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  margin: 10% 10%;
+}
+
+.avatar-frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  width: 130%;
+  display: block;
+  background: url('/img/avatar-frame.png') no-repeat center center;
+  background-size: 100%;
+}
+
+.anim-spin {
+  animation: spin 20s linear infinite;
+}
+.anim-spin img {
+  animation: none;
+}
+
+.anim-hue {
+  animation: hue 20s linear infinite;
+}
+
+@keyframes hue {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bt-innerbannercontent.about h1 {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
 }
 .bt-innerpagebanner {
   color: #fff;
@@ -2659,13 +2714,12 @@ body.bt-homevseven .bt-main {
 .bt-member {
   z-index: 1;
   width: 100%;
-  float: left;
   text-align: left;
   position: relative;
 }
 .bt-member:nth-child(odd) {
-  z-index: 2;
-  margin: 0 0 -70px;
+  /* z-index: 2;
+  margin: 0 0 -70px; */
 }
 .bt-member figure {
   margin: 0;
@@ -2693,7 +2747,6 @@ body.bt-homevseven .bt-main {
 }
 .bt-membername {
   width: 100%;
-  float: left;
   padding: 0 0 15px;
   margin: 0 0 15px;
   position: relative;
@@ -2714,10 +2767,8 @@ body.bt-homevseven .bt-main {
   line-height: 35px;
 }
 .bt-memberdesignation {
-  width: 100%;
-  float: left;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 19px;
   padding: 0 0 30px;
@@ -2888,12 +2939,10 @@ body.bt-homevseven .bt-main {
 }
 .bt-member.bt-memberdetail .bt-membercontent {
   width: 100%;
-  padding: 0 0 50px;
+  margin: 30px 0px;
 }
 .bt-skillsandclients {
-  width: 100%;
-  /* float: left; */
-  padding: 0 0 60px;
+  padding: 0 0 40px;
 }
 .bt-skillsandclients h3 {
   margin: 0 0 40px;
@@ -2938,19 +2987,16 @@ body.bt-homevseven .bt-main {
   background: #565656;
 }
 .bt-skills {
-  overflow: hidden;
-  padding: 0 20% 0 0;
+  width: 90%;
 }
 .bt-memberskills {
   width: 100%;
-  float: left;
 }
 .bt-memberskill {
   width: 100%;
-  float: left;
 }
-.bt-memberskill + .bt-memberskill {
-  margin: 30px 0 0;
+.bt-memberskill {
+  padding: 10px 15px;
 }
 .bt-memberskill h4 {
   margin: 0 0 10px;
@@ -4266,6 +4312,29 @@ body.bt-homevseven .bt-main {
   .bt-post {
     width: 100%;
   }
+  .bt-menu {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .bt-navigation .bt-socialicons {
+    padding: 35px 0 35px;
+  }
+  .bt-slidercontent {
+    padding: 10px;
+    bottom: 60px;
+  }
+  .bt-slidercontent h1 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 32px;
+  }
+  .bt-slidercontent .bt-description {
+    padding: 6px 0px 12px 0px;
+    font-size: 14px;
+  }
+  .tg-bannerfullwidthslidecount {
+    bottom: 30px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -4557,4 +4626,58 @@ body.bt-homevseven .bt-main {
 }
 .modal.hide {
   display: none !important;
+}
+
+.bt-socialicons-about {
+  overflow: hidden;
+  list-style: none;
+  text-align: center;
+  line-height: 30px;
+  padding: 0;
+}
+.bt-socialicons-about li {
+  float: left;
+  padding: 0px 15px 0px 0px;
+  line-height: inherit;
+  list-style-type: none;
+}
+.bt-socialicons-about li a {
+  width: 30px;
+  color: #000;
+  display: block;
+  overflow: hidden;
+}
+.bt-socialicons-about li a i {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.bt-socialicons-about li a:hover {
+  color: #b3b3b3;
+}
+.bt-contact {
+  padding-top: 20px;
+  display: block;
+}
+.about-info {
+  margin-top: 30px;
+}
+.about-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.about-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-info h5 {
+  font-size: 16px;
+}
+.about-name {
+  font-size: 30px !important;
+}
+.about-skills,
+.about-contact {
+  margin-top: 20px;
 }
