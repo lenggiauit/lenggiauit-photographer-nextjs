@@ -42,7 +42,7 @@ export default function About() {
                     <img
                       src='/img/avatar-frame.png'
                       alt='avatar'
-                      class='avatar-frame anim-spin'
+                      className='avatar-frame anim-spin'
                     ></img>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ export default function About() {
                   <div className='col-md-12 '>
                     <h3 className='about-name'>Giau Le</h3>
                     <h4>
-                      I’m a Full-Stack Developer &amp; Professional photographer
+                      I’m a Full-Stack Developer &amp; Professional Photographer
                     </h4>
                     <p>
                       With a love for travel and exploration, I connect with
