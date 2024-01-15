@@ -79,10 +79,15 @@
         "title": "Beautiful Back & White for Lovers",
         "description": "Location: Ho Chi Minh, Viet Nam",
         "link": "/albums/beautiful-back-white-for-lovers"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8697.jpg",
+        "title": "Street Photography",
+        "description": "Location: Downtown, Toronto, Canada",
+        "link": "/albums/street-photography"
       }
     ]
   },
-
   {
     "pageUrl": "color-of-autumn",
     "metaData": {
@@ -1104,8 +1109,8 @@
       "link": "/albums/most-wanted-it-girl-look"
     },
     "nextPage": {
-      "title": "Albums List",
-      "link": "/albums/"
+      "title": "Street Photography",
+      "link": "/albums/street-photography"
     },
     "photos": [
       {
@@ -1146,6 +1151,54 @@
       {
         "src": "/images/photos/album_10/08.jpg",
         "description": "Beautiful Back & White for Lovers",
+        "filter": "popular"
+      }
+    ]
+  },
+  {
+    "pageUrl": "street-photography",
+    "metaData": {
+      "title": "Street Photography Album - Lenggiauit Photographer",
+      "description": "Street Photography Album",
+      "location": "Downtown, Toronto, Canada"
+    },
+    "prevPage": {
+      "title": "Beautiful Back & White for Lovers",
+      "link": "/albums/beautiful-back-white-for-lovers"
+    },
+    "nextPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_13/LNG_8680.jpg",
+        "description": "Street Photography",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8690.jpg",
+        "description": "Street Photography",
+        "filter": "most-recent"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8697.jpg",
+        "description": "Street Photography",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8707.jpg",
+        "description": "Street Photography",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8714.jpg",
+        "description": "Street Photography",
+        "filter": "popular"
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8726.jpg",
+        "description": "Street Photography",
         "filter": "popular"
       }
     ]
