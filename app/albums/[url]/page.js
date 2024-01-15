@@ -40,26 +40,6 @@ const AlbumDetail = ({ params }) => {
             </h1>
             <BtnBooking />
             <p className='text-center'>{pageData.metaData.location} </p>
-            {/* <ul id='js-filters-agency' className='cbp-l-filters-text'>
-              <li
-                data-filter='*'
-                className='cbp-filter-item-active cbp-filter-item pe-auto'
-              >
-                All<div className='cbp-filter-counter'></div>
-              </li>
-              <li data-filter='.new' className='cbp-filter-item pe-auto'>
-                New<div className='cbp-filter-counter'></div>
-              </li>
-              <li
-                data-filter='.most-recent'
-                className='cbp-filter-item pe-auto'
-              >
-                Most recent<div className='cbp-filter-counter'></div>
-              </li>
-              <li data-filter='.popular' className='cbp-filter-item pe-auto'>
-                Popular<div className='cbp-filter-counter'></div>
-              </li>
-            </ul> */}
 
             <PhotoList photos={pageData.photos} />
           </div>

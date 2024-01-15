@@ -23,7 +23,11 @@ const PhotoList = ({ photos }) => {
         {isLoading && <PageLoader />}
         {!isLoading && (
           <>
-            <Masonry columns={4} spacing={0.5} style={{ marginLeft: '2px' }}>
+            <Masonry
+              columns={{ xs: 1, sm: 2, md: 3, xl: 4 }}
+              spacing={0.2}
+              style={{ marginLeft: '0px' }}
+            >
               {photos.map((item, index) => (
                 <div key={index}>
                   <img
@@ -36,8 +40,8 @@ const PhotoList = ({ photos }) => {
                     alt={item.title}
                     loading='lazy'
                     style={{
-                      borderBottomLeftRadius: 4,
-                      borderBottomRightRadius: 4,
+                      // borderBottomLeftRadius: 4,
+                      // borderBottomRightRadius: 4,
                       display: 'block',
                       width: '100%',
                     }}

@@ -2557,7 +2557,7 @@ body.bt-homevseven .bt-main {
 }
 
 .anim-spin {
-  animation: spin 20s linear infinite;
+  animation: spin 10s linear infinite;
 }
 .anim-spin img {
   animation: none;
@@ -2574,8 +2574,11 @@ body.bt-homevseven .bt-main {
 }
 
 @keyframes spin {
+  50% {
+    transform: rotate(45deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(25deg);
   }
 }
 
