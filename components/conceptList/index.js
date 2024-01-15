@@ -28,41 +28,38 @@ const ConceptList = (props) => {
                   <p className='text-center'>
                     {props.data.pageheader.description}
                   </p>
-
-                  <div className='container-fluid align-items-center mt-4'>
-                    <div className='bt-posts '>
-                      {props.data.concepts.map((item) => (
-                        <article key={v4()} className='bt-post '>
-                          <figure>
-                            <a href={item.link}>
-                              <img src={item.src} alt={item.title} />
-                            </a>
-                          </figure>
-                          <div className='bt-postcontent'>
-                            <div className='bt-posttitle'>
-                              <a href={item.link}>
-                                <h3>{item.title}</h3>
-                              </a>
-                            </div>
-                            <div className='bt-description'>
-                              <p>{item.description}</p>
-                              <p>Location: {item.location}</p>
-                              <p>Status: {item.status}</p>
-                            </div>
-                            <div className=' text-end'>
-                              <a
-                                className='bt-btn bt-btnblack'
-                                href={item.link}
-                              >
-                                <span>explore</span>
-                              </a>
-                            </div>
-                          </div>
-                        </article>
-                      ))}
-                    </div>
-                  </div>
                 </div>
+              </div>
+
+              <div className='row mt-4'>
+                {props.data.concepts.map((item) => (
+                  <div key={v4()} className='col-md-6'>
+                    <article className='bt-post '>
+                      <figure>
+                        <a href={item.link}>
+                          <img src={item.src} alt={item.title} />
+                        </a>
+                      </figure>
+                      <div className='bt-postcontent'>
+                        <div className='bt-posttitle'>
+                          <a href={item.link}>
+                            <h3>{item.title}</h3>
+                          </a>
+                        </div>
+                        <div className='bt-description'>
+                          <p>{item.description}</p>
+                          <p>Location: {item.location}</p>
+                          <p>Status: {item.status}</p>
+                        </div>
+                        <div className=' text-end'>
+                          <a className='bt-btn bt-btnblack' href={item.link}>
+                            <span>explore</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                ))}
               </div>
             </div>
           </main>

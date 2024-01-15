@@ -805,7 +805,7 @@ export default function Booking(props) {
                 >
                   <span>Back</span>
                 </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a
                   className='bt-btn bt-btnblack '
                   role='button'
