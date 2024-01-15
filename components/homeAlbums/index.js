@@ -49,7 +49,7 @@ export default function HomeAlbums(props) {
     initial: 0,
     slideChanged: (s) => {
       //setCurrentSlide(s.track.details.rel)
-      //console.log(s.track.details.rel)
+      // console.log(s.track.details.rel)
     },
   })
 
@@ -155,8 +155,18 @@ export default function HomeAlbums(props) {
                 ))}
             </div>
             <div className='tg-bannerfullwidthslidecount'>
-              <span>{currentSlide}</span>
-              <span>{props.data.sliderData.length}</span>
+              <span>
+                {instanceRef.current != null
+                  ? instanceRef.current.track.details.rel
+                  : '0'}
+              </span>
+              <span>
+                {
+                  props.data.sliderData.filter((item) => {
+                    return item.visible == true
+                  }).length
+                }
+              </span>
             </div>
           </main>
         </>

@@ -58,7 +58,7 @@
         "description": "Location: Scarborough Bluffs, Ontario, Canada",
         "alignment": "bottom",
         "link": "/albums/raining-day",
-        "visible": true
+        "visible": false
       },
       {
         "src": "/images/photos/album_02/LNG_6247.jpg",
@@ -94,7 +94,7 @@
         "description": "Location: Woodbine beach, Toronto, Ontario, Canada",
         "alignment": "bottom",
         "link": "/albums/fashion-girl",
-        "visible": true
+        "visible": false
       },
 
       {
@@ -114,6 +114,15 @@
         "alignment": "top",
         "link": "/albums/beautiful-back-white-for-lovers",
         "visible": false
+      },
+      {
+        "src": "/images/photos/album_13/LNG_8697.jpg",
+        "thumb": "/images/photos/album_13/thumbnails/LNG_8697.jpg",
+        "title": "<span>Street <span>Photography</span></span>",
+        "description": "Location: Downtown, Toronto, Canada",
+        "alignment": "top",
+        "link": "/albums/street-photography",
+        "visible": true
       }
     ]
   },
