@@ -3,8 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../public/css/font-awesome.min.css'
 import '../public/css/style.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
+  metadataBase: new URL('https://lenggiauit.com'),
   title: 'Lenggiauit - Photographer Portfolio',
   description: 'Lenggiauit - Photographer Portfolio',
 }
@@ -38,6 +40,7 @@ export default function RootLayout({ children }) {
         `,
           }}
         />
+        <Analytics />
       </body>
     </html>
   )
