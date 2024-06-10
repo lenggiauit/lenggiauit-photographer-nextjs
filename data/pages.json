@@ -7,6 +7,15 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_02/LNG_9327.jpg",
+        "thumb": "/images/photos/album_02/thumbnails/LNG_9327.jpg",
+        "title": "<span>Celebrate <span>Graduation</span></span>Photography",
+        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
+        "alignment": "bottom",
+        "link": "/albums/celebrate-graduation-photography",
+        "visible": true
+      },
+      {
         "src": "/images/photos/album_06/LNG_7879.jpg",
         "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
         "title": "<span><span>Color of Autumn</span></span>",
@@ -59,15 +68,6 @@
         "alignment": "bottom",
         "link": "/albums/raining-day",
         "visible": false
-      },
-      {
-        "src": "/images/photos/album_02/LNG_6247.jpg",
-        "thumb": "/images/photos/album_02/thumbnails/LNG_6247.jpg",
-        "title": "<span>Celebrate <span>Graduation</span></span>Photography",
-        "description": "Location: Centennial College, Scarborough, Ontario, Canada",
-        "alignment": "bottom",
-        "link": "/albums/celebrate-graduation-photography",
-        "visible": true
       },
       {
         "src": "/images/photos/album_03/LNG_5759.jpg",

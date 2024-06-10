@@ -32,7 +32,7 @@
         "link": "/albums/raining-day"
       },
       {
-        "src": "/images/photos/album_02/LNG_6247.jpg",
+        "src": "/images/photos/album_02/LNG_9327.jpg",
         "title": "Celebrate Graduation Photography",
         "description": "Location: Centennial College, Scarborough, Ontario, Canada",
         "link": "/albums/celebrate-graduation-photography"
@@ -520,6 +520,41 @@
       "link": "/albums/raining-day"
     },
     "photos": [
+      {
+        "src": "/images/photos/album_02/LNG_9327.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9324.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9317.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9330.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9341.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9345.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_02/LNG_9347.jpg",
+        "description": "Centennial College",
+        "filter": "new"
+      },
       {
         "src": "/images/photos/album_02/LNG_6243.jpg",
         "description": "Centennial College",
