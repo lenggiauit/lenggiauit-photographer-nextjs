@@ -26,6 +26,7 @@
     "formik": "^2.4.3",
     "gapi-script": "^1.2.0",
     "keen-slider": "^6.8.6",
+    "lenggiauit-photographer-nextjs": "file:",
     "next": "^13.4.9",
     "querybase": "^0.6.0",
     "react": "18.2.0",

@@ -7,6 +7,12 @@
     },
     "albums": [
       {
+        "src": "/images/photos/album_14/LNG_9296.jpg",
+        "title": "Prospect Point",
+        "description": "Location: Prospect Point, Stanley Park - Vancouver, Canada",
+        "link": "/albums/prospect-point"
+      },
+      {
         "src": "/images/photos/album_06/LNG_7879.jpg",
         "title": "Color Of Autumn",
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
@@ -88,6 +94,90 @@
       }
     ]
   },
+  {
+    "pageUrl": "prospect-point",
+    "metaData": {
+      "title": "Prospect Point Album - Lenggiauit Photographer",
+      "description": "Prospect Point Album",
+      "location": "Prospect point, Stanley Park, Vancouver, Canada"
+    },
+    "prevPage": {
+      "title": "Albums List",
+      "link": "/albums/"
+    },
+    "nextPage": {
+      "title": "Color Of Autumn",
+      "link": "/albums/color-of-autumn"
+    },
+    "photos": [
+      {
+        "src": "/images/photos/album_14/LNG_9053.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9099.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9119.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9129.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9165.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9230.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9240.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9241.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9254.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9256.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9264.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9296.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      },
+      {
+        "src": "/images/photos/album_14/LNG_9307.jpg",
+        "description": "Prospect Point",
+        "filter": "new"
+      }
+    ]
+  },
+
   {
     "pageUrl": "color-of-autumn",
     "metaData": {

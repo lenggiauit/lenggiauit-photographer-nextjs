@@ -7,6 +7,15 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_14/LNG_9296.jpg",
+        "thumb": "/images/photos/album_14/thumbnails/LNG_9296.jpg",
+        "title": "<span> Stanley Park <span>Prospect Point</span></span>",
+        "description": "Location: Prospect Point, Stanley Park - Vancouver, Canada",
+        "alignment": "bottom",
+        "link": "/albums/prospect-point",
+        "visible": true
+      },
+      {
         "src": "/images/photos/album_02/LNG_9327.jpg",
         "thumb": "/images/photos/album_02/thumbnails/LNG_9327.jpg",
         "title": "<span>Celebrate <span>Graduation</span></span>Photography",
