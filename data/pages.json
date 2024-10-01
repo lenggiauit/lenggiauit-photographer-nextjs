@@ -25,20 +25,20 @@
         "visible": true
       },
       {
-        "src": "/images/photos/album_06/LNG_7879.jpg",
-        "thumb": "/images/photos/album_06/thumbnails/LNG_7879.jpg",
+        "src": "/images/photos/album_06/LNG_8235.jpg",
+        "thumb": "/images/photos/album_06/thumbnails/LNG_8235.jpg",
         "title": "<span><span>Color of Autumn</span></span>",
         "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "bottom",
+        "alignment": "center",
         "link": "/albums/color-of-autumn",
         "visible": true
       },
       {
-        "src": "/images/photos/album_12/LNG_7271.jpg",
-        "thumb": "/images/photos/album_12/thumbnails/LNG_7271.jpg",
+        "src": "/images/photos/album_12/LNG_7325.jpg",
+        "thumb": "/images/photos/album_12/thumbnails/LNG_7325.jpg",
         "title": "<span><span>Hong Kong 90's</span> Retro</span>",
         "description": "Location: Chinatown Toronto, Ontario, Canada",
-        "alignment": "top",
+        "alignment": "center",
         "link": "/albums/retro-hongkong-90s",
         "visible": true
       },
