@@ -1,5 +1,6 @@
 import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
+import AudioBackground from '@/components/audioBackground'
 import Chatbot from '@/components/chatbot'
 let appData = require('/data/pages.json')
 let appSetting = require('/appSetting.json')
@@ -23,13 +24,16 @@ export async function generateMetadata({ params, searchParams }, parent) {
     return null
   }
 }
+
 export default function Home() {
   return (
     <>
       <div id='bt-wrapper' className='bt-wrapper bt-haslayout'>
         <Navigation></Navigation>
         <HomeAlbums data={appData.find((x) => x.pageUrl == '/')}></HomeAlbums>
+        <AudioBackground />
       </div>
+
       {/* <Chatbot /> */}
     </>
   )

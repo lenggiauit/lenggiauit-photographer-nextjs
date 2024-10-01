@@ -41,9 +41,7 @@ function ThumbnailPlugin(mainRef) {
   }
 }
 export default function HomeAlbums(props) {
-  var audioRef = useRef()
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [sliderRef, instanceRef] = useKeenSlider(
     {
@@ -105,21 +103,7 @@ export default function HomeAlbums(props) {
 
   useEffect(() => {
     setIsLoading(false)
-    var main = document.getElementById('bt-main')
-    if (main != null) {
-      main.click()
-    }
   }, [])
-
-  const playBackground = () => {
-    const audio = audioRef.current
-    if (typeof window !== 'undefined') {
-      if (!isPlaying) {
-        setIsPlaying(true)
-        audio?.play()
-      }
-    }
-  }
 
   return (
     <>
@@ -128,12 +112,8 @@ export default function HomeAlbums(props) {
         <>
           <main
             id='bt-main'
-            onClick={playBackground}
             className='bt-main bt-haslayout h-100 overflow-hidden position-relative'
           >
-            <audio ref={audioRef} id='background_audio' loop>
-              <source src='/music/OneStepCloser.mp3' type='audio/mpeg' />
-            </audio>
             <div
               ref={sliderRef}
               id='tg-postfullslider'
