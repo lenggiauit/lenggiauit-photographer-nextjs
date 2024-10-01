@@ -88,7 +88,7 @@ export default function Navigation(props) {
                 <span>Phone +1 437 410 3085</span>
               </li>
               <li>
-                <address>Toronto, Canada</address>
+                <address>Vancouver, Canada</address>
               </li>
             </ul>
           </div>
