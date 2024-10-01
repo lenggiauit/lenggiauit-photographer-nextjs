@@ -4421,6 +4421,34 @@ body.bt-homevseven .bt-main {
   }
 }
 
+@media (min-width: 1330px) and (max-width: 1366px) {
+  .tg-postthumbnail {
+    width: 125px !important;
+    height: 48% !important;
+    min-height: 370px;
+  }
+  .bt-togglethumbnails {
+    right: 92px;
+  }
+  .bt-post {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1660px) and (max-width: 2560px) {
+  .tg-postthumbnail {
+    width: 135px !important;
+    height: 48% !important;
+    min-height: 370px;
+  }
+  .bt-togglethumbnails {
+    right: 108px;
+  }
+  .bt-post {
+    width: 100%;
+  }
+}
+
 .alert {
   padding: 5px 5px !important;
   font-size: 12px;
