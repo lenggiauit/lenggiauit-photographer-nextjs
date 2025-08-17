@@ -4768,3 +4768,12 @@ body.bt-homevseven .bt-main {
 .about-contact {
   margin-bottom: 20px;
 }
+#audio-container {
+  width: 175px;
+  height: 175px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  opacity: 0.8;
+}

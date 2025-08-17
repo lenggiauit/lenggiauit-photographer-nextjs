@@ -1,10 +1,34 @@
 'use client'
 import React, { useEffect, useState, useRef } from 'react'
+import AudioMotionAnalyzer from 'audiomotion-analyzer'
 
 export default function AudioBackground(props) {
   var audioRef = useRef()
   const [isPlaying, setIsPlaying] = useState(false)
   const [isAutoPlay, setIsAutoPlay] = useState(false)
+
+  const container = window.document.getElementById('audio-container')
+  const audioSource = window.document.getElementById('background_audio')
+  const audioMotion = new AudioMotionAnalyzer(container, {
+    source: audioSource,
+    height: 200,
+    ansiBands: false,
+    showScaleX: false,
+    bgAlpha: 0,
+    overlay: true,
+    smoothing: 0.7,
+    mode: 0,
+    barSpace: 0.1,
+    channelLayout: 'single',
+    ledBars: false,
+    mirror: 0,
+    radial: true,
+    showPeaks: true,
+    spinSpeed: 5,
+    colorMode: 'gradient',
+    gradient: 'rainbow',
+  })
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener('click', function () {
@@ -39,12 +63,13 @@ export default function AudioBackground(props) {
 
   return (
     <div>
+      <div id='audio-container'></div>
       <div
         onClick={playBackground}
         style={{
           position: 'absolute',
-          bottom: 56,
-          right: 40,
+          bottom: 55,
+          right: 72,
           zIndex: 999,
           cursor: 'pointer',
         }}
@@ -55,7 +80,13 @@ export default function AudioBackground(props) {
         ></i>
       </div>
 
-      <audio ref={audioRef} id='background_audio' volume={0.2} loop>
+      <audio
+        ref={audioRef}
+        id='background_audio'
+        volume={0.2}
+        loop
+        crossOrigin='anonymous'
+      >
         <source src='/music/OneStepCloser.mp3' type='audio/mpeg' />
       </audio>
     </div>
