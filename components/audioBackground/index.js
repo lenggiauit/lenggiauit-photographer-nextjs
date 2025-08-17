@@ -7,30 +7,30 @@ export default function AudioBackground(props) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isAutoPlay, setIsAutoPlay] = useState(false)
 
-  const container = window.document.getElementById('audio-container')
-  const audioSource = window.document.getElementById('background_audio')
-  const audioMotion = new AudioMotionAnalyzer(container, {
-    source: audioSource,
-    height: 200,
-    ansiBands: false,
-    showScaleX: false,
-    bgAlpha: 0,
-    overlay: true,
-    smoothing: 0.7,
-    mode: 0,
-    barSpace: 0.1,
-    channelLayout: 'single',
-    ledBars: false,
-    mirror: 0,
-    radial: true,
-    showPeaks: true,
-    spinSpeed: 5,
-    colorMode: 'gradient',
-    gradient: 'rainbow',
-  })
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const container = window.document.getElementById('audio-container')
+      const audioSource = window.document.getElementById('background_audio')
+      const audioMotion = new AudioMotionAnalyzer(container, {
+        source: audioSource,
+        height: 200,
+        ansiBands: false,
+        showScaleX: false,
+        bgAlpha: 0,
+        overlay: true,
+        smoothing: 0.7,
+        mode: 0,
+        barSpace: 0.1,
+        channelLayout: 'single',
+        ledBars: false,
+        mirror: 0,
+        radial: true,
+        showPeaks: true,
+        spinSpeed: 5,
+        colorMode: 'gradient',
+        gradient: 'rainbow',
+      })
+
       window.addEventListener('click', function () {
         //autoplay()
       })
