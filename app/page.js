@@ -2,6 +2,7 @@ import Navigation from '@/components/navigation'
 import HomeAlbums from '@/components/homeAlbums'
 import AudioBackground from '@/components/audioBackground'
 import Chatbot from '@/components/chatbot'
+import SelectPage from '@/components/selectPage'
 let appData = require('/data/pages.json')
 let appSetting = require('/appSetting.json')
 
@@ -32,9 +33,9 @@ export default function Home() {
         <Navigation></Navigation>
         <HomeAlbums data={appData.find((x) => x.pageUrl == '/')}></HomeAlbums>
         <AudioBackground />
+        {/* <SelectPage /> */}
       </div>
-
-      {/* <Chatbot /> */}
+      <Chatbot />
     </>
   )
 }

@@ -10,12 +10,10 @@ let appSetting = require('/appSetting.json')
 
 export default function Admin() {
   const [user, setUser] = useState(null)
-  const signInWithGoogle = async () => {
-    try {
-      await signInWithRedirect(auth, googleProvider)
-    } catch (err) {
-      console.error(err)
-    }
+  const signInWithGoogle = () => {
+    signInWithPopup(auth, googleProvider).catch((error) => {
+      console.log(error.message)
+    })
   }
   const logOut = async () => {
     try {
@@ -29,14 +27,9 @@ export default function Admin() {
     auth.onAuthStateChanged(
       (user) => {
         if (user) {
-          // User is signed in.
           setUser(user)
-        } else {
-          // No user is signed in.
-          reject('no user logged in')
         }
       },
-      // Prevent console error
       (error) => reject(error)
     )
   }, [])
