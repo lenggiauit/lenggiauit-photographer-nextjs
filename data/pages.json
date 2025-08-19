@@ -7,6 +7,15 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_06/LNG_8217.jpg",
+        "thumb": "/images/photos/album_06/thumbnails/LNG_8217.jpg",
+        "title": "<span><span>Color of Autumn</span></span>",
+        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
+        "alignment": "center",
+        "link": "/albums/color-of-autumn",
+        "visible": true
+      },
+      {
         "src": "/images/photos/album_14/LNG_9296.jpg",
         "thumb": "/images/photos/album_14/thumbnails/LNG_9296.jpg",
         "title": "<span> Stanley Park <span>Prospect Point</span></span>",
@@ -24,15 +33,7 @@
         "link": "/albums/celebrate-graduation-photography",
         "visible": true
       },
-      {
-        "src": "/images/photos/album_06/LNG_8235.jpg",
-        "thumb": "/images/photos/album_06/thumbnails/LNG_8235.jpg",
-        "title": "<span><span>Color of Autumn</span></span>",
-        "description": "Location: Rouge National Urban Park, Toronto, Ontario, Canada",
-        "alignment": "center",
-        "link": "/albums/color-of-autumn",
-        "visible": true
-      },
+
       {
         "src": "/images/photos/album_12/LNG_7325.jpg",
         "thumb": "/images/photos/album_12/thumbnails/LNG_7325.jpg",
