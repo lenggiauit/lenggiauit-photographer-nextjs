@@ -123,6 +123,7 @@ export default function HomeAlbums(props) {
                 .filter((item) => {
                   return item.visible == true
                 })
+                .sort((a, b) => a.order - b.order)
                 .map((item, index) => (
                   <div
                     key={v4()}
@@ -170,6 +171,7 @@ export default function HomeAlbums(props) {
                 .filter((item) => {
                   return item.visible == true
                 })
+                .sort((a, b) => a.order - b.order)
                 .map((item) => (
                   <div
                     key={v4()}
