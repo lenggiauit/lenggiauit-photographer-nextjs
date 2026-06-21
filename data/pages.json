@@ -7,6 +7,16 @@
     },
     "sliderData": [
       {
+        "src": "/images/photos/album_15/LNG_9781.jpg",
+        "thumb": "/images/photos/album_15/thumbnails/LNG_9781.jpg",
+        "title": "<span><span>Maan Farm</span></span>",
+        "description": "Location: Maan Farm, Abbotsford - BC Canada",
+        "alignment": "top",
+        "link": "/albums/farm",
+        "visible": true,
+        "order": 1
+      },
+      {
         "src": "/images/photos/album_06/LNG_8217.jpg",
         "thumb": "/images/photos/album_06/thumbnails/LNG_8217.jpg",
         "title": "<span><span>Color of Autumn</span></span>",
@@ -14,8 +24,9 @@
         "alignment": "center",
         "link": "/albums/color-of-autumn",
         "visible": true,
-        "order": 1
+        "order": 2
       },
+
       {
         "src": "/images/photos/album_14/LNG_9296.jpg",
         "thumb": "/images/photos/album_14/thumbnails/LNG_9296.jpg",
@@ -24,7 +35,7 @@
         "alignment": "bottom",
         "link": "/albums/prospect-point",
         "visible": true,
-        "order": 2
+        "order": 3
       },
       {
         "src": "/images/photos/album_02/LNG_9327.jpg",
@@ -34,7 +45,7 @@
         "alignment": "bottom",
         "link": "/albums/celebrate-graduation-photography",
         "visible": true,
-        "order": 3
+        "order": 4
       },
 
       {
@@ -45,7 +56,7 @@
         "alignment": "center",
         "link": "/albums/retro-hongkong-90s",
         "visible": true,
-        "order": 4
+        "order": 5
       },
       {
         "src": "/images/photos/album_11/LNG_7133.jpg",
@@ -55,7 +66,7 @@
         "alignment": "top",
         "link": "/albums/play-with-paper-boats",
         "visible": true,
-        "order": 5
+        "order": 6
       },
       {
         "src": "/images/photos/album_08/LNG_6477.jpg",
@@ -65,7 +76,7 @@
         "alignment": "top",
         "link": "/albums/spring-girl",
         "visible": true,
-        "order": 6
+        "order": 7
       },
       {
         "src": "/images/photos/album_09/_lng815.jpg",
@@ -75,7 +86,7 @@
         "alignment": "top",
         "link": "/albums/most-wanted-it-girl-look",
         "visible": true,
-        "order": 7
+        "order": 8
       },
       {
         "src": "/images/photos/album_01/LNG_5889.jpg",
@@ -85,7 +96,7 @@
         "alignment": "bottom",
         "link": "/albums/raining-day",
         "visible": false,
-        "order": 8
+        "order": 9
       },
       {
         "src": "/images/photos/album_03/LNG_5759.jpg",
@@ -95,7 +106,7 @@
         "alignment": "bottom",
         "link": "/albums/high-park-cherry-blossom",
         "visible": true,
-        "order": 9
+        "order": 10
       },
       {
         "src": "/images/photos/album_04/LNG_6005.jpg",
@@ -105,7 +116,7 @@
         "alignment": "bottom",
         "link": "/albums/a-view-in-toronto-isLand",
         "visible": true,
-        "order": 10
+        "order": 11
       },
       {
         "src": "/images/photos/album_05/LNG_6321.jpg",
@@ -115,7 +126,7 @@
         "alignment": "bottom",
         "link": "/albums/fashion-girl",
         "visible": false,
-        "order": 11
+        "order": 12
       },
 
       {
@@ -126,7 +137,7 @@
         "alignment": "bottom",
         "link": "/albums/beautiful-nature-for-lovers",
         "visible": false,
-        "order": 12
+        "order": 13
       },
       {
         "src": "/images/photos/album_10/01.jpg",
@@ -136,7 +147,7 @@
         "alignment": "top",
         "link": "/albums/beautiful-back-white-for-lovers",
         "visible": false,
-        "order": 13
+        "order": 14
       },
       {
         "src": "/images/photos/album_13/LNG_8697.jpg",
@@ -146,7 +157,7 @@
         "alignment": "top",
         "link": "/albums/street-photography",
         "visible": true,
-        "order": 14
+        "order": 15
       }
     ]
   },

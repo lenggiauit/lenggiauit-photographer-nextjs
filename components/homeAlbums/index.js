@@ -5,6 +5,37 @@ import { useKeenSlider } from 'keen-slider/react'
 import { v4 } from 'uuid'
 import 'keen-slider/keen-slider.min.css'
 import PageLoader from '@/components/pageLoader'
+import { refFromURL } from 'firebase/database'
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min) // Ensure min is an integer
+  max = Math.floor(max) // Ensure max is an integer
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+function getBgUrls(pics, picSrc) {
+  if (pics == typeof undefined || pics == null || pics.length == 0) {
+    return `url('${picSrc}')`
+  } else {
+    let str = ''
+    for (let i = 0; i < pics.length; i++) {
+      str += `url('${pics[i].src}'),`
+    }
+    return str.substring(0, str.length - 1)
+  }
+}
+
+function getBgSize(pics, picSrc) {
+  if (pics == typeof undefined || pics == null || pics.length == 0) {
+    return 'auto'
+  } else {
+    let str = ''
+    let startSize = 100 - pics.length * 10
+    for (let i = 0; i < pics.length; i++) {
+      str += startSize + 10 * i + `,`
+    }
+    return str.substring(0, str.length - 1)
+  }
+}
 
 function ThumbnailPlugin(mainRef) {
   return (slider) => {
@@ -132,7 +163,7 @@ export default function HomeAlbums(props) {
                   >
                     <figure
                       style={{
-                        backgroundImage: `url('${item.src}')`,
+                        background: `url('${item.src}')`,
                         backgroundPositionX: 'center',
                         backgroundPositionY: `${item.alignment}`,
                         backgroundRepeat: 'no-repeat',
